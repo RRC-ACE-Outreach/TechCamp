@@ -1,0 +1,69 @@
+body,form,input,h1,label,div,ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: lightgrey;
+}
+
+body,
+form, input {
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+  #container{
+      color: #444;
+      background-color: #FFF;
+      border: 1px solid grey;
+      margin: 3em auto;
+      max-width: 750px;  
+      padding: 0 3em 3em;
+  }
+
+    h1{
+      line-height: 1.2;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px #AAA;
+    }
+
+/*  Insert form styles here */
+
+
+
+    ul{ 
+      width: 600px;
+      padding: 0;
+      margin: .5em auto;
+      list-style: none;
+    }
+
+    ul li{
+      margin: 1em;
+      border: 1px solid #FFF;
+      background-color: #EEE;
+      height: 55px;
+      line-height: 55px;
+      padding-left: 44px;
+      font-size: 1.3em;
+      box-shadow: 1px 1px 2px #AAA;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

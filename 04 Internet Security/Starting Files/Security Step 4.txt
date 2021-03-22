@@ -1,0 +1,1 @@
+<li><a href="detail.php?id=<?= $dataset['id'] ?>"><?= strip_tags($dataset['column1']) ?></a></li>

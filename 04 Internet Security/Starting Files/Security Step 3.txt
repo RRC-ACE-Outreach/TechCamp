@@ -1,0 +1,5 @@
+	if ($_POST) {
+		$select_sql = "SELECT username FROM users WHERE username=:username AND password=:password;";
+		$statement = $db->prepare($select_sql);
+		$statement->execute($_POST);
+		$user = $statement->fetch();
