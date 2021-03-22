@@ -1,3 +1,4 @@
+		<!-- Copy this form into your .html file -->
 		<form method="post" action="#">
 		    <div>
 		      <label for="name">Name</label>
@@ -24,7 +25,9 @@
 		      	<input type="submit" value="Create" />
 		    </div>			
 		</form>
+		<!-- end of copy this form into your html file -->
 
+/* Copy this section into your .css file */
     form{
       box-sizing: border-box;
       width: 700px;
@@ -58,3 +61,4 @@
         background-color: #DDD;
         font-size: 1.1em;
       }
+/* end of copy this section into your .css file */
