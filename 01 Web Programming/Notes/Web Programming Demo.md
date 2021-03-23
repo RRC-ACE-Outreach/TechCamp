@@ -120,7 +120,7 @@ form{
   }
 ```
 
-###Play Time  
+### Play Time  
 With the time we have left, try customizing this for yourself.
 It doesn’t have to be a pokemon index. Try and think of something you’d rather have a list of, or make entries about.
 Try changing colours as well. Have fun and ask questions!
