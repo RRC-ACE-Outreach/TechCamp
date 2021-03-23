@@ -32,9 +32,9 @@ body {
 ```
 
 ### Back to the HTML  
-Our goal for this page is to display a list of the pokemon.
-Go to the <ul> tag, (point out that this is an unordered list), and let’s start adding some pokemons.
-Save and refresh the page in the browser.
+Our goal for this page is to display a list of the pokemon. 
+Go to the `<ul>` tag, (point out that this is an unordered list), and let’s start adding some pokemons. 
+  Save and refresh the page in the browser.
 ```html
 <ul>
   <!--Listing of pokemons -->
