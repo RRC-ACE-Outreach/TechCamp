@@ -1,3 +1,38 @@
+# Let us try and get tshark (cli version) working on Goorm
+https://www.wireshark.org/docs/wsug_html_chunked/AppToolstshark.html#:~:text=TShark%20is%20a%20terminal%20oriented,the%20same%20options%20as%20wireshark%20.
+```
+sudo apt-get install tshark
+```
+installing tshark was super snappy and lightweight.
+
+### Starting up tshark
+```
+sudo tshark
+```
+
+here's what we get in the terminal:
+```
+root@goorm:/workspace/ace-tech-camp-test# sudo tshark
+Running as user "root" and group "root". This could be dangerous.
+Capturing on 'Cisco remote capture: ciscodump'
+tshark: Couldn't run /usr/bin/dumpcap in child process: Operation not permitted
+
+tshark: Error by extcap pipe:
+** (process:5447): WARNING **: 14:46:40.488: Missing parameter: --remote-host
+
+0 packets captured
+```
+
+hmm, let's look at the documentation?
+https://www.wireshark.org/docs/man-pages/tshark.html
+
+
+*NOTE:* I ended up replying to Nola's email on the topic of whether we could install wireshark on Goorm - hopefully somebody from the Networking team can suggest options to run against the command. \- Andrea
+
+
+
+# Below is documentation of a failed attempt at Wireshark installation on Goorm
+\------------------------------------------------
 # Let us try and get wireshark working on Goorm
 Trying this method: https://askubuntu.com/questions/700712/how-to-install-wireshark
 
