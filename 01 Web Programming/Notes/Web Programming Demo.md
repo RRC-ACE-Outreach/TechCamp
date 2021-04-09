@@ -1,6 +1,11 @@
-## Red River College's Applied Computer Education Department presents  
-# Tech Camp  
-  
+### Red River College's Applied Computer Education Department presents  
+## Tech Camp
+# Part 1: Web Development
+
+### Before we get started
+Create a user account for yourself on Goorm.io (need link)
+NOTE TO INSTRUCTOR: instructions on how to get started on Goorm and start their container need to be covered here.
+
 ### Intro  
 Start by opening the folder with the starting files.
 Open index.html in the browser. (Ask if they know the different kinds of browsers)
