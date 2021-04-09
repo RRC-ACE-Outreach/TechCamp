@@ -2,24 +2,154 @@
 ## Tech Camp
 # Part 1: Web Development
 
-### Before we get started
-Create a user account for yourself on Goorm.io (need link)
-NOTE TO INSTRUCTOR: instructions on how to get started on Goorm and start their container need to be covered here.
+### Let's Get Started
+We will be using a browser based IDE called Goorm. Start by creating a user account for yourself on https://ide.goorm.io/
+TODO: add screenshots
 
-### Intro  
-Start by opening the folder with the starting files.
-Open index.html in the browser. (Ask if they know the different kinds of browsers)
-Discuss what we’re going to be doing to this webpage.
-Now let’s edit these files. Open index.html and styles.css in Sublime.
-  
+#### STEP 1
+Choose: Create a new container
+
+#### STEP 2
+Configure your container. 
+Name: Choose a name without offensive words as we will share our sites with other participants later.
+Description: You can leave this blank
+Region: Oregon (US)
+Visibility: Public
+Template: Default Template
+Deployment: Not Used
+GPU: No GPU core
+Stack: PHP
+** IMPORTANT BEFORE CREATING **
+Check the following checkboxes:
+- [x] Install MySQL
+- [x] Enable mysql-ctl command
+
+(Andrea has a screenshot)
+
+We are now ready to create the container.
+** Press the Create Button **
+
+This will take a minute or two for container creation.
+
+#### STEP 3
+When the container has been created, you'll see a screen stating:
+** Container has been successfully created **
+
+Press the button: "Run Container"
+This will take a few moments to launch.
+
+### Where do the files live?
+In the PROJECT pane, expand the folder with your container name on it.
+TODO: insert screenshot.
+
+### Fill the index.php file
+#### Copy and paste this starter snippet into the index.php file:
+```html
+<!-- Security Step 1 - Paste Above -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pokedex</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="container">
+	<!-- Security Step 2 - Paste Below -->
+	
+		<h1>Add a New Pokemon</h1>
+			<!--Insert Form Here -->
+			
+		<h1>Pokedex Roll Call</h1>
+		<ul>
+			<!--Listing of pokemons -->
+
+		</ul>
+	</div>
+</body>
+</html>
+```
+
 ### HTML  
 At the root of every single webpage you’ve ever seen is HTML. It’s the language of the web.
 HTML is made up of tags, which describe the data contained within them.
+
+* A quick note: *
+* We are building this website using a PHP stack, the default file suffix is .php. Please know that a .html suffix would have worked for this part. Although the suffix is .php, we will be using only HTML within this php file. *
+
+Let's look at the file: index.php
+
 Point out the first `<h1>`. 
 Change the content, save, and refresh the browser.
 Change to another heading tag. Just end up back with the `<h1>`.
 ```html
 <h1>Add a New Pokemon</h1>
+```
+
+### Create your styles.css file
+Add a new file to your project folder. 
+In the PROJECT panel, press the + icon to create a new file.
+TODO: Insert screenshot
+
+#### Name your file:
+```
+styles.css
+```
+
+#### Copy and paste this starter snippet into the styles.css file:
+``` css
+body,form,input,h1,label,div,ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: lightgrey;
+}
+
+body,
+form, input {
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+  #container{
+      color: #444;
+      background-color: #FFF;
+      border: 1px solid grey;
+      margin: 3em auto;
+      max-width: 750px;  
+      padding: 0 3em 3em;
+  }
+
+    h1{
+      line-height: 1.2;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px #AAA;
+    }
+
+/*  Insert form styles here */
+
+
+
+    ul{ 
+      width: 600px;
+      padding: 0;
+      margin: .5em auto;
+      list-style: none;
+    }
+
+    ul li{
+      margin: 1em;
+      border: 1px solid #FFF;
+      background-color: #EEE;
+      height: 55px;
+      line-height: 55px;
+      padding-left: 44px;
+      font-size: 1.3em;
+      box-shadow: 1px 1px 2px #AAA;
+    }
 ```
 
 ### CSS  
