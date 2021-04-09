@@ -19,28 +19,33 @@ Template: Default Template
 Deployment: Not Used
 GPU: No GPU core
 Stack: PHP
-** IMPORTANT BEFORE CREATING **
+
+**IMPORTANT BEFORE CREATING**
+
 Check the following checkboxes:
 - [x] Install MySQL
 - [x] Enable mysql-ctl command
 
-(Andrea has a screenshot)
+**TODO: Add screenshot - andrea has a screenshot**
 
 We are now ready to create the container.
-** Press the Create Button **
+
+**Press the Create Button**
 
 This will take a minute or two for container creation.
 
 #### STEP 3
 When the container has been created, you'll see a screen stating:
-** Container has been successfully created **
+
+**Container has been successfully created**
 
 Press the button: "Run Container"
 This will take a few moments to launch.
 
 ### Where do the files live?
 In the PROJECT pane, expand the folder with your container name on it.
-TODO: insert screenshot.
+
+**TODO: insert screenshot.**
 
 ### Fill the index.php file
 #### Copy and paste this starter snippet into the index.php file:
@@ -49,23 +54,23 @@ TODO: insert screenshot.
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Pokedex</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <title>Pokedex</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<div id="container">
-	<!-- Security Step 2 - Paste Below -->
-	
-		<h1>Add a New Pokemon</h1>
-			<!--Insert Form Here -->
-			
-		<h1>Pokedex Roll Call</h1>
-		<ul>
-			<!--Listing of pokemons -->
+  <div id="container">
+  <!-- Security Step 2 - Paste Below -->
 
-		</ul>
-	</div>
+    <h1>Add a New Pokemon</h1>
+      <!--Insert Form Here -->
+			
+    <h1>Pokedex Roll Call</h1>
+      <ul>
+        <!--Listing of pokemons -->
+        
+      </ul>
+  </div>
 </body>
 </html>
 ```
@@ -74,8 +79,8 @@ TODO: insert screenshot.
 At the root of every single webpage you’ve ever seen is HTML. It’s the language of the web.
 HTML is made up of tags, which describe the data contained within them.
 
-* A quick note: *
-* We are building this website using a PHP stack, the default file suffix is .php. Please know that a .html suffix would have worked for this part. Although the suffix is .php, we will be using only HTML within this php file. *
+*A quick note:*
+*We are building this website using a PHP stack, the default file suffix is .php. Please know that a .html suffix would have worked for this part. Although the suffix is .php, we will be using only HTML within this php file.*
 
 Let's look at the file: index.php
 
