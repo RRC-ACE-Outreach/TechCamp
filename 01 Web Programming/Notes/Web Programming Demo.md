@@ -91,6 +91,13 @@ Change to another heading tag. Just end up back with the `<h1>`.
 <h1>Add a New Pokemon</h1>
 ```
 
+### That's great, but what does it look like?
+TODO: add screenshots
+Copy the URL under "Registered URL and Port".
+
+Paste the URL into a new tab/window in your browser.
+AA NOTE: This is the live preview.
+
 ### Create your styles.css file
 Add a new file to your project folder. 
 In the PROJECT panel, press the + icon to create a new file.
