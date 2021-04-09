@@ -4,7 +4,8 @@
 
 ### Let's Get Started
 We will be using a browser based IDE called Goorm. Start by creating a user account for yourself on https://ide.goorm.io/
-TODO: add screenshots
+
+**TODO: add screenshots**
 
 #### STEP 1
 Choose: Create a new container
@@ -92,11 +93,13 @@ Change to another heading tag. Just end up back with the `<h1>`.
 ```
 
 ### That's great, but what does it look like?
-TODO: add screenshots
+TODO: add screenshots. Polish up descriptions
 Copy the URL under "Registered URL and Port".
 
 Paste the URL into a new tab/window in your browser.
-AA NOTE: This is the live preview.
+Click on your project folder name (link).
+
+This is the live preview for the site you are developing.
 
 ### Create your styles.css file
 Add a new file to your project folder. 
