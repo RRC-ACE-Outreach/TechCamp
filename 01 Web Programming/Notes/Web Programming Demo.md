@@ -20,12 +20,7 @@ Template: Default Template
 Deployment: Not Used
 GPU: No GPU core
 Stack: PHP
-
-**IMPORTANT BEFORE CREATING**
-
-Check the following checkboxes:
-- [x] Install MySQL
-- [x] Enable mysql-ctl command
+Leave the checkboxes under the Stack menu **unchecked**.
 
 **TODO: Add screenshot - andrea has a screenshot**
 
