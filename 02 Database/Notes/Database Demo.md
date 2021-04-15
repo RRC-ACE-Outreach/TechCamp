@@ -2,7 +2,7 @@
 ## Tech Camp
 # Part 2: Adding a Database
 
-# Where we left off
+## Where we left off...
 TODO: add instructions on using starter files if they got stuck in the last part.
 We will continue with our solution that we started in Goorm.
 
@@ -11,15 +11,27 @@ We will continue with our solution that we started in Goorm.
 
 In the CLI - Copy paste this command, then press Enter/Return to run the command:
 ```
+apt-get update
+```
+
+Then run this line:
+```
+apt-get install -y mysql-server
+```
+
+Start mysql by running this line:
+```
 service mysql start
 ```
 
+Now we'ts install phpmyadmin by running this line:
 ```
-apt-get install -y php7.3-mbstring php7.3-mysql phpmyadmin
+apt-get install -y php7.3-mbstring php7.3-mysqli phpmyadmin
 ```
 
-You will be prompted to answer a few questions during the installation.
-Question 1:
+### When installing phpmyadmin, you'll be prompted for some questions to answer.
+
+#### Question 1:
 ```
 Please choose the web server that should be automatically configured to run phpMyAdmin.
   1. apache2  2. lighttpd
@@ -32,7 +44,7 @@ Enter Answer 1 into the command prompt:
 Press Enter/Return to accept.
 NOTE: This will take some time for your container to install phpmyadmin
 
-Question 2:
+#### Question 2:
 ```
 Configure database for phpmyadmin with dbconfig-common? [yes/no]
 
@@ -44,7 +56,8 @@ yes
 ```
 Press Enter/Return to accept.
 
-Question 3:
+#### Question 3:
+* THIS IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK. *
 ```
 Please provide a password for phpmyadmin to register with the database server. If left blank, a random password will be generated.
 MySQL application password for phpmyadmin:
@@ -91,18 +104,25 @@ TODO: add instructions on getting to project link and how to add suffix /phpmyad
 
 From the top menu, select "PROJECT" and then pick "Running URL and Port" from the menu.
 
-TODO: add screenshots
-Copy the URL under "Registered URL and Port".
-
-Paste the URL into a new tab/window in your browser.
-Click on your project folder name (link)
-
-
-# Sample  
-Sample text. Inline code ref: `<h1>`.
-```html
-<h1>Add a New Pokemon</h1>
+There is a little diagonal arrow in a box icon you can click to open the link in your web browser in a new tab.
+Append this suffix to the URL to view phpmyadmin:
 ```
+/phpmyadmin
+```
+
+Your URL should look something similar to this (this is not a real URL):
+```
+http://YourProjectName-nxyqj.run-us-west2.goorm.io/phpmyadmin/
+```
+Notice how you are not adding '/phpmyadmin' after your directory name. (Note to instructors - I have a feeling that we should we remove the directory/folder to simplify)
+
+
+
+# TODO: modify instructions to help students and cover the following points
+1. login to myphp
+2. add a database
+3. update the php files and create new php files
+4. not in that order.
 
 
 ### COPYING TO WEB
