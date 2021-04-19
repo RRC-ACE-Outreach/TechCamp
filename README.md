@@ -1,15 +1,16 @@
-## Welcome to RRC's Applied Computer Education
+## Welcome to RRC's Applied Computer Education (ACE):
 # TechCamp
-  
-  
-ToDo: we should have a welcome paragraph.
+
+Thank you for joining us at RRC's TechCamp with the ACE Department. Many thanks to our TechCamp sponsor, Wawanesa Insurance, for sponsoring door prizes to a handful of lucky visiting students. 
+
+This year's TechCamps are online in two different streams, with more details below.
+Follow the links for the path you have chosen.
 
 ## Stream 1: Girls Exploring Information Technology and Day in the Life of an IT Student Web App
 Thank you for spending a day with us learning about Information Technology at Red River College.
 If you want to do all of the Web Application activities again, all of the files you will need are in this GitHub.
 
-Start with the notes at this link:
-https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App
+[Stream 1 is delivered in multiple sessions, starting with the instructions at this link](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App)
 
 TODO: Add links to each section. Make sure all the snippets and starting code are in the notes files. Add video links into md instructions.
 
@@ -18,5 +19,5 @@ TODO: Add links to each section. Make sure all the snippets and starting code ar
 Each session will be an opportunity to experience and explore some aspect of Information Technology. 
 
 Sessions will include:
-1. Introduction to Information Security: The Instructor will demonstrate topics covered in our Information Security courses, including pentesting and malware analysis content. (link to come)
-1. Javascript: A session on using JavaScript asynchronously to access and create dynamic content from Open Data sources.
+1. [Introduction to Information Security](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Javascript): The Instructor will demonstrate topics covered in our Information Security courses, including pentesting and malware analysis content. (link to come)
+1. [Javascript](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Javascript): A session on using JavaScript asynchronously to access and create dynamic content from Open Data sources.
