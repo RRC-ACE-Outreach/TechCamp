@@ -58,7 +58,7 @@ There are 4 text files called Security Step 1.txt through to Security Step 4.txt
 
 At the very top of index.php, you will see an empty line, and right below it is a comment that says Security Step 1. Copy and paste the text from Security Step 1.txt right above this comment. It should look like this after you are done:
 
-Next, near the top of index.php, right above the title <h1> tag, should be another comment that says Security Step 2, followed by an empty line. Copy and paste the contents of Security Step 2.txt in to the empty line. When you have done this, it should look like this:
+Next, near the top of index.php, right above the title &lt;h1&gt; tag, should be another comment that says Security Step 2, followed by an empty line. Copy and paste the contents of Security Step 2.txt in to the empty line. When you have done this, it should look like this:
 
 Don’t forget to save your work! You should now be able to visit your website, and you will not be able to see it until you enter the username of ‘john’, and a password of ‘1234’.
 
