@@ -108,7 +108,7 @@ Your website should now be secure against simple attacks. But there is always mo
 
 <h2>Where can I learn more?</h2>
 
-If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit <span style="text-decoration:underline;">https://[www.owasp.org, ](http://www.owasp.org/)</span>the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
+If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit [https://www.owasp.org, ](https://www.owasp.org/)the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
 
 And remember what our favorite web slinger always says; with great power comes great responsibility. You should **never **use this knowledge against someone who is unwilling.
 
