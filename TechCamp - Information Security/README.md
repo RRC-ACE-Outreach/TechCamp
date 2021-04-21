@@ -1,22 +1,21 @@
-# Introduction
+<h2>Introduction</h2>
+
+In the Internet Security session of the Tech Camp, we teach you how to add a basic security feature called a user gateway. By setting up this feature, you limit certain functions or information on your site to authorized individuals only. However, with added complexity to your site comes the need for additional security. The example that we give you initially is flawed and it leaves the site open to security threats. After we demonstrate the holes in the security, we proceed with strengthening it. The fixes we provide do not solve every problem that can occur, but it is a great start.
 
 
-    In the Internet Security session of the Tech Camp, we teach you how to add a basic security feature called a user gateway. By setting up this feature, you limit certain functions or information on your site to authorized individuals only. However, with added complexity to your site comes the need for additional security. The example that we give you initially is flawed and it leaves the site open to security threats. After we demonstrate the holes in the security, we proceed with strengthening it. The fixes we provide do not solve every problem that can occur, but it is a great start.
+We invite you to find additional security threats on your website, and see if you can prevent them!
+
+<h3>SQL Injections</h3>
 
 
-    We invite you to find additional security threats on your website, and see if you can prevent them!
 
-
-## SQL Injections
-
-
-    The first of two attacks we use is what’s called an SQL Injection. SQL is the language of the modern database (a warehouse of information). It tries to use a natural language approach to its design that allows for easy use and understanding. For example, let’s say you were browsing a retail store for a computer, but you only wanted to see computers that are orange in color. How would you ask a sales person this question? In SQL it would look like this: SELECT * (asterisk means all) FROM computers WHERE color = ‘orange’. You want to get (or select) ALL information about the computers at this store (from computers), where the color of the computer is equal to orange.
+The first of two attacks we use is what’s called an SQL Injection. SQL is the language of the modern database (a warehouse of information). It tries to use a natural language approach to its design that allows for easy use and understanding. For example, let’s say you were browsing a retail store for a computer, but you only wanted to see computers that are orange in color. How would you ask a sales person this question? In SQL it would look like this: SELECT * (asterisk means all) FROM computers WHERE color = ‘orange’. You want to get (or select) ALL information about the computers at this store (from computers), where the color of the computer is equal to orange.
 
 
     In an SQL injection attack, you use this natural language against itself. When you understand the structure of the language, it can be simple to alter it. And when the statement finally gets sent to the database, it doesn’t know what a normal or fake statement is. It takes the statement and runs it without a care in the world! However, most websites already prevent this threat before it reaches the database.
 
+<h3>Cross Site Scripting</h3>
 
-## Cross Site Scripting
 
 
     This kind of threat also goes by the acronym of XSS. This threat is one of the more common attacks done to a website in the modern age. It can be tricky to deal with it, even if you realize that it is happening to you. The idea behind this threat is that you place an otherwise harmless piece of code on a website that allows you to save information. This harmless code loads more code from a different website. The code on this other website is anything but harmless. It can be used to gather private information from you, or to change the entire structure of your website.
@@ -24,8 +23,8 @@
 
     At best, a cross site scripting threat will simply deface your website. You see this threat almost immediately and you can begin to clean it up so other people can view your website again. At worst, this threat can be quick and silent, tracking information about you and your website. This kind of attack could be on your site for weeks, months, or even years before you discover it.
 
+<h2>Setting up the Project</h2>
 
-# Setting up the Project
 
 
     If you are setting up this project from the Database session, all of the files you will need are located in the following folder on the USB drive:
@@ -45,8 +44,8 @@
 
     This will add the user, john, with a password of, 1234, to the database. You will now be ready to add the user gateway to the website.
 
+<h2>Setting up the Hacker Files</h2>
 
-# Setting up the Hacker Files
 
 
     If you wish to run the hacker files locally, you will be required to run a few extra steps to get them set up. First, you will need to locate the files on the USB stick:
@@ -66,8 +65,8 @@
 
     [http://localhost/secretshow.php](http://localhost/secretshow.php)
 
+<h2>Adding the User Gateway</h2>
 
-# Adding the User Gateway
 
 
     If you have not set up the project yet, go to the section of this document titled Setting up the Project, and follow those instructions first. It will copy the necessary files over to your website, and set up the users database.
@@ -88,13 +87,13 @@
     At the very top of index.php, you will see an empty line, and right below it is a comment that says Security Step 1. Copy and paste the text from Security Step 1.txt right above this comment. It should look like this after you are done:
 
 
-    Next, near the top of index.php, right above the title &lt;h1> tag, should be another comment that says Security Step 2, followed by an empty line. Copy and paste the contents of Security Step 2.txt in to the empty line. When you have done this, it should look like this:
+    Next, near the top of index.php, right above the title <h1> tag, should be another comment that says Security Step 2, followed by an empty line. Copy and paste the contents of Security Step 2.txt in to the empty line. When you have done this, it should look like this:
 
 
     Don’t forget to save your work! You should now be able to visit your website, and you will not be able to see it until you enter the username of ‘john’, and a password of ‘1234’.
 
+<h2>Performing the Security Audit</h2>
 
-# Performing the Security Audit
 
 
     If you wish to see the results of performing a cross site scripting attack on your website, please visit the section titled Setting up the Hacker Files. These files are required to be set up in order for the attack to take place. You can still perform the SQL Injection attack without these files however.
@@ -120,8 +119,8 @@
 
     Click create, and suddenly the website has been defaced by Hackit the Cat!
 
+<h2>Strengthening Security</h2>
 
-# Strengthening Security
 
 
     If you wish to start your website from this strengthened point, you can find the files on your USB stick in the following directory:
@@ -148,7 +147,7 @@
     The different between this and what was there before is that now we are relying on the programming language to help us clean up attempts to cause an SQL Injection. If you observe the validate page before and after you change the code, you will notice that the SQL Statement part of the page will have changed. Instead of it saying WHERE username=’john’ AND password=’1234’;, it will say WHERE username=:username AND password=:password;.
 
 
-    Next, we need to prevent any future XSS attacks from potentially running. Open Security Step 4.txt, and edit index.php. Near the very bottom of the webpage, where you erased all your &lt;li>&lt;/li> tags and replaced it with some code in the Database session. Here you will see a comment that says Security Step 4. The line right below it is what you will replace with what is in Security Step 4.txt. If you are not sure which line, look at what is in the text file for a reference. The change we are making is subtle, but it is very important.
+    Next, we need to prevent any future XSS attacks from potentially running. Open Security Step 4.txt, and edit index.php. Near the very bottom of the webpage, where you erased all your <li></li> tags and replaced it with some code in the Database session. Here you will see a comment that says Security Step 4. The line right below it is what you will replace with what is in Security Step 4.txt. If you are not sure which line, look at what is in the text file for a reference. The change we are making is subtle, but it is very important.
 
 
     When you have replaced the old line, the code should look like this:
@@ -159,8 +158,8 @@
 
     Your website should now be secure against simple attacks. But there is always more that you can always do…
 
+<h2>Where can I learn more?</h2>
 
-# Where can I learn more?
 
 
     If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit <span style="text-decoration:underline;">https://[www.owasp.org, ](http://www.owasp.org/)</span>the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
