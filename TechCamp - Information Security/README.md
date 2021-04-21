@@ -98,7 +98,7 @@ In here are the last two Security Step text files that we will need. Security St
 
 The different between this and what was there before is that now we are relying on the programming language to help us clean up attempts to cause an SQL Injection. If you observe the validate page before and after you change the code, you will notice that the SQL Statement part of the page will have changed. Instead of it saying WHERE username=’john’ AND password=’1234’;, it will say WHERE username=:username AND password=:password;.
 
-Next, we need to prevent any future XSS attacks from potentially running. Open Security Step 4.txt, and edit index.php. Near the very bottom of the webpage, where you erased all your <li></li> tags and replaced it with some code in the Database session. Here you will see a comment that says Security Step 4. The line right below it is what you will replace with what is in Security Step 4.txt. If you are not sure which line, look at what is in the text file for a reference. The change we are making is subtle, but it is very important.
+Next, we need to prevent any future XSS attacks from potentially running. Open Security Step 4.txt, and edit index.php. Near the very bottom of the webpage, where you erased all your &lt;li&gt; &lt;/li&gt; tags and replaced it with some code in the Database session. Here you will see a comment that says Security Step 4. The line right below it is what you will replace with what is in Security Step 4.txt. If you are not sure which line, look at what is in the text file for a reference. The change we are making is subtle, but it is very important.
 
 When you have replaced the old line, the code should look like this:
 
