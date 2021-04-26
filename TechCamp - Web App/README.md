@@ -17,3 +17,5 @@ We have a series of videos to support you through the activities in this Tech Ca
 
 
 TODO: Add links to each section. Make sure all the snippets and starting code are in the notes files. Add video links into md instructions.
+
+At the end of your day with us, we would love to hear your feedback. [Please fill out our survey and tell us how we did.](https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u)
