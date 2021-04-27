@@ -3,40 +3,11 @@
 # Part 1: Web Development
 
 ### Let's Get Started
-We will be using a browser based IDE called Goorm. Start by creating a user account for yourself on https://ide.goorm.io/
+We will be using a browser based IDE called Goorm. We asked for all participants to set up their virtual environment using [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). 
 
-**TODO: add screenshots**
+If your environment isn't set up - we ask you to walk through steps 1 to [ ? ] of the virtual environment setup before starting this Web Development module.
 
-#### STEP 1
-Choose: Create a new container
-
-#### STEP 2
-Configure your container. 
-Name: Choose a name without offensive words as we will share our sites with other participants later.
-Description: You can leave this blank
-Region: Oregon (US)
-Visibility: Public
-Template: Default Template
-Deployment: Not Used
-GPU: No GPU core
-Stack: PHP
-Leave the checkboxes under the Stack menu **unchecked**.
-
-**TODO: Add screenshot - andrea has a screenshot**
-
-We are now ready to create the container.
-
-**Press the Create Button**
-
-This will take a minute or two for container creation.
-
-#### STEP 3
-When the container has been created, you'll see a screen stating:
-
-**Container has been successfully created**
-
-Press the button: "Run Container"
-This will take a few moments to launch.
+## TODO: we are now using Goorm - we will need to help our participants along in navigating through Goorm to complete this module
 
 ### Where do the files live?
 In the PROJECT pane, expand the folder with your container name on it.
@@ -269,3 +240,9 @@ form{
 With the time we have left, try customizing this for yourself.
 It doesn’t have to be a pokemon index. Try and think of something you’d rather have a list of, or make entries about.
 Try changing colours as well. Have fun and ask questions!
+
+### If you did not set up your virtual environment before starting this module - please take a moment to work through the rest of the steps in the [Before you Start] instructional. 
+Recap of the rest of the steps:
+• Install mySQL
+• Install myPHPadmin
+• Test myPHPadmin
