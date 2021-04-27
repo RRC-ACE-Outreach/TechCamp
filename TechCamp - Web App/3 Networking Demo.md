@@ -2,25 +2,49 @@
 ## Tech Camp
 # Part 3: Networking
 
-### Let's Get Started
-**TODO: This section needs to be written formatted and screenshots added. Below notes are copy-pasted from script.**
+### Keeping You Connected To The Things That Matter
 
-#### Script
-Tech Camp 2021
-
-Introduction:
+### Introduction
 We all use the Internet daily for many things.  What do you use it for?
+Research
+- Education
+- Shopping
+- Phone Calls
+- Instant Messaging
+- Meetings
+- GPS
+- Gaming
+- Tech Camp today
 
 Networks provide the underlying communications paths that the Internet run on.  All communication must take place over some sort of media.  Each type of media uses different methods for communication.  Copper cables (Ethernet or co-ax) use electrical impulses to send data.  Fiber-optic cables uses pulses of light.  Wireless transmission is accomplished through modulation of specific frequencies of electromagnetic waves.  Regardless of the media, all transmissions are sent as binary (ones and zeroes) either on or off. So when using fiber optic – the light is either on or off (1 or 0).
 
-Using the internet perhaps by connecting to a web site may involve many different types of media.  Picture of network with different media through the path
+Using the internet perhaps by connecting to a web site may involve many different types of media.  
+<img src="0 - Images/03 Networking Presentation 03.jpg" alt="Different types of physical media can be used to communicate">
 
-Typical home network setup.  Within our typical home network, we have internal media which may be wireless and/or Ethernet.  Our ISP provides us with hardware and a connection to their service.  That connection can be fibre optic, co-ax cable.  Their equipment provides your home network with a DHCP server, a gateway and NAT.  A DHCP server provides logical addresses to any powered-on device.  The gateway provides the device with an address to get off of the network and out to the Internet.  The NAT (Network Address Translation) will translate our private address into a public address which will allow that information to go out onto the Internet.  Private internal addresses are not allowed on the internet and were designed to expand the address space of IPv4.  The ISP hardware also provides a switching function where the device will convert the internal communication protocols into the required protocol to go out to the Internet.
+| Media Types | Description |
+| - | - |
+| Metal wires within cables | Uses Electrical Impulses |
+| Glass or plastic fibers within cables (fiber-optic cable) | Uses pulses of light |
+| Wireless transmission | Uses modulation of specific frequrencies of electromagnetic waves |
+
+### Typical home network setup. 
+Within our typical home network, we have internal media which may be wireless and/or Ethernet.  Our ISP provides us with hardware and a connection to their service.  That connection can be fibre optic, co-ax cable.  
+<img src="0 - Images/03 Networking Presentation 04.jpg" alt="Connecting to a Website with media type examples">
+<img src="0 - Images/03 Networking Presentation 05.jpg" alt="Typical Home Network Setup">
+
+Their equipment provides your home network with a DHCP server, a gateway and NAT.  A DHCP server provides logical addresses to any powered-on device.  The gateway provides the device with an address to get off of the network and out to the Internet.  The NAT (Network Address Translation) will translate our private address into a public address which will allow that information to go out onto the Internet.  Private internal addresses are not allowed on the internet and were designed to expand the address space of IPv4.  The ISP hardware also provides a switching function where the device will convert the internal communication protocols into the required protocol to go out to the Internet.
+
+### Importance of standards
+- We have seen that internet communication takes place in a variety of ways
+- This leads to the importance of standards in the networking world
+- In order to provide seamless communication, all networking media and the transmission of that communication follows protocols
+- Networking protocols can be defined as rules that govern the transmission of data
 
 Standards are set and enforced for all network communication.  To understand the reason we need to learn a little about the history of the computer industry. Not long ago, Companies like IBM and Digital Equipment Corporation (DEC) were the leading computer manufacturers in the world manufactured devices which were not compatible with each other. So if you bought a computer from IBM you had to buy a monitor, printer and everything from IBM. There were many companies that bought equipment from both equipment manufacturers but the problem was the devices could not communicate with each other. That was about the time when international organization for standards or more commonly known as ISO thought that there was a need for a standard.  Now all devices and communications adhere to standards meaning equipment can work seamlessly together and devices from all different manufacturers can communicate.
 
 
-We have all sorts of acronyms in the networking world.  Some you may recognize.
+### We have all sorts of acronyms in the networking world. Some you may recognize.
+<img src="0 - Images/03 Networking Presentation 07.jpg" alt="Acronym Stew - many networking acronyms are pictured">
 IPv4 – Internet Protocol version 4
 IPv6 – Internet Protocol version 6
 TCP – Transport Control Protocol
@@ -32,6 +56,13 @@ Https – secure hypertext transfer protocol
 
 
 If you were to mail a letter, you are required to perform certain tasks and to provide information in a standard format.  You would provide the address of the recipient on the front of the envelope.  You would usually put your address in the top left-hand corner of the envelope so that the recipient knows where the letter came from.  You would also put a stamp in the top right-hand corner of the envelope.  By performing these tasks and conforming to the standards, you would assume your letter would move through the postal system and would be successfully delivered.  Like a letter, certain pieces of information are required for any network communication to take place. The three required pieces are MAC address, logical address and port number.
+
+### Requirements for communication
+- In order to communicate between your device and any other device on the network three pieces of information are needed:
+  - MAC address
+  - Logical address – IPv4 or IPv6
+  - Port number
+- We will explore each of these pieces of information and see how they work together to deliver information over the Internet
 
 MAC address is a physical address of the network interface.  You can look at your MAC address in a variety of ways.  MAC addresses are unique.  Some operating systems will allow you to randomize your MAC address as a security feature.
 
