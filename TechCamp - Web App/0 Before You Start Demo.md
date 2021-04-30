@@ -1,24 +1,33 @@
 ### Red River College's Applied Computer Education Department presents  
 ## Tech Camp
-# Part 0: Setting up your virtual environment before Tech Camp Day	
+# Part 0: Before you Start
+Setting up your virtual environment before Tech Camp Day	
 
-### Let's Get Started
-**TODO: This file is a placeholder and still needs to be filled.**
+### Welcome
 
-Note from Andrea: This section needs to be developed.
-Goals: Get users onto Goorm IDE
+
+**TODO: Notes from Andrea => This page needs to be developed.**
+Goals: 
+------
+Get users onto Goorm IDE
 Create a container
 Launch the container
 Install phpmyadmin
 Install mysql
+Validate phpmyadmin works
 
 In all - the process may take around 20 minutes:
 
 # Below notes were Copy-pasted from what was in the Web Dev notes:
-### Let's Get Started
-We will be using a browser based IDE called Goorm. Start by creating a user account for yourself on https://ide.goorm.io/
+### Getting our Toolkit Ready
+We will be using a browser based IDE called Goorm.
+Start by creating a user account for yourself on 
+## https://ide.goorm.io/
+
+Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp. 
 
 **TODO: add screenshots**
+**TODO: please make sure to number the steps so we
 
 #### STEP 1
 Choose: Create a new container
