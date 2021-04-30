@@ -22,7 +22,7 @@ Using the internet perhaps by connecting to a web site may involve many differen
 <img src="0 - Images/03 Networking 3_1.png" alt="Different types of physical media can be used to communicate">
 
 | Media Types | Description |
-| - | - |
+| --- | --- |
 | Metal wires within cables | Uses Electrical Impulses |
 | Glass or plastic fibers within cables (fiber-optic cable) | Uses pulses of light |
 | Wireless transmission | Uses modulation of specific frequencies of electromagnetic waves |
@@ -107,21 +107,23 @@ The following slides will demonstrate methods to find your address on different 
 Choose the method that matches both your operating system and the access you have to the device settings
 
 #### Well known port numbers
+
 | Port Number | Protocol | Application |
-| 20​ | TCP​ | File Transfer Protocol (FTP) - Data​ |
-| 21​ | TCP​ | File Transfer Protocol (FTP) - Control​ |
-| 22​ | TCP​ | Secure Shell (SSH)​ |
-| 23​ | TCP​ | Telnet​ |
-| 25​ | TCP​ | Simple Mail Transfer Protocol (SMTP)​ |
-| 53​ | UDP, TCP​ | Domain Name Service (DNS)​ |
-| 67​ | UDP​ | Dynamic Host Configuration Protocol (DHCP) - Server​ |
-| 68​ | UDP​ | Dynamic Host Configuration Protocol - Client​ |
-| 69​ | UDP​ | Trivial File Transfer Protocol (TFTP)​ |
-| 80​ | TCP​ | Hypertext Transfer Protocol (HTTP)​ |
-| 110​ | TCP​ | Post Office Protocol version 3 (POP3)​ |
-| 143​ | TCP​ | Internet Message Access Protocol (IMAP)​ |
-| 161​ | UDP​ | Simple Network Management Protocol (SNMP)​ |
-| 443​ | TCP​ | Hypertext Transfer Protocol Secure (HTTPS)​ |
+| ----- | ----- | ----- | ----- |
+| 20 | TCP | File Transfer Protocol (FTP) - Data |
+| 21 | TCP | File Transfer Protocol (FTP) - Control |
+| 22 | TCP | Secure Shell (SSH) |
+| 23 | TCP | Telnet |
+| 25 | TCP | Simple Mail Transfer Protocol (SMTP) |
+| 53 | UDP, TCP | Domain Name Service (DNS) |
+| 67 | UDP | Dynamic Host Configuration Protocol (DHCP) - Server |
+| 68 | UDP | Dynamic Host Configuration Protocol - Client |
+| 69 | UDP | Trivial File Transfer Protocol (TFTP) |
+| 80 | TCP | Hypertext Transfer Protocol (HTTP) |
+| 110 | TCP | Post Office Protocol version 3 (POP3) |
+| 143 | TCP | Internet Message Access Protocol (IMAP) |
+| 161 | UDP | Simple Network Management Protocol (SNMP) |
+| 443 | TCP | Hypertext Transfer Protocol Secure (HTTPS) |
 
 ### DNS
 DNS – maps names to ip addresses.  Without a DNS service we would have to remember the IP address for every web site we wanted to visit.
@@ -192,9 +194,16 @@ In Goorm, from the top navigation menu, choose: **Container**, then **Port Forwa
 
 #### Try out
 
-# TODO: add try-it-out commands for Goorm
+# TODO: add try-it-out commands for Goorm - left off at 9:10 in the video
+Goorm Container Setup Commands
+apt install tshark -y
+usermod -a -G wireshark root
+newgrp wireshark
+chgrp wireshark /usr/bin/dumpcap
+apt install dnsutils -y
 
-# TODO: remove unused information
+
+# TODO: remove unused information (this was in the script but I don't think its in the video)
 DHCP - Will assign an address to a device from a group of available addresses.  This can be configured by the administrator.
 
 Gateway - is the router port that will allow you to get off the internal network and access another network or the internet.  In your home network this is the typically the device provided by the ISP.
@@ -205,9 +214,4 @@ Port number – used to identify the application required.  There are well-known
 
 
 
-Goorm Container Setup Commands
-apt install tshark -y
-usermod -a -G wireshark root
-newgrp wireshark
-chgrp wireshark /usr/bin/dumpcap
-apt install dnsutils -y
+
