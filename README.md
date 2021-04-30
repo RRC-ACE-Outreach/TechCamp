@@ -8,15 +8,19 @@ Follow the links for the path you have chosen.
 
 ## Stream 1: Girls Exploring Information Technology and Day in the Life of an IT Student Web App
 Thank you for spending a day with us learning about Information Technology at Red River College.
-If you want to do all of the Web Application activities again, all of the files you will need are in this GitHub.
+If you want to do all of the Web Application activities again, all of the files and code snippets you will need are in this GitHub.
 
-[Stream 1 is delivered in multiple sessions, starting with the instructions at this link](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App)
+Video recordings for each session can be found on the [Applied Computer Education's YouTube channel at this link](https://www.youtube.com/channel/UCE-d5qjcZXZ_aAcexZywbLw).
+
+[Stream 1 is delivered in multiple sessions, starting with the instructions at this link. ](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App)
 
 TODO: Add links to each section. Make sure all the snippets and starting code are in the notes files. Add video links into md instructions.
 
 
 ## Stream 2: Information Security, Javascript, and more
 Each session will be an opportunity to experience and explore some aspect of Information Technology. 
+
+Video recordings for each session can be found on the [Applied Computer Education's YouTube channel at this link](https://www.youtube.com/channel/UCE-d5qjcZXZ_aAcexZywbLw).
 
 Sessions will include:
 1. [Introduction to Information Security](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Javascript): The Instructor will demonstrate topics covered in our Information Security courses, including pentesting and malware analysis content. (link to come)
