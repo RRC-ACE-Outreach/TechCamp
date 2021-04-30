@@ -18,7 +18,8 @@ Research
 
 Networks provide the underlying communications paths that the Internet run on.  All communication must take place over some sort of media.  
 
-Using the internet perhaps by connecting to a web site may involve many different types of media.  
+Using the internet perhaps by connecting to a web site may involve many different types of media.
+
 <img src="0 - Images/03 Networking 3_1.png" alt="Different types of physical media can be used to communicate">
 
 | Media Types | Description |
@@ -30,11 +31,13 @@ Using the internet perhaps by connecting to a web site may involve many differen
 Each type of media uses different methods for communication.  Copper cables (Ethernet or co-ax) use electrical impulses to send data.  Fiber-optic cables uses pulses of light.  Wireless transmission is accomplished through modulation of specific frequencies of electromagnetic waves.  Regardless of the media, all transmissions are sent as binary (ones and zeroes) either on or off. So when using fiber optic – the light is either on or off (1 or 0).
 
 Using the internet for house by connecting to a website may involve many different types of network media. Imagine many networks connected by various media types, copper, fiber, or wireless, that expand across the world. This is the start to understanding how we are all connected through the internet.
-<img src="0 - Images/03 Networking 4_1.png" alt="Connecting to a Website with media type examples">
+
+<img src="0 - Images/03 Networking 4_1.png" width="800" alt="Connecting to a Website with media type examples">
 
 ### Typical home network setup.
 Within our typical home network, we have internal media which may be wireless and/or Ethernet.  Our Internet Service Provider, or ISP, provides us with hardware and a connection to their service.  That connection can be fibre optic, co-ax cable, through satellites, or plain old telephone service.
-<img src="0 - Images/03 Networking 5_1.png" alt="Typical Home Network Setup">
+
+<img src="0 - Images/03 Networking 5_1.png" width="600" alt="Typical Home Network Setup">
 
 Their equipment provides your home network with a DHCP server, a gateway and NAT.  A DHCP server provides logical addresses to any powered-on device.  The gateway provides the device with an address to get off of the network and out to the Internet.  The NAT (Network Address Translation) will translate our private address into a public address which will allow that information to go out onto the Internet.  Private internal addresses are not allowed on the internet and were designed to expand the address space of IPv4.  The ISP hardware also provides a switching function where the device will convert the internal communication protocols into the required protocol to go out to the Internet.
 
@@ -47,7 +50,9 @@ Standards are set and enforced for all network communication.  To understand the
 - Networking protocols can be defined as rules that govern the transmission of data
 
 ### We have all sorts of acronyms in the networking world. Some you may recognize.
-<img src="0 - Images/03 Networking Presentation 07.png" alt="Acronym Stew - many networking acronyms are pictured">
+
+<img src="0 - Images/03 Networking Presentation 07.jpg" width="800" alt="Acronym Stew - many networking acronyms are pictured">
+
 IPv4 – Internet Protocol version 4
 IPv6 – Internet Protocol version 6
 TCP – Transport Control Protocol
@@ -59,8 +64,8 @@ Https – secure hypertext transfer protocol
 
 #### Analogy for network communication
 If you were to mail a letter, you are required to perform certain tasks and to provide information in a standard format.  You would provide the address of the recipient on the front of the envelope.  You would usually put your address in the top left-hand corner of the envelope so that the recipient knows where the letter came from.  You would also put a stamp in the top right-hand corner of the envelope.  By performing these tasks and conforming to the standards, you would assume your letter would move through the postal system and would be successfully delivered.  Like a letter, certain pieces of information are required for any network communication to take place. The three required pieces are MAC address, logical address and port number.
-<img src="0 - Images/03 Networking 9_1.png" alt="Addressing on a physical letter">
-<img src="0 - Images/03 Networking 9_2.png" alt="Letter addressing as network addresses example">
+
+<img src="0 - Images/03 Networking 9_1.png" width="400" alt="Addressing on a physical letter"> <img src="0 - Images/03 Networking 9_2.png" width="400" alt="Letter addressing as network addresses example">
 
 
 ### Requirements for communication
@@ -94,11 +99,13 @@ Routers read packets and send them in the direction toward the network the packe
 
 #### Examples
 
-<img src="0 - Images/03 Networking 26_1.png" alt="IPv4 address example">
-IPv4 - 192.168.100.108
+*IPv4 - 192.168.100.108*
+<img src="0 - Images/03 Networking 26_1.png" width="800"  alt="IPv4 address example">
 
-<img src="0 - Images/03 Networking 27_1.png" alt="IPv6 address example">
-IPv6 - fe80::152e:fb67:e18a:b2ec
+
+*IPv6 - fe80::152e:fb67:e18a:b2ec*
+<img src="0 - Images/03 Networking 27_1.png" width="800"  alt="IPv6 address example">
+
 
 ### Many ways to determine the address of my device
 Every device will have the required addresses for network communication
@@ -109,7 +116,7 @@ Choose the method that matches both your operating system and the access you hav
 #### Well known port numbers
 
 | Port Number | Protocol | Application |
-| ----- | ----- | ----- | ----- |
+| ----- | ----- | ----- |
 | 20 | TCP | File Transfer Protocol (FTP) - Data |
 | 21 | TCP | File Transfer Protocol (FTP) - Control |
 | 22 | TCP | Secure Shell (SSH) |
@@ -124,6 +131,9 @@ Choose the method that matches both your operating system and the access you hav
 | 143 | TCP | Internet Message Access Protocol (IMAP) |
 | 161 | UDP | Simple Network Management Protocol (SNMP) |
 | 443 | TCP | Hypertext Transfer Protocol Secure (HTTPS) |
+
+
+
 
 ### DNS
 DNS – maps names to ip addresses.  Without a DNS service we would have to remember the IP address for every web site we wanted to visit.
@@ -168,12 +178,9 @@ nslookup rrc.ca
 
 ### Viewing a website
 To view a web site you will use a URL (Universal Resource Locator) or an ip address
-Your device has to have access to a DNS server in order to use a URL
-<img src="0 - Images/03 Networking 36_1.png" alt="Chrome Logo">
-<img src="0 - Images/03 Networking 36_2.png" alt="Firefox Logo">
-<img src="0 - Images/03 Networking 36_3.png" alt="MS Edge Logo">
-<img src="0 - Images/03 Networking 36_4.png" alt="Explorer Logo">
-<img src="0 - Images/03 Networking 36_5.png" alt="Safari Logo">
+Your device has to have access to a DNS server in order to use a URL.
+
+<img src="0 - Images/03 Networking 36_1.png" width="100" alt="Chrome Logo">   <img src="0 - Images/03 Networking 36_2.png" width="100" alt="Firefox Logo">   <img src="0 - Images/03 Networking 36_3.png" width="100" alt="MS Edge Logo">   <img src="0 - Images/03 Networking 36_4.png" width="100" alt="Explorer Logo">   <img src="0 - Images/03 Networking 36_5.png" width="100" alt="Safari Logo">
 
 ### Firewalls
 - Firewalls are a set of rules on a computer or network device that determine what type of communication is allowed or denied
