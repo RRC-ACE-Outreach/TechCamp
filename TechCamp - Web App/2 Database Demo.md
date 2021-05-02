@@ -84,7 +84,7 @@ service mysql start
 **SQL** stands for **'Structured Query Language'**. It is the language used to send commands to a **relational** (< that's a type) **database**.  
 
 
-# We are ready to connect to PhpMyAdmin
+# We are ready to connect to phpMyAdmin
 In your Goorm container, pick from the top menu:
 ```
 Project
@@ -107,43 +107,54 @@ Your URL should look something like this:
 mytechcamp-lbpaf.run-us-west2.goorm.io/phpmyadmin
 ```
 
-# #TODO: finish dbms module
-1. login to myphp
-2. add a database
-3. update the php files and create new php files
-4. not in that order.
-
+You should be presented with a screen that looks like this:
+<img src="0 - Images/00 Welcome to phpMyAdmin.png" alt="phpMyAdmin starting page">
 
 ### Login to phpMyAdmin
+Use the following credentials to login to phpMyAdmin:
 
-- Sign in to MySQL
-  - username: phpmyadmin
-  - password: root
-  - click Login button  
-
-You should see this screen:
-- Let’s create a database
-  - click on “Create new database”
-  - text box (this is the database name): techcamp
-  - collation: utf8_bin  
-
-Database Name and Collation must match the notes exactly or your web page won’t be able to find the database.
-- click on the Save button
-- should get a green message:
-
-Now we have a database.
-A database is just a container for our lists.
-The lists are called tables.
-
-Now let’s create a table.
-- Click on “SQL Command”
-
-- Open db_table_create.sql in the text editor
-Let's create tables in your database:
+**Username:**  
 ```
-db_table_create.sql
+phpmyadmin
 ```
-TODO: add the snippet here for db creation to put into phpmyadmin
+
+**Password:**  
+```
+root
+```
+
+### Select the **'Go'** button to login.  
+
+We are now logged in!
+
+# Let's create your database!
+Select the 'Databases' link:
+<img src="0 - Images/02 phpMyAdmin Databases Link.png" alt="phpMyAdmin Databases Link">
+
+Under 'Create Database':
+- name your database: **techcamp**
+- set the collation to: **utf_8bin**  
+
+<img src="0 - Images/02 phpMyAdmin Create Database.png" alt="phpMyAdmin Create Database">  
+
+**NOTE:** The database **Name** and **Collation** must match the notes exactly or your web page won’t be able to find the database.
+
+### Select the **'Create'** button to create your database.
+</br>  
+
+We should see a brief green notification.
+
+## Now we have a database.
+
+**Do you remember...**  
+Earlier, I mentioned that a database holds collections of tables? We now need to create your table in the database!
+
+
+# Let’s create a table!
+Click on the “SQL” link from the navigation bar:
+<img src="0 - Images/02 phpMyAdmin SQL link.png" alt="SQL link">  
+
+Copy and then paste this script into the text area:
 ``` mySql
 USE techcamp;
 
@@ -163,12 +174,17 @@ INSERT INTO db_table (column1, column2, column3, column4, column5)
 VALUES	('Bulbasaur', 45, 49, 49, 45),
 		('Ivysaur', 60, 62, 63, 60),
 		('Wally', 62, 19, 30, 99);
-
 ```
 
-• Copy and paste all of the text to the SQL Command window
-• Click on the EXECUTE button
-• You should see a series of green success messages. Yay!!
+It should look something like this:  
+<img src="0 - Images/02 phpMyAdmin SQL Script.png" alt="SQL Script and Go Button">  
+
+Select the **Go** button when you are ready to send your script.
+You should see a bunch of green success notifications.
+In the sidebar, click on the 'techcamp' link to see your database.  
+<img src="0 - Images/02 phpMyAdmin SQL Success.png" alt="Successful SQL Notifications">  
+
+
 • click on techcamp at the top
 o you can see the tables in the database
 • click on db_table
