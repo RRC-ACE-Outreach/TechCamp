@@ -93,7 +93,7 @@ Start mysql by running this line:
 service mysql start
 ```
 
-Now we'ts install phpmyadmin by running this line:
+Now let's install phpmyadmin by running this line:
 ```
 apt-get install -y php7.3-mbstring php7.3-mysqli phpmyadmin
 ```
@@ -126,19 +126,19 @@ yes
 Press Enter/Return to accept.
 
 #### Question 3:
-* THIS IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK. *
+**IT IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK.**
 ```
 Please provide a password for phpmyadmin to register with the database server. If left blank, a random password will be generated.
 MySQL application password for phpmyadmin:
 ```
 
-Enter Answer 3 into the command prompt (use this password for this TechCamp for ease of following along):
+Enter Answer 3 into the command prompt **use the below password for this TechCamp for ease of following along**:
 ```
 root
 ```
 Press Enter/Return to accept. Enter the same password again when prompted for confirmation.
 
-NOTE: I'm not sure what to do if the user presses enter instead of entering the first password.
+**If you accidentally left the password blank**: You may run into troubles if you forgot to enter a password and may be stuck waiting for the process to finish failing. It will probably be best to stop your container and try making a new one again.
 
 #### Restart your server
 ```
@@ -190,10 +190,13 @@ Your URL should look something like this:
 mytechcamp-lbpaf.run-us-west2.goorm.io/phpmyadmin
 ```
 
-When you open the url, you will hopefully see a screen that looks like this:
-TODO: insert image
+When you open the url, you will hopefully see a screen that looks like this:  
+<img src="0 - Images/00 Welcome to phpMyAdmin.png" alt="phpMyAdmin starting page">
 
-If you have problems reaching this screen, try entering the following commands into your terminal again and retry the link:
+# You are now ready to start TechCamp!  
+
+### Are you having problems?
+If you have problems reaching the **phpMyAdmin** screen, try entering the following commands into your terminal again and retry the link:
 ```
 service apache2 restart
 ```
@@ -201,15 +204,4 @@ service apache2 restart
 service mysql start
 ```
 
-If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: aceinfo@rrc.ca 
-
-
-Notice how you are not adding '/phpmyadmin' after your directory name. (Note to instructors - I have a feeling that we should we remove the directory/folder to simplify)
-
-
-
-# TODO: modify instructions to help students and cover the following points
-1. login to myphp
-2. add a database
-3. update the php files and create new php files
-4. not in that order.
+If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: aceinfo@rrc.ca

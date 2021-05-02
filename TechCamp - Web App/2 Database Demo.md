@@ -107,6 +107,13 @@ Your URL should look something like this:
 mytechcamp-lbpaf.run-us-west2.goorm.io/phpmyadmin
 ```
 
+# #TODO: finish dbms module
+1. login to myphp
+2. add a database
+3. update the php files and create new php files
+4. not in that order.
+
+
 ### Login to phpMyAdmin
 
 - Sign in to MySQL
