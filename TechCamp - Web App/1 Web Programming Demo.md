@@ -3,11 +3,13 @@
 # Part 1: Web Development
 
 ### Let's Get Started
-We will be using a browser based IDE called Goorm. We asked for all participants to set up their virtual environment using [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). 
+We will be using a browser based IDE called Goorm. We asked for all participants to set up their virtual environment using [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md).
 
-If your environment isn't set up - we ask you to walk through steps 1 to [ ? ] of the virtual environment setup before starting this Web Development module.
+If your environment isn't set up - we ask you to walk through steps 1 through 3 of the virtual environment setup before starting this Web Development module.
 
 ## TODO: we are now using Goorm - we will need to help our participants along in navigating through Goorm to complete this module
+
+## NOTE FROM ANDREA: What do you think about having participants put files at the root instead of the project folder (default location of index.php)? Let me know so I can reflect it in the DB demo.
 
 ### Where do the files live?
 In the PROJECT pane, expand the folder with your container name on it.
@@ -31,11 +33,11 @@ In the PROJECT pane, expand the folder with your container name on it.
 
     <h1>Add a New Pokemon</h1>
       <!--Insert Form Here -->
-			
+
     <h1>Pokedex Roll Call</h1>
       <ul>
         <!--Listing of pokemons -->
-        
+
       </ul>
   </div>
 </body>
@@ -51,7 +53,7 @@ HTML is made up of tags, which describe the data contained within them.
 
 Let's look at the file: index.php
 
-Point out the first `<h1>`. 
+Point out the first `<h1>`.
 Change the content, save, and refresh the browser.
 Change to another heading tag. Just end up back with the `<h1>`.
 ```html
@@ -68,7 +70,7 @@ Click on your project folder name (link).
 This is the live preview for the site you are developing.
 
 ### Create your styles.css file
-Add a new file to your project folder. 
+Add a new file to your project folder.
 In the PROJECT panel, press the + icon to create a new file.
 TODO: Insert screenshot
 
@@ -114,7 +116,7 @@ form, input {
 
 
 
-    ul{ 
+    ul{
       width: 600px;
       padding: 0;
       margin: .5em auto;
@@ -148,8 +150,8 @@ body {
 ```
 
 ### Back to the HTML  
-Our goal for this page is to display a list of the pokemon. 
-Go to the `<ul>` tag, (point out that this is an unordered list), and let’s start adding some pokemons. 
+Our goal for this page is to display a list of the pokemon.
+Go to the `<ul>` tag, (point out that this is an unordered list), and let’s start adding some pokemons.
   Save and refresh the page in the browser.
 ```html
 <ul>
@@ -160,7 +162,7 @@ Go to the `<ul>` tag, (point out that this is an unordered list), and let’s st
   <li>Charmander</li>
 </ul>
 ```
-  
+
 ### Adding a Form  
 Wouldn’t it be great to not have to go into the code to add a new pokemon?
 Normally, a user would enter a new pokemon using a form. That’s what we’re going to add here.
@@ -210,7 +212,7 @@ form{
   column-count: 2;
   text-align: center;
   border: 1px solid #FFF;
-  box-shadow: 1px 1px 2px #AAA; 
+  box-shadow: 1px 1px 2px #AAA;
 }
 
   form label {
@@ -241,8 +243,17 @@ With the time we have left, try customizing this for yourself.
 It doesn’t have to be a pokemon index. Try and think of something you’d rather have a list of, or make entries about.
 Try changing colours as well. Have fun and ask questions!
 
-### If you did not set up your virtual environment before starting this module - please take a moment to work through the rest of the steps in the [Before you Start] instructional. 
+### If you did not set up your virtual environment before starting this module - please take a moment to work through the rest of the steps in the **[Before you Start](0%20Before%20You%20Start%20Demo.md)**  instructional.
 Recap of the rest of the steps:
 • Install mySQL
 • Install myPHPadmin
 • Test myPHPadmin
+
+
+
+---
+## That's all for Part 1: Web Development!
+
+# Links
+**Coming up: [Part 2: Adding a Database](2%20Database%20Demo.md)**  
+**Return to [Web App Landing Page](README.md)**

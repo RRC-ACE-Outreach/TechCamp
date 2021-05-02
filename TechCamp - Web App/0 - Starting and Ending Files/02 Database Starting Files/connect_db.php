@@ -1,8 +1,8 @@
 <?php
     //Define variables needed to connect to the MySQL database
     define('DB_DSN', 'mysql:host=localhost;dbname=techcamp;charset=utf8');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
+    define('DB_USER', 'phpmyadmin');
+    define('DB_PASS', 'root');
 
     //Connect to the database. If the connection fails the main form will not display
     try {

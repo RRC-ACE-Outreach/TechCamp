@@ -2,6 +2,10 @@
 ## Tech Camp
 # Part 2: Adding a Database
 
+<img src="0 - Images/02 Jigglypuff Database.png" alt="If its not in the database, did it really happen?">   
+
+## {TODO: add link} Follow along by video at [this link]().
+
 ### Where we left off...
 In the previous module, you created a simple HTML page with CSS within the Goorm IDE.
 
@@ -26,7 +30,7 @@ You can copy starter code from the below files, and then paste it into your Goor
 ### Last check before we dive in...
 Before attending TechCamp, we asked for all participants to set up their virtual environment using [these instructions](../0%20Before%20You%20Start%20Demo.md).
 
-If you didn't set up your Goorm container before today - we ask you to walk through the rest of the setup steps ([ x ] to [ y ]) before continuing.
+If you didn't set up your Goorm container before today - we ask you to walk through the rest of the setup steps 4 through 9 before continuing.
 
 This may take 10-15 minutes.
 
@@ -107,7 +111,7 @@ Your URL should look something like this:
 mytechcamp-lbpaf.run-us-west2.goorm.io/phpmyadmin
 ```
 
-You should be presented with a screen that looks like this:
+You should be presented with a screen that looks like this:  
 <img src="0 - Images/00 Welcome to phpMyAdmin.png" alt="phpMyAdmin starting page">
 
 ### Login to phpMyAdmin
@@ -128,7 +132,7 @@ root
 We are now logged in!
 
 # Let's create your database!
-Select the 'Databases' link:
+Select the 'Databases' link:  
 <img src="0 - Images/02 phpMyAdmin Databases Link.png" alt="phpMyAdmin Databases Link">
 
 Under 'Create Database':
@@ -151,17 +155,17 @@ Earlier, I mentioned that a database holds collections of tables? We now need to
 
 
 # Let’s create a table!
-Click on the “SQL” link from the navigation bar:
+Click on the “SQL” link from the navigation bar:  
 <img src="0 - Images/02 phpMyAdmin SQL link.png" alt="SQL link">  
 
 Copy and then paste this script into the text area:
-``` mySql
+``` sql
 USE techcamp;
 
 DROP TABLE IF EXISTS db_table;
 
 CREATE TABLE db_table (
-  id 		int(11)			NOT NULL	AUTO_INCREMENT
+    id 		int(11)			NOT NULL	AUTO_INCREMENT
   , column1	varchar(255)	NOT NULL
   , column2	varchar(255)	NOT NULL
   , column3	varchar(255)	NOT NULL
@@ -169,11 +173,6 @@ CREATE TABLE db_table (
   , column5	varchar(255)	NOT NULL
   , PRIMARY KEY(id)
 );
-
-INSERT INTO db_table (column1, column2, column3, column4, column5)
-VALUES	('Bulbasaur', 45, 49, 49, 45),
-		('Ivysaur', 60, 62, 63, 60),
-		('Wally', 62, 19, 30, 99);
 ```
 
 It should look something like this:  
@@ -181,34 +180,35 @@ It should look something like this:
 
 Select the **Go** button when you are ready to send your script.
 You should see a bunch of green success notifications.
-In the sidebar, click on the 'techcamp' link to see your database.  
+In the sidebar, select the 'techcamp' link to see your database.  
 <img src="0 - Images/02 phpMyAdmin SQL Success.png" alt="Successful SQL Notifications">  
 
+Here, we can see the tables in the database.
+Select the 'db_table' link:  
+<img src="0 - Images/02 phpMyAdmin db_table.png" alt="Select the db_table link">  
 
-• click on techcamp at the top
-o you can see the tables in the database
-• click on db_table
-o you can see the column names
-We have a database and a table! Hurrah!
-Now we just have to connect the web page to our database
-We do that by adding some new code to the web page
-PHP
-PHP is code that can be added to an HTML file.
-This new kind of code will let us perform more complicated actions such as connecting to a database.
-• Find your copy of index.html
-• Rename it to index.php
-• Open a browser window
-• in the address line type: localhost/index.php
-• There’s your form
+If you see a warning message like this one, select 'ignore':  
+<img src="0 - Images/02 phpMyAdmin ignore error sql.png" alt="Ignore the error message when viewing db_table">  
+
+In this view, we can see the column names:
+<img src="0 - Images/02 phpMyAdmin db_table columns.png" alt="Ignore the error message when viewing db_table">  
+
+
+## We have a database and a table! Hurrah!
+Now we just have to connect the web page to our database.  
 
 
 # Let's connect our web page to the database!
 *Remember - we go to the PROJECT pane and press the '+' icon to create new files.*
 
-We will create **two** additional files to support connecting your app to a database.
+#### What even is PHP?
+So far, we have been using phpMyAdmin to get your database set up, but what even is PHP?  
+**PHP is code that can be added to an HTML file.**  
+This type of code will let us perform more complicated actions such as connecting to a database.
 
+## First, let's create **two** helper files.
 
-### 1. A file to connect to the database
+#### FILE 1: A file to connect to the database
 Create a new file and call it:
 ```
 connect_db.php
@@ -232,14 +232,14 @@ Copy and Paste this starting snippet to connect_db.php
 ?>
 ```
 
-#### What is this file all about?
+##### What is this file all about?
 We put some hints into the snippets in the form of comments! Single-line PHP comments begin with two slashes '//' and are used to explain what the code around it does. We can see that this code is.
 
 We can see that we defined some variables containing the database location, our username, and our password. We use those variables to pass into a 'PDO statement' to connect our page to our database. We call this a 'connection string'. We wrapped the statement in a 'try/catch' - which means, we try to run the statement. If it fails, we can catch the error so that we don't break our web page.
 
 
 
-### 2. A new page for details on your website
+#### FILE 2: A new page to show (pokémon) details on your website
 Create a new file and call it:
 ```
 detail.php
@@ -299,26 +299,72 @@ Copy and paste this starting snippet to detail.php
 #### What is this file all about?
 This page will display the details about database entries, or Pokémon, we have entered into the database. At the top of the file, we require the 'connect_db.php' file, because we need that connection to retrieve data from our database.
 
-An 'SQL Query' is prepared where we have a little bit of code that will use data fields to ask the database a question. We can use the responses to fill fields that are labelled in the html beneath it. For example: '$pokemon['column1']' is intended to display the data of your pokemon that is stored in column1 of the database table.
+We prepared an 'SQL Select Statement', in other words ... we prepared a question, also known as a 'query', that we intend to ask the database. We can use the database response to fill fields that are labelled in the html beneath it. For example: '$pokemon['column1']' is intended to display the data of your pokemon that is stored in column1 of the database table.
 
-# Let's connect index.php to the database
-Open index.php in a text editor
-We’re going to replace the list you created with a list of information from the database.
-• Find your list of Pokémon (a group of <li> tags) and delete them.
-o Do not delete the <ul> </ul> tags
-• Save the file and refresh the page. There’s nothing there.
-• Open php1.txt
-o Copy everything from this file.
-o Paste the text between the <ul> and </ul> tags.
-• Refresh the page.
-There’s still nothing there. The table is empty. Remember that form you created on your web page?
-• Fill in the form. Click on the “Create” button.
-• Do you see your new list item? Great! Now double-click on it.
-o Surprise! We added an extra page called detail.php to display the extra information about your Pokémon.
-BEFORE YOU GO
-Let’s save your files.
-All the work you have done in this session should be in:
-Desktop\zwamp\vdrive\web
-• Use Windows Explorer to find this folder.
-• Copy and paste all of the files in this folder to:
-o Flash Drive\02 Database\My Files
+## Next, Let's connect index.php to the database.
+Open the **index.php** file.  
+We are going to make some edits.
+
+Let's replace the list you created in **index.php**. Careful, replace the `<li>` elements only:
+``` php
+<!--Listing of pokemons -->
+<li>Pikachu</li>
+<li>Eevee</li>
+```
+
+Replace with this list of information from the database.
+``` php
+<?php
+  //The 'connect_db.php' file contains code to connect to the database
+  require('connect_db.php');
+
+
+  // Check if create new record button was clicked.
+  // If it was, create an SQL insert statement to add -
+  // - the information entered on the form into the database.
+  if ($_POST) {
+    $insert_sql = "INSERT INTO db_table ( column1,  column2,  column3,  column4,  column5 )
+                               VALUES  (:column1, :column2, :column3, :column4, :column5 )";
+    $insert_statement  = $db->prepare($insert_sql);
+    $insert_statement->execute($_POST);
+  }
+
+
+  // Using a SQL Select statement, get records from the table so they can be displayed on the form.
+  $select_sql = 'SELECT * from db_table';
+  $statement  = $db->prepare($select_sql);
+  $statement->execute();
+  $resultset   = $statement->fetchAll();
+?>
+
+<!-- The next three lines of code will cause all data in the table to be displayed on the form -->
+<?php foreach($resultset as $dataset): ?>
+	<!-- Security Step 4 - Replace Line Below -->
+
+  <!-- Hey! If you are reading this comment,
+  your <li> elements will get added to your page using the line below -->
+	<li><a href="detail.php?id=<?= $dataset['id'] ?>"><?= $dataset['column1'] ?></a></li>
+<?php endforeach ?>
+```
+
+## Your database will now be connected to your web page.
+Let's view your page. Open your page from Running Port and URL.
+
+Hmm, there’s still nothing there.
+
+The table is empty.
+
+## Remember that form you created on your web page?
+- Fill in the form.
+- Click on the “Create” button.
+- Do you see your new list item? Great!
+- Now select the link on your new list item.
+  - Surprise! We added an extra page called detail.php to display the extra information about your Pokémon.  
+
+
+---
+## That's all for Part 2: Adding a Database!
+
+# Links
+**Coming up: [Part 3: Networking](3%20Networking%20Demo.md)**  
+**Return to [Web App Landing Page](README.md)**

@@ -70,12 +70,8 @@ Expand the project folder, we will be working on files in this directory.
 We can easily add extra files using the plus icon:  
 <img src="0 - Images/00 Starter file and file creation.png" width=500 alt="Starter File and File Creation">
 
-# Below notes were copy-pasted from Database notes
-## Where we left off...
-TODO: add instructions on using starter files if they got stuck in the last part.
-We will continue with our solution that we started in Goorm.
-
-### TODO: Instruct participants to stop the server. It might just be a simple one-line into the CLI
+## STEP 4
+### NOTE: Below was copy/pasted from the original DB demo
 <img src="0 - Images/00 Terminal Commands.png" width=500 alt="Enter commands in the Terminal">  
 
 In the CLI - Copy paste this command, then press Enter/Return to run the command:
@@ -83,6 +79,7 @@ In the CLI - Copy paste this command, then press Enter/Return to run the command
 apt-get update
 ```
 
+## STEP 5
 Then run this line:
 ```
 apt-get install -y mysql-server
@@ -93,6 +90,7 @@ Start mysql by running this line:
 service mysql start
 ```
 
+## STEP 6
 Now let's install phpmyadmin by running this line:
 ```
 apt-get install -y php7.3-mbstring php7.3-mysqli phpmyadmin
@@ -140,12 +138,14 @@ Press Enter/Return to accept. Enter the same password again when prompted for co
 
 **If you accidentally left the password blank**: You may run into troubles if you forgot to enter a password and may be stuck waiting for the process to finish failing. It will probably be best to stop your container and try making a new one again.
 
+## STEP 7
 #### Restart your server
 ```
 service apache2 restart
 ```
 Press Enter/Return to accept.
 
+## STEP 8
 ### Configure MySQL
 In the CLI - Copy paste this command to run MySQL, then press Enter/Return to run the command:
 ```
@@ -167,6 +167,7 @@ Let's restart the Apache web server:
 service apache2 restart
 ```
 
+## STEP 9
 ### We are ready to view your project via /phpmyadmin
 In your Goorm container, pick from the top menu:
 ```
@@ -205,3 +206,11 @@ service mysql start
 ```
 
 If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: aceinfo@rrc.ca
+
+
+---
+## That's all for Part 0: Before You Start!
+
+# Links
+**Coming up: [Part 1: Web Development](1%20Web%20Programming%20Demo.md)**  
+**Return to [Web App Landing Page](README.md)**
