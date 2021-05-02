@@ -1,13 +1,13 @@
 ### Red River College's Applied Computer Education Department presents  
 ## Tech Camp
 # Part 0: Before you Start
-Setting up your virtual environment before Tech Camp Day	
+Setting up your virtual environment before Tech Camp Day
 
 ### Welcome
 
 
 **TODO: Notes from Andrea => This page needs to be developed.**
-Goals: 
+Goals:
 ------
 Get users onto Goorm IDE
 Create a container
@@ -21,10 +21,10 @@ In all - the process may take around 20 minutes:
 # Below notes were Copy-pasted from what was in the Web Dev notes:
 ### Getting our Toolkit Ready
 We will be using a browser based IDE called Goorm.
-Start by creating a user account for yourself on 
+Start by creating a user account for yourself on
 ## https://ide.goorm.io/
 
-Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp. 
+Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp.
 
 **TODO: add screenshots**
 **TODO: please make sure to number the steps so we
@@ -33,7 +33,7 @@ Take a moment and get your user account created. Be careful to remember your log
 Choose: Create a new container
 
 #### STEP 2
-Configure your container. 
+Configure your container.
 Name: Choose a name without offensive words as we will share our sites with other participants later.
 Description: You can leave this blank
 Region: Oregon (US)
@@ -44,27 +44,31 @@ GPU: No GPU core
 Stack: PHP
 Leave the checkboxes under the Stack menu **unchecked**.
 
-**TODO: Add screenshot - andrea has a screenshot**
+<img src="0 - Images/00 Create Container Options.png" alt="Create Container Options">
 
 We are now ready to create the container.
 
 **Press the Create Button**
 
 This will take a minute or two for container creation.
+<img src="0 - Images/00 Preparing Container.png" alt="Preparing Container">
 
 #### STEP 3
 When the container has been created, you'll see a screen stating:
 
-**Container has been successfully created**
+**Container has been successfully created**  
+<img src="0 - Images/00 Container created.png" alt="Container Creation Complete">
 
 Press the button: "Run Container"
 This will take a few moments to launch.
 
 ### Where do the files live?
-In the PROJECT pane, expand the folder with your container name on it.
+In the PROJECT pane, expand the folder with your container name on it.  
+<img src="0 - Images/00 Files Folder and Terminal.png" width=800 alt="Files Folder and Terminal">
 
-**TODO: insert screenshot.**
-
+Expand the project folder, we will be working on files in this directory.
+We can easily add extra files using the plus icon:  
+<img src="0 - Images/00 Starter file and file creation.png" width=500 alt="Starter File and File Creation">
 
 # Below notes were copy-pasted from Database notes
 ## Where we left off...
@@ -72,7 +76,7 @@ TODO: add instructions on using starter files if they got stuck in the last part
 We will continue with our solution that we started in Goorm.
 
 ### TODO: Instruct participants to stop the server. It might just be a simple one-line into the CLI
-
+<img src="0 - Images/00 Terminal Commands.png" width=500 alt="Enter commands in the Terminal">  
 
 In the CLI - Copy paste this command, then press Enter/Return to run the command:
 ```
@@ -164,21 +168,42 @@ service apache2 restart
 ```
 
 ### We are ready to view your project via /phpmyadmin
-Login to PhpMyAdmin at your project link. 
-TODO: add instructions on getting to project link and how to add suffix /phpmyadmin
+In your Goorm container, pick from the top menu:
+```
+Project
+ > Running URL and Port
+```
+<img src="0 - Images/02 Open Running Port and URL.png" alt="Running URL and Port">
 
-From the top menu, select "PROJECT" and then pick "Running URL and Port" from the menu.
+#### That will open window that looks like this:
+<img src="0 - Images/02 Running URL.png" alt="Open the running URL">  
 
-There is a little diagonal arrow in a box icon you can click to open the link in your web browser in a new tab.
-Append this suffix to the URL to view phpmyadmin:
+You'll see that a URL has been generated for your project. Select the icon pictured to open your project different browser tab/window, or copy/paste the url to do the same thing in a new tab/window.
+
+Add the following text to the end of your URL:
 ```
 /phpmyadmin
 ```
 
-Your URL should look something similar to this (this is not a real URL):
+Your URL should look something like this:
 ```
-http://YourProjectName-nxyqj.run-us-west2.goorm.io/phpmyadmin/
+mytechcamp-lbpaf.run-us-west2.goorm.io/phpmyadmin
 ```
+
+When you open the url, you will hopefully see a screen that looks like this:
+TODO: insert image
+
+If you have problems reaching this screen, try entering the following commands into your terminal again and retry the link:
+```
+service apache2 restart
+```
+```
+service mysql start
+```
+
+If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: aceinfo@rrc.ca 
+
+
 Notice how you are not adding '/phpmyadmin' after your directory name. (Note to instructors - I have a feeling that we should we remove the directory/folder to simplify)
 
 
@@ -188,4 +213,3 @@ Notice how you are not adding '/phpmyadmin' after your directory name. (Note to 
 2. add a database
 3. update the php files and create new php files
 4. not in that order.
-
