@@ -227,4 +227,4 @@ Port number – used to identify the application required.  There are well-known
 
 # Links
 **Coming up: [Part 4: Internet Security](1%2Internet%20Security%20Demo.md)**  
-**Return to [Web App Landing Page](README.md)**
+**Return to [Web App Landing Page](../README.md)**

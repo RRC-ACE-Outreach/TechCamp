@@ -274,4 +274,4 @@ Hacking is illegal, and you can be fined, jailed, or even extradited over these 
 
 # Links
 **Coming up: [Please fill out our survey and tell us how we did.](https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u)**  
-**Return to [Web App Landing Page](README.md)**
+**Return to [Web App Landing Page](../README.md)**

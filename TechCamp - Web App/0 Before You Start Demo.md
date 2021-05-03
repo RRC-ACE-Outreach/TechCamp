@@ -214,4 +214,4 @@ If you are still having trouble, please reach out to the folks at RRC's Applied 
 
 # Links
 **Coming up: [Part 1: Web Development](1%20Web%20Programming%20Demo.md)**  
-**Return to [Web App Landing Page](README.md)**
+**Return to [Web App Landing Page](../README.md)**

@@ -258,4 +258,4 @@ Recap of the rest of the steps:
 
 # Links
 **Coming up: [Part 2: Adding a Database](2%20Database%20Demo.md)**  
-**Return to [Web App Landing Page](README.md)**
+**Return to [Web App Landing Page](../README.md)**
