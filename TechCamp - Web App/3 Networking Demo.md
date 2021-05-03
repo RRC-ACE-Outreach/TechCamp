@@ -159,16 +159,22 @@ Use the **nslookup** command in one of the following applications:
 ```
  nslookup rrc.mb.ca
 ```
-
+<img src="0 - Images/03 Networking Presentation 41.png.png" width="800"  alt="Windows nslookup example">
 It reveals the server's ip address associated with rrc.mb.ca
 
 
 #### Let's try it in your Goorm container
+To install the nslookup utility for your goorm container enter the following commands:
 
-Now try typing in terminal and press enter:
+```
+apt update
+apt install dnsutils -y
+```
+Now try nslookup in terminal and press enter:
 ```
 nslookup rrc.mb.ca
 ```
+<img src="0 - Images/03 Networking Presentation 40.png.png" width="800"  alt="goorm nslookup example">
 
 ### Viewing a website
 To view a web site you will use a URL (Universal Resource Locator) or an ip address
@@ -201,7 +207,6 @@ apt install tshark -y
 usermod -a -G wireshark root
 newgrp wireshark
 chgrp wireshark /usr/bin/dumpcap 
-apt install dnsutils -y
 ```
 
 #### Goorm - Packet Capture from Terminal
