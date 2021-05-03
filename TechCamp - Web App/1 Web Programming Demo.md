@@ -2,6 +2,8 @@
 ## Tech Camp
 # Part 1: Web Development
 
+#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
+
 ### Let's Get Started
 We will be using a browser based IDE called Goorm. We asked for all participants to set up their virtual environment using [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md).
 

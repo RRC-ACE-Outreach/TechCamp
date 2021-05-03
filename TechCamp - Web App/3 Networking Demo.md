@@ -2,6 +2,7 @@
 ## Tech Camp
 # Part 3: Networking
 
+#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).  
 ### Keeping You Connected To The Things That Matter
 
 ### Introduction

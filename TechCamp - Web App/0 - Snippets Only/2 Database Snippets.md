@@ -3,6 +3,8 @@
 # Part 2: Adding a Database.  
 # SNIPPETS ONLY VERSION
 
+*The full version of these notes exist here: [2 Database Demo](../2%20Database%20Demo.md)*
+
 ## Make sure your server is running
 Restart your server
 ```

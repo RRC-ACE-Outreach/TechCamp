@@ -4,7 +4,8 @@
 
 <img src="0 - Images/02 Jigglypuff Database.png" alt="If its not in the database, did it really happen?">   
 
-## {TODO: add link} Follow along by video at [this link]().
+#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
+*A snippets only version of these notes exist here: [2 Database Snippets](/0%20-%20Snippets%20Only/2%20Database%20Snippets.md)*
 
 ### Where we left off...
 In the previous module, you created a simple HTML page with CSS within the Goorm IDE.
@@ -23,8 +24,7 @@ styles.css
 You can copy starter code from the below files, and then paste it into your Goorm container's project files:
 
 1. [index.php](0%20-%20Starting%20and%20Ending%20Files/01%20Web%20Ending%20Files/index.php)
-1.
-[styles.css](0%20-%20Starting%20and%20Ending%20Files/01%20Web%20Ending%20Files/index.css)
+1. [styles.css](0%20-%20Starting%20and%20Ending%20Files/01%20Web%20Ending%20Files/index.css)
 
 
 ### Last check before we dive in...
@@ -35,6 +35,7 @@ If you didn't set up your Goorm container before today - we ask you to walk thro
 This may take 10-15 minutes.
 
 When you're finished that, come back here and continue the Database demo.
+
 
 # What is a database?
 A database is a collection of well organized tables.
@@ -48,7 +49,7 @@ A database is a collection of well organized tables.
 | Bulbasaur | 45 | 49 | 49 | 45 |
 | Jigglypuff | 115 | 45 | 20 | 25 | 20 |
 
-
+</br>
 We use databases to save large amounts of complicated information, or information that we want to change quickly and easily.
 
 So, what’s up with the list of items on your web pages? Can you add or change those items easily?
@@ -61,6 +62,7 @@ Not really, you need to edit your file every time you want to make some changes.
 1. A database
 1. Some programming code to connect the two together.
 
+</br>
 # Let's get your server running!
 Remember when you set up your Goorm container, you installed an application called **phpMyAdmin**? We are going to use that to create your database.
 
@@ -74,6 +76,7 @@ Copy and paste then run this command in your Goorm Terminal:
 ```
 service apache2 restart
 ```
+
 
 # Let's start the app that will hold your database!
 We are using an application called **mySQL** to hold and run your database. Because mySQL doesn't have a Graphical User Interface (GUI), a visual way to interact with the database, **phpMyAdmin** will give us GUI to interact with **mySQL**.
@@ -98,7 +101,8 @@ Project
 
 #### That will open window that looks like this:
 <img src="0 - Images/02 Running URL.png" alt="Open the running URL">  
-
+</br>  
+</br>  
 You'll see that a URL has been generated for your project. Select the icon pictured to open your project different browser tab/window, or copy/paste the url to do the same thing in a new tab/window.
 
 Add the following text to the end of your URL:
@@ -130,6 +134,7 @@ root
 ### Select the **'Go'** button to login.  
 
 We are now logged in!
+
 
 # Let's create your database!
 Select the 'Databases' link:  

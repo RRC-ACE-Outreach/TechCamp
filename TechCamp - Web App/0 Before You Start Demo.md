@@ -1,14 +1,16 @@
 ### Red River College's Applied Computer Education Department presents  
 ## Tech Camp
 # Part 0: Before you Start
-Setting up your virtual environment before Tech Camp Day
 
-### Welcome
+#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
 
 
-**TODO: Notes from Andrea => This page needs to be developed.**
+# Setting up your virtual environment before Tech Camp Day
+
+**TODO: Notes from Andrea => This page needs to be developed.**  
 Goals:
 ------
+Show students around GitHub Repo?
 Get users onto Goorm IDE
 Create a container
 Launch the container
@@ -18,7 +20,6 @@ Validate phpmyadmin works
 
 In all - the process may take around 20 minutes:
 
-# Below notes were Copy-pasted from what was in the Web Dev notes:
 ### Getting our Toolkit Ready
 We will be using a browser based IDE called Goorm.
 Start by creating a user account for yourself on
@@ -26,23 +27,23 @@ Start by creating a user account for yourself on
 
 Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp.
 
-**TODO: add screenshots**
-**TODO: please make sure to number the steps so we
+**TODO: add screenshots**  
+**TODO: please make sure to number the steps so we  
 
 #### STEP 1
 Choose: Create a new container
 
 #### STEP 2
-Configure your container.
-Name: Choose a name without offensive words as we will share our sites with other participants later.
-Description: You can leave this blank
-Region: Oregon (US)
-Visibility: Public
-Template: Default Template
-Deployment: Not Used
-GPU: No GPU core
-Stack: PHP
-Leave the checkboxes under the Stack menu **unchecked**.
+Configure your container.  
+- `Name:` Choose a name without offensive words as we will share our sites with other participants later.  
+- `Description:` You can leave this blank  
+- `Region:` Oregon (US)  
+- `Visibility:` Public  
+- `Template:` Default Template  
+- `Deployment:` Not Used  
+- `GPU:` No GPU core  
+- `Stack:` PHP  
+- Leave the checkboxes under the Stack menu **unchecked**.  
 
 <img src="0 - Images/00 Create Container Options.png" alt="Create Container Options">
 
@@ -50,7 +51,7 @@ We are now ready to create the container.
 
 **Press the Create Button**
 
-This will take a minute or two for container creation.
+This will take a minute or two for container creation.  
 <img src="0 - Images/00 Preparing Container.png" alt="Preparing Container">
 
 #### STEP 3
