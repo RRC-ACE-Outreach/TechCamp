@@ -77,13 +77,19 @@ In order to communicate between your device and any other device on the network 
 
 We will explore each of these pieces of information and see how they work together to deliver information over the Internet
 
+### Many ways to determine the address of my device
+Every device will have the required addresses for network communication
+Depending upon your operating system and the access you are granted on the device, there are different ways to determine the address of your device
+The slides at the end of this presentation will demonstrate methods to find your address on different devices
+Choose the method that matches both your operating system and the access you have to the device settings
+
 ### MAC Addresses
 Your computer's Network Interface’s physical address.
 Is like your name... stays the same even if you move to a different street.
 "Burned in" by the manufacturer into the device. Unique for every device
 Some operating systems are offering the option of randomizing your MAC address as a security feature
 Displayed as a hexadecimal number
-The MAC address is made up of 6 pairs of hexadecimal numbers separated by either a dash ('-') or a semi-colon (':')
+The MAC address is made up of 6 pairs of hexadecimal numbers separated by either a dash ('-') or a colon (':')
 
 A MAC address is a physical address of the network interface. Also known as a Network Interface Card (NIC). You can look at your MAC address in a variety of ways.  MAC addresses are unique.  Some operating systems will allow you to randomize your MAC address as a security feature, like your smart phone.
 
@@ -108,11 +114,12 @@ Routers read packets and send them in the direction toward the network the packe
 <img src="0 - Images/03 Networking 27_1.png" width="800"  alt="IPv6 address example">
 
 
-### Many ways to determine the address of my device
-Every device will have the required addresses for network communication
-Depending upon your operating system and the access you are granted on the device, there are different ways to determine the address of your device
-The following slides will demonstrate methods to find your address on different devices
-Choose the method that matches both your operating system and the access you have to the device settings
+### Logical Ports - TCP/UDP
+Port numbers are used to determine WHO you are talking to.
+Different apps are listening on different ports.
+Most web servers communicate on ports 80 or 8080
+Secure websites using the HTTPS protocol use port 443
+HTTPS encrypt communication between a web server and your device.
 
 #### Well known port numbers
 
@@ -146,40 +153,27 @@ DNS – maps names to ip addresses.  Without a DNS service we would have to reme
 
 Use the **nslookup** command in one of the following applications:
 - Command Prompt, on Windows
-- Terminal Application, on Macintosh
-- on Linux, you would use **dig**  Open browser & access via ip address.
+- Terminal Application, on Macintosh or Linux
 
  Type this command then press enter/return:
 ```
- nslookup rrc.ca
+ nslookup rrc.mb.ca
 ```
 
-It reveals the server's ip address associated with rrc.ca
+It reveals the server's ip address associated with rrc.mb.ca
 
-Now, try this. Type this command then press enter/return:
-```
-nslookup 35.182.194.48
-```
 
 #### Let's try it in your Goorm container
-From your goorm container, type in terminal and press enter:
-```
-apt update
-```
-
-Type in terminal and press enter:
-```
-apt install dnsutils –y
-```
 
 Now try typing in terminal and press enter:
 ```
-nslookup rrc.ca
+nslookup rrc.mb.ca
 ```
 
 ### Viewing a website
 To view a web site you will use a URL (Universal Resource Locator) or an ip address
 Your device has to have access to a DNS server in order to use a URL.
+From your web browser, type a domain name (rrc.mb.ca) or public IP address (198.163.144.90) into the URL to view the website.
 
 <img src="0 - Images/03 Networking 36_1.png" width="100" alt="Chrome Logo">   <img src="0 - Images/03 Networking 36_2.png" width="100" alt="Firefox Logo">   <img src="0 - Images/03 Networking 36_3.png" width="100" alt="MS Edge Logo">   <img src="0 - Images/03 Networking 36_4.png" width="100" alt="Explorer Logo">   <img src="0 - Images/03 Networking 36_5.png" width="100" alt="Safari Logo">
 
@@ -193,38 +187,54 @@ Your device has to have access to a DNS server in order to use a URL.
 - Port Forwarding allows remote devices access through your firewall to a specific IP address and  port number(s) inside your LAN.
 - Use caution when configuring port forwarding rules as you may be exposing your device to untrusted networks (e.g. Internet).
 
-#### Try it out
+#### Goorm - Port forwarding
 In Goorm, from the top navigation menu, choose: **Container**, then **Port Forwarding Configuration**
 1. Set the Internal Port number to: **80**
-1. Click the **Register** button
-1. Copy the address under **Command**. The format should look similar to this: 542.218.62.176:50418
-1. Paste the address into your search bar in your browser.
+2. Click the **Register** button
+3. Copy the address under **Command**. The format should look similar to this: 54.218.62.176:50418
+4. Paste the address into your search bar in your browser.
 
-#### Try out
-
-# TODO: add try-it-out commands for Goorm - left off at 9:10 in the video
-Goorm Container Setup Commands
+#### Goorm - Setup Commands
+```
+apt update
 apt install tshark -y
 usermod -a -G wireshark root
 newgrp wireshark
-chgrp wireshark /usr/bin/dumpcap
+chgrp wireshark /usr/bin/dumpcap 
 apt install dnsutils -y
+```
 
+#### Goorm - Packet Capture from Terminal
+To send packet capture output directly to terminal, enter the following:
+```
+tshark -i eth0
+```
+To save packet capture output directly to a file, enter the following:
+```
+tshark -i eth0 > ./test.pcap
+```
 
-# TODO: remove unused information (this was in the script but I don't think its in the video)
-DHCP - Will assign an address to a device from a group of available addresses.  This can be configured by the administrator.
+#### Goorm - Filtering Packet Capture from Terminal
+To filter the packet capture to show the HTTP GET request, enter the following command:
+```
+cat test.pcap | grep HTTP
+```
+To filter the packet capture to show communication with a particular IP address, enter the following command:
+```
+cat test.pcap | grep [ip address]
+```
 
-Gateway - is the router port that will allow you to get off the internal network and access another network or the internet.  In your home network this is the typically the device provided by the ISP.
-
-How to find this information?  Each device is different.  The Powerpoint presentation provides screenshots to help you find all of your address information on various devices.  Can you find your information on your goorm container?  On your phone?  On your device?
-
-Port number – used to identify the application required.  There are well-known port numbers which identify certain applications such as http (80) or https (443).  A port number can be any number between 0-65535.
-
-
+#### TCP 3 Way Handshake
+The handshake is a three part process in the following order:
+1. SYN
+2. SYN + ACK
+3. ACK
+- This handshake establishes a reliable connection, verifying what has been sent was recieved.
+- Packets received out of order can be reassembled by sequence numbers established during the handshake process.
 
 ---
 ## That's all for Part 3: Networking!
 
 # Links
 **Coming up: [Part 4: Internet Security](1%2Internet%20Security%20Demo.md)**  
-**Return to [Web App Landing Page](../README.md)**
+**Return to [Web App Landing Page](README.md)**
