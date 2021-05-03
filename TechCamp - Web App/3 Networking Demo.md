@@ -159,7 +159,7 @@ Use the **nslookup** command in one of the following applications:
 ```
  nslookup rrc.mb.ca
 ```
-<img src="0 - Images/03 Networking Presentation 41.png.png" width="800"  alt="Windows nslookup example">
+<img src="0 - Images/03 Networking Presentation 41.png.png" width="600"  alt="Windows nslookup example">
 It reveals the server's ip address associated with rrc.mb.ca
 
 
@@ -174,7 +174,7 @@ Now try nslookup in terminal and press enter:
 ```
 nslookup rrc.mb.ca
 ```
-<img src="0 - Images/03 Networking Presentation 40.png.png" width="800"  alt="goorm nslookup example">
+<img src="0 - Images/03 Networking Presentation 40.png.png" width="600"  alt="goorm nslookup example">
 
 ### Viewing a website
 To view a web site you will use a URL (Universal Resource Locator) or an ip address
