@@ -32,6 +32,7 @@ Take a moment and get your user account created. Be careful to remember your log
 
 #### STEP 1
 Choose: Create a new container
+![image](https://user-images.githubusercontent.com/83470699/116954762-d8416600-ac5e-11eb-93f1-c74e08ec2810.png)
 
 #### STEP 2
 Configure your container.  
