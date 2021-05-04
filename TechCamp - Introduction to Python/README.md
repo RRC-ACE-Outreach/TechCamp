@@ -6,9 +6,9 @@
 
 ### Resources
 - Python online editor
-  - https://trinket.io/python3➔Secret
+  - https://trinket.io/python3
 
-- Agent Chat Project
+- Secret Agent Chat Project
   - https://projects.raspberrypi.org/en/projects/secret-agent-chat
 
 - Raspberry Pi Python Projects
