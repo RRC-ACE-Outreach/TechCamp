@@ -79,18 +79,7 @@ A *.html* file would have worked for this part of the demo, because we are only 
 
 Let's look at the code we pasted into the index.php file...
 
-Let's change the content in the first `<h1>` element. This is a *level 1 heading* element and is usually used for the main heading or title of a web page. Note that the element has a start tag and an end tag. The end tag has a forward slash: `</h1>`.
-
-Change the content, save the file in Groom, and then refresh your viewing page in the browser. You should see your updated content in the heading.
-
-Try changing to different heading tags. h1 through h6 are level one through level six headings. Change it back to an `<h1>` afterward.
-
-```html
-<h1>Add a New Pokemon</h1>
-```
-
 ### That's great, but what does it look like?
-**TODO: add screenshots. Polish up descriptions**
 Copy the URL under the menu item *Project > Running URL and Port* (or just click the launch button).
 
 Paste the URL into a new tab/window in your browser and press Enter.
@@ -98,9 +87,19 @@ Paste the URL into a new tab/window in your browser and press Enter.
 This is what your web page looks like!
 You can see how the browser renders changes and additions you make to the HTML markup by simply saving the index.php file that contains the code, and then refreshing the browser tab that is requesting your web page from your Apache web server.
 
+### Different levels of headings
+Let's change the content in the first `<h1>` element. This is a *level 1 heading* element and is usually used for the main heading or title of a web page. Note that the element has a start tag and an end tag. The end tag has a forward slash: `</h1>`.
+
+Change the content, save the file in Goorm, and then refresh your viewing page in the browser. You should see your updated content in the heading.
+
+Try changing to different heading tags. **h1** through **h6** are level one through level six headings. Change it back to an **h1** afterward.
+
+```html
+<h1>Add a New Pokemon</h1>
+```
+
 ### Now for some style!
 Next we will add a CSS (Cascading Style Sheets) file to our website. Add a new file to your project folder by pressing the **+** button at the top of the PROJECT pane.
-**TODO: Insert screenshot**
 
 Name your file `styles.css`
 
@@ -159,8 +158,7 @@ form, input {
 ```
 
 ### CSS  
-Cascading Style Sheets are responsible for making your webpages look good.
-Colors, fonts, positioning and spacing can all be modified using CSS.
+Cascading Style Sheets are responsible for making your webpages look good. Colors, fonts, positioning and spacing can all be modified using CSS.
 
 HTML is responsible for the content; CSS is responsible for the presentation.
 
