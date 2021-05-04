@@ -80,15 +80,25 @@ A *.html* file would have worked for this part of the demo, because we are only 
 Let's look at the code we pasted into the index.php file...
 
 ### That's great, but what does it look like?
-Copy the URL under the menu item *Project > Running URL and Port* (or just click the launch button).
+Click on the menu item at the top labelled "Project"
+From the menu, select the Option: "Running URL and Port:
 
-![image](https://user-images.githubusercontent.com/1053524/117057981-b63df700-ace3-11eb-9547-4a827c222293.png)
+![image](https://user-images.githubusercontent.com/2661661/117058114-da013d00-ace3-11eb-9abc-dad7cc5b41da.png)
 
-![Untitled](https://user-images.githubusercontent.com/1053524/117058246-02893700-ace4-11eb-9c10-9e1136362ff8.png)
+Click the URL link icon to open a new browser window:
 
-Paste the URL into a new tab/window in your browser and press Enter.
+![image](https://user-images.githubusercontent.com/2661661/117058351-22b8f600-ace4-11eb-8224-32f97d282933.png)
 
-This is what your web page looks like!
+When the browser launches you should see something like this:
+![image](https://user-images.githubusercontent.com/2661661/117057945-ac1bf880-ace3-11eb-85ab-b599b8bb6bd6.png)
+
+Alternatively you could copy and paste the URL text into the top of a new tab/window in your browser's press Enter.
+
+
+This is what your web page should look like:
+
+![image](https://user-images.githubusercontent.com/2661661/117058879-c86c6500-ace4-11eb-8a5c-a2dd71ce7077.png)
+
 You can see how the browser renders changes and additions you make to the HTML markup by simply saving the index.php file that contains the code, and then refreshing the browser tab that is requesting your web page from your Apache web server.
 
 ### Different levels of headings
@@ -180,11 +190,11 @@ body {
 
 ### Back to the HTML  
 Our goal for this page is to display a list of Pokemon.
-Find the `<ul>` element (this is an *unordered list*), and let’s start adding some Pokemon! Each Pokemon is added as a `<li>` (list item) *child element* of the unordered list.
+Find the `<ul>` element (this is an *unordered list*), and let’s start adding some Pokemon!
 Save your PHP file and refresh the browser tab to see the updated content in your web page.
 ```html
 <ul>
-  <!--List of Pokemon -->
+  <!--Listing of pokemons -->
   <li>Bulbasaur</li>
   <li>Ivysaur</li>
   <li>Venusaur</li>
@@ -194,8 +204,7 @@ Save your PHP file and refresh the browser tab to see the updated content in you
 
 ### Adding a Form  
 Wouldn’t it be great not to have to edit HTML to add new Pokemon?
-
-We could have users add Pokemon using a form on the web page. That’s what we’re going to add here.
+We could have users add Pokemon using a form on the web page. That’s what we’re going to add here.<br>
 
 This is “front-end development”; in the next session we will connect the form to a database which will be used to store the Pokemon data! (This is the "back-end" part.)
 
