@@ -56,7 +56,7 @@ So, what’s up with the list of items on your web pages? Can you add or change 
 
 Not really, you need to edit your file every time you want to make some changes. We want to make this easier.
 
-#### We need to build 3 things to make this work.
+#### We need to build 4 things to make this work.
 1. A web page – Hey we already built that!
 1. A server to host your database
 1. A database
