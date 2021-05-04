@@ -5,9 +5,9 @@
 #### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
 
 ### Let's Get Started
-Prior to this session, you should have completed all of the set-up steps in[these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). If you did not, you should still be able to continue by completing steps 1-3 to create a Goorm container.
+Prior to this session, you should have completed all of the set-up steps in [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). If you did not, you should still be able to continue by completing steps 1-3 to create a Goorm container.
 
-Be sure to have Goorm open, it should look something like this: (my container name is _MyTechCamp_, yours may be different)
+Be sure to have Goorm open, it should look something like this. (My container name is _MyTechCamp_. Yours may be different.)
 ![image](https://user-images.githubusercontent.com/2661661/117020466-16b93e00-acbc-11eb-9b5f-073c79ed1387.png)
 
 ### Starting your Servers
@@ -68,14 +68,14 @@ In the PROJECT pane, expand the folder by clicking on the arrow beside your cont
 #### HTML  
 HTML stands for HyperText Markup Language. HTML is a markup language that is used to describe the structure of web pages.
 
-But what is HTML? HTML is made up of &lt;elements&gt; which are used to describe the semantics of the page. (Semantics refers to the meaning of the different elements. For example: &lt;<h1>&gt; through &lt;<h6>&gt; elements are used to describe headings; &lt;<p>&gt; elements are used to denote paragraphs.)
+But what is HTML? HTML is made up of `<elements>` which are used to describe the semantics of the page. *Semantics* refers to the meaning of the different elements. For example: **h1** through **h6** elements are used to describe headings; **p** elements are used to denote paragraphs.
 
 *A quick note:*
-*We are building this website using a PHP stack, that means that if we wanted to, we could use the PHP scripting language in this file. 
+We are building this website using a PHP stack, that means that if we wanted to, we could use the PHP scripting language in this file. 
 
-This file has a file extension of .php. In other words, the filename ends with a ".php" suffix.
+This index.php file has a file extension of *.php.* In other words, the filename ends with a ".php" suffix.
 
-A ".html" file would have worked for this part of the demo, because we are only using HTML tags, but no PHP code... yet!
+A *.html* file would have worked for this part of the demo, because we are only using HTML tags, but no PHP code... yet!
 
 Let's look at the code we pasted into the index.php file...
 
@@ -84,6 +84,7 @@ Let's change the content in the first `<h1>` element. This is a *level 1 heading
 Change the content, save the file in Groom, and then refresh your viewing page in the browser. You should see your updated content in the heading.
 
 Try changing to different heading tags. h1 through h6 are level one through level six headings. Change it back to an `<h1>` afterward.
+
 ```html
 <h1>Add a New Pokemon</h1>
 ```
