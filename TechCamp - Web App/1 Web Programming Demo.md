@@ -190,11 +190,11 @@ body {
 
 ### Back to the HTML  
 Our goal for this page is to display a list of Pokemon.
-Find the `<ul>` element (this is an *unordered list*), and let’s start adding some Pokemon!
+Find the `<ul>` element (this is an *unordered list*), and let’s start adding some Pokemon! Each Pokemon is added as a `<li>` (list item) *child element* of the unordered list.
 Save your PHP file and refresh the browser tab to see the updated content in your web page.
 ```html
 <ul>
-  <!--Listing of pokemons -->
+   <!--Listing of Pokemons -->
   <li>Bulbasaur</li>
   <li>Ivysaur</li>
   <li>Venusaur</li>
@@ -204,7 +204,7 @@ Save your PHP file and refresh the browser tab to see the updated content in you
 
 ### Adding a Form  
 Wouldn’t it be great not to have to edit HTML to add new Pokemon?
-We could have users add Pokemon using a form on the web page. That’s what we’re going to add here.<br>
+We could have users add Pokemon using a form on the web page. That’s what we’re going to add here.
 
 This is “front-end development”; in the next session we will connect the form to a database which will be used to store the Pokemon data! (This is the "back-end" part.)
 
