@@ -17,6 +17,7 @@ Be sure to have Goorm open, it should look something like this: (my container na
 If you completed the set-up steps on a previous day, you will have to start your web server (Apache). 
 
 Find the terminal window near the bottom of your screen:
+
 ![image](https://user-images.githubusercontent.com/2661661/117022150-9c89b900-acbd-11eb-915b-0749fb3d7048.png)
 
 
