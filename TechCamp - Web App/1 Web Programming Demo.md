@@ -27,13 +27,13 @@ service apache2 restart
 
 ### Where do the files live?
 
-#### STEP 1 - Expand the container
+#### Expand the container
 
 In the PROJECT pane, expand the folder by clicking on the arrow beside your container name:
 
 ![image](https://user-images.githubusercontent.com/2661661/117015780-ac060380-acb7-11eb-997e-a2fc4c8ebae9.png)
 
-#### STEP 2 - Add starting code to the index.php file
+#### Add starting code to the index.php file
 
 #### Double Click on index.php to open it (it will look like this):
 ![image](https://user-images.githubusercontent.com/2661661/117017131-f936a500-acb8-11eb-8600-595ce444c46a.png)
