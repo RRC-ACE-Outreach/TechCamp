@@ -5,21 +5,37 @@
 #### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
 
 ### Let's Get Started
-We will be using a browser based IDE called Goorm. We asked for all participants to set up their virtual environment using [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md).
+Complete all of the steps in part 0 using [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md).
 
-If your environment isn't set up - we ask you to walk through steps 1 through 3 of the virtual environment setup before starting this Web Development module.
+Your Goorm environment must be setup before starting this Web Development module.
 
-## TODO: we are now using Goorm - we will need to help our participants along in navigating through Goorm to complete this module
+Be sure to have Goorm open, it should look something like this: (my container name is _MyTechCamp_, yours may be different)
+![image](https://user-images.githubusercontent.com/2661661/117020466-16b93e00-acbc-11eb-9b5f-073c79ed1387.png)
 
-## NOTE FROM ANDREA: What do you think about having participants put files at the root instead of the project folder (default location of index.php)? Let me know so I can reflect it in the DB demo.
+### Starting your Servers
+
+If you completed the set-up steps on a previous day, you will have to start your web server (Apache). 
+
+Type this command: 
+```
+service apache2 restart
+```
+
 
 ### Where do the files live?
-In the PROJECT pane, expand the folder with your container name on it.
+
+#### STEP 1 - Expand the container
+
+In the PROJECT pane, expand the folder by clicking on the arrow beside your container name:
 
 ![image](https://user-images.githubusercontent.com/2661661/117015780-ac060380-acb7-11eb-997e-a2fc4c8ebae9.png)
 
-### Fill the index.php file
-#### Copy and paste this starter snippet into the index.php file:
+#### STEP 2 - Fill out the index.php file with our starter coder
+
+#### Double Click on index.php to open it (it may look like this by default):
+![image](https://user-images.githubusercontent.com/2661661/117017131-f936a500-acb8-11eb-8600-595ce444c46a.png)
+
+#### Copying the starter snippet below and paste it over the default text in the index.php file:
 ```html
 <!-- Security Step 1 - Paste Above -->
 <!DOCTYPE html>
@@ -46,14 +62,18 @@ In the PROJECT pane, expand the folder with your container name on it.
 </html>
 ```
 
-### HTML  
-At the root of every single webpage you’ve ever seen is HTML. It’s the language of the web.
-HTML is made up of tags, which describe the data contained within them.
+#### HTML  
+All webpages use HTML. It’s the language of the web.
+But what is HTML? HTML is made up of <tags>, which describe the data contained within them.
 
 *A quick note:*
-*We are building this website using a PHP stack, the default file suffix is .php. Please know that a .html suffix would have worked for this part. Although the suffix is .php, we will be using only HTML within this php file.*
+*We are building this website using a PHP stack, that means that if we wanted to, we could use the PHP language in this file. 
 
-Let's look at the file: index.php
+This file has a default file suffix of .php. In other words, the file ends with the characters: ".php" 
+
+An ".html" suffix file would have worked for this part of the demo, because we are only using basic HTML tags for now!*
+
+Let's discuss the code snippet we pasted in: index.php
 
 Point out the first `<h1>`.
 Change the content, save, and refresh the browser.
