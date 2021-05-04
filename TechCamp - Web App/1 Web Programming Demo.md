@@ -16,7 +16,7 @@ If your environment isn't set up - we ask you to walk through steps 1 through 3 
 ### Where do the files live?
 In the PROJECT pane, expand the folder with your container name on it.
 
-**TODO: insert screenshot.**
+![image](https://user-images.githubusercontent.com/2661661/117015780-ac060380-acb7-11eb-997e-a2fc4c8ebae9.png)
 
 ### Fill the index.php file
 #### Copy and paste this starter snippet into the index.php file:
