@@ -66,7 +66,7 @@ We can easily add extra files using the plus icon:
 
 In the CLI - Copy paste this command, then press Enter/Return to run the command:
 ```
-apt dist-upgrade -y
+apt-get update
 ```
 
 ## STEP 5

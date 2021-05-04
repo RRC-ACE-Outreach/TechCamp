@@ -63,6 +63,7 @@ Not really, you need to edit your file every time you want to make some changes.
 1. Some programming code to connect the two together.
 
 </br>
+
 # Let's get your server running!
 Remember when you set up your Goorm container, you installed an application called **phpMyAdmin**? We are going to use that to create your database.
 
