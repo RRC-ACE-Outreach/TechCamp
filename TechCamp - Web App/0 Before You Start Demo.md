@@ -27,9 +27,6 @@ Start by creating a user account for yourself on
 
 Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp.
 
-**TODO: add screenshots**  
-**TODO: please make sure to number the steps so we  
-
 #### STEP 1
 Choose: Create a new container
 
