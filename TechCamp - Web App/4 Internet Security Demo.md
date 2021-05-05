@@ -210,7 +210,7 @@ Click create, and suddenly the website has been defaced by Hackit the Cat!
 ## Strengthening Security
 If you wish to start your website from this strengthened point, you can find the files in the following directory:
 
-[0 - Starting and Ending Files/04 Security Ending Files/After Intrusion](0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/After%20Intrusion)
+[Starting and Ending Files/04 Security Ending Files/After Intrusion](0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/After%20Intrusion)
 
 Before you begin strengthening your website against hacking attempts, you might need to clean up any existing hacks that have occurred. You do this by going in to phpMyAdmin, logging in as root, clicking on the link for the techcamp database, and clicking on the link that says `db_table`, and finally by clicking on the link that says Select data. When you see the entry for the hack, you click on the check box next to it, and then hit delete:
 
