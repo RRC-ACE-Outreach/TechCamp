@@ -165,7 +165,7 @@ At the very top of index.php, you will see an empty line, and right below it is 
 ```php
 <?php require_once("login.inc"); ?>
 ```
-It should look like this after you are done:
+It should look like this after you are done:<br />
 <img src="0 - Images/04 security step 1.PNG" alt="1st edit to add login functionality">
 
 #### Security Step 2
