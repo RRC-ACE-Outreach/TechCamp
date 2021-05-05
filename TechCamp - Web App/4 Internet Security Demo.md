@@ -129,7 +129,7 @@ Copy and paste this snippet into your `secretshow.php` file:
 ```
 
 #### xss.js
-The `xss.js` file is the code that is executed from a remote computer. It takes over the website that runs it, and tries to load another “image” that is actually the secret.php page.
+The `xss.js` file is the code that is executed from a remote computer. It takes over the website that runs it, and tries to load another “image” that is actually the secret.php page.  **Please note, you will need to replace <YOUR_CONTAINER_ADDRESS> with the address you are using to view your website.**  This is best done after you copy the code below into the goormIDE.
 
 Copy and paste this snippet into your `xss.js` file:
 ```js
