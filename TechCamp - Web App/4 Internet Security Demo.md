@@ -212,7 +212,7 @@ If you wish to start your website from this strengthened point, you can find the
 
 [Starting and Ending Files/04 Security Ending Files/After Intrusion](0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/After%20Intrusion)
 
-Before you begin strengthening your website against hacking attempts, you might need to clean up any existing hacks that have occurred. You do this by going in to phpMyAdmin, logging in as phpmyadmin, clicking on the link for the techcamp database, and clicking on the link that says `db_table`, and finally by clicking on the link that says Browse. When you see the entry for the hack, you click on the check box next to it, and then hit delete:
+Before you begin strengthening your website against hacking attempts, you might need to clean up any existing hacks that have occurred. You do this by going in to phpMyAdmin, logging in as phpmyadmin, clicking on the link for the techcamp database, and clicking on the link that says `db_table`, and finally by clicking on the link that says Browse. When you see the entry for the hack, you click on the link that says Delete, as highlighted below:
 
 <img src="0 - Images/04 security remove injections.PNG" alt="4th edit to add login functionality">
 
