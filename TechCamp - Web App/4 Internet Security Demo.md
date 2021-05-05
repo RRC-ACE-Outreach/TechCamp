@@ -27,13 +27,12 @@ This kind of threat also goes by the acronym of XSS. This threat is one of the m
 At best, a cross site scripting threat will simply deface your website. You see this threat almost immediately and you can begin to clean it up so other people can view your website again. At worst, this threat can be quick and silent, tracking information about you and your website. This kind of attack could be on your site for weeks, months, or even years before you discover it.
 
 ## Setting up the Project
-### NOTE from Andrea: below needs to be converted for Goorm delivery. We are using phpMyAdmin instead of Adminer. Sorry, I just noticed this (02-05-2021) I replaced all instances of 'Adminer' with 'phpMyAdmin'.  
 
 <!-- NOTE from Andrea: Let's prefer snippets over file navigation if at all possible.
 
-If you are setting up this project from the Database session, all of the files you will need are located in the following folder on the USB drive:
+If you are setting up this project from the Database session, all of the files you will need are located in the following folder in this git repo:
 
-Internet Security\Starting Files\
+[Github Security Files Repository](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files)
 -->
 
 If you wish to start with the project already set up, you can get them from the following directory:
