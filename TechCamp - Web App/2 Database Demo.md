@@ -56,13 +56,14 @@ So, what’s up with the list of items on your web pages? Can you add or change 
 
 Not really, you need to edit your file every time you want to make some changes. We want to make this easier.
 
-#### We need to build 3 things to make this work.
+#### We need to build 4 things to make this work.
 1. A web page – Hey we already built that!
 1. A server to host your database
 1. A database
 1. Some programming code to connect the two together.
 
 </br>
+
 # Let's get your server running!
 Remember when you set up your Goorm container, you installed an application called **phpMyAdmin**? We are going to use that to create your database.
 

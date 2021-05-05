@@ -41,10 +41,10 @@ If you wish to start with the project already set up, you can get them from the 
 
 ### NOTE from Andrea: will still need to give instruction on how to get the files into their project.
 In the Starting Files folder are several files that you need to copy over to your project first. These files are:
-1. login.inc
-1. login_state.inc
-1. logout.php
-1. validate.php  
+1. [login.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc)
+1. [login_state.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc)
+1. [logout.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php)
+1. [validate.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php)  
 
 After the files have been copied over to the website, you will need to add the user credentials to the database. The SQL you need to run is located in the file called create_users.sql. Right click on the ZWAMP icon in the task bar, highlight Tools, and select phpMyAdmin. Log in to phpMyAdmin using `phpmyadmin` as the username with a password of `root`. When you are in, click on the techcamp database link. When the database page has loaded, click on the green SQL Command button at the top of the page.
 
@@ -165,10 +165,8 @@ At the very top of index.php, you will see an empty line, and right below it is 
 ```php
 <?php require_once("login.inc"); ?>
 ```
-It should look like this after you are done:
-```php
-{Replace this with the example of code needed}
-```
+It should look like this after you are done:<br />
+<img src="0 - Images/04 security step 1.PNG" alt="1st edit to add login functionality">
 
 #### Security Step 2
 Next, near the top of index.php, right above the title `<h1>` tag, should be another comment that says Security Step 2, followed by an empty line. Copy and paste the following snippet onto the empty line:  
@@ -176,9 +174,7 @@ Next, near the top of index.php, right above the title `<h1>` tag, should be ano
 <?php require_once("login_state.inc"); ?>
 ```
 When you have done this, it should look like this:  
-```php
-{Replace this with the example of code needed}
-```
+<img src="0 - Images/04 security step 2.PNG" alt="2nd edit to add login functionality">
 
 Don’t forget to save your work!
 You should now be able to visit your website, and you will not be able to see it until you enter the username of `john`, and a password of `1234`.
@@ -228,9 +224,7 @@ if ($_POST) {
   $user = $statement->fetch();
 ```  
 When you have done that, `validate.php` should look like this:
-```php
-{Replace this with the example of code needed}
-```  
+<img src="0 - Images/04 security step 3.PNG" alt="3rd edit to add login functionality">
 
 The different between this and what was there before is that now we are relying on the programming language to help us clean up attempts to cause an SQL Injection. If you observe the validate page before and after you change the code, you will notice that the SQL Statement part of the page will have changed.
 
@@ -254,9 +248,7 @@ Near the very bottom of the webpage, where you erased all your `<li>` `</li>` ta
 <li><a href="detail.php?id=<?= $dataset['id'] ?>"><?= strip_tags($dataset['column1']) ?></a></li>
 ```
 When you have replaced the old line, the code should look like this:
-```php
-{Replace this with the example of code needed}
-```
+<img src="0 - Images/04 security step 4.PNG" alt="4th edit to add login functionality">
 
 It is subtle, but that extra part that says `strip_tags()` prevents code from being run when you don’t want it to.
 

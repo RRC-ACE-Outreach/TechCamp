@@ -241,5 +241,5 @@ The handshake is a three part process in the following order:
 ## That's all for Part 3: Networking!
 
 # Links
-**Coming up: [Part 4: Internet Security](1%2Internet%20Security%20Demo.md)**  
+**Coming up: [Part 4: Internet Security](4%20Internet%20Security%20Demo.md)**  
 **Return to [Web App Landing Page](README.md)**

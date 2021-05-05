@@ -5,33 +5,20 @@
 #### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
 
 
-# Setting up your virtual environment before Tech Camp Day
-
-**TODO: Notes from Andrea => This page needs to be developed.**  
-Goals:
-------
-Show students around GitHub Repo?
-Get users onto Goorm IDE
-Create a container
-Launch the container
-Install phpmyadmin
-Install mysql
-Validate phpmyadmin works
-
-In all - the process may take around 20 minutes:
+# Let's set up your virtual environment before TechCamp Day!
+All steps in this process process may take around 20 minutes.
 
 ### Getting our Toolkit Ready
 We will be using a browser based IDE called Goorm.
-Start by creating a user account for yourself on
+Start by creating a user account for yourself on:
 ## https://ide.goorm.io/
 
 Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp.
 
-**TODO: add screenshots**  
-**TODO: please make sure to number the steps so we  
-
 #### STEP 1
-Choose: Create a new container
+Once logged into Goorm:
+- Select the 'Dashboard' button
+- From the Dashboard, select the '+ New Container' button
 ![image](https://user-images.githubusercontent.com/83470699/116954762-d8416600-ac5e-11eb-93f1-c74e08ec2810.png)
 
 #### STEP 2
@@ -46,20 +33,23 @@ Configure your container.
 - `Stack:` PHP  
 - Leave the checkboxes under the Stack menu **unchecked**.  
 
-<img src="0 - Images/00 Create Container Options.png" alt="Create Container Options">
+<img src="0 - Images/00 Create Container Options.png" alt="Create Container Options">  
 
-We are now ready to create the container.
+</br>
+</br>
+
+We are now ready to create the container:  
 
 **Press the Create Button**
 
-This will take a minute or two for container creation.  
+This will take a minute or two for container creation.   
 <img src="0 - Images/00 Preparing Container.png" alt="Preparing Container">
 
 #### STEP 3
 When the container has been created, you'll see a screen stating:
 
 **Container has been successfully created**  
-<img src="0 - Images/00 Container created.png" alt="Container Creation Complete">
+<img src="0 - Images/00 Container created.png" alt="Container Creation Complete">  
 
 Press the button: "Run Container"
 This will take a few moments to launch.
@@ -73,7 +63,6 @@ We can easily add extra files using the plus icon:
 <img src="0 - Images/00 Starter file and file creation.png" width=500 alt="Starter File and File Creation">
 
 ## STEP 4
-### NOTE: Below was copy/pasted from the original DB demo
 <img src="0 - Images/00 Terminal Commands.png" width=500 alt="Enter commands in the Terminal">  
 
 In the CLI - Copy paste this command, then press Enter/Return to run the command:
@@ -95,7 +84,7 @@ service mysql start
 ## STEP 6
 Now let's install phpmyadmin by running this line:
 ```
-apt-get install -y php7.3-mbstring php7.3-mysqli phpmyadmin
+apt-get install -y php7.3-mbstring php7.3-mysql phpmyadmin
 ```
 
 ### When installing phpmyadmin, you'll be prompted for some questions to answer.
