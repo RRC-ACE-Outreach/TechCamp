@@ -41,10 +41,10 @@ If you wish to start with the project already set up, you can get them from the 
 
 ### NOTE from Andrea: will still need to give instruction on how to get the files into their project.
 In the Starting Files folder are several files that you need to copy over to your project first. These files are:
-1. login.inc
-1. login_state.inc
-1. logout.php
-1. validate.php  
+1. [login.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc)
+1. [login_state.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc)
+1. [logout.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php)
+1. [validate.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php)  
 
 After the files have been copied over to the website, you will need to add the user credentials to the database. The SQL you need to run is located in the file called create_users.sql. Right click on the ZWAMP icon in the task bar, highlight Tools, and select phpMyAdmin. Log in to phpMyAdmin using `phpmyadmin` as the username with a password of `root`. When you are in, click on the techcamp database link. When the database page has loaded, click on the green SQL Command button at the top of the page.
 
