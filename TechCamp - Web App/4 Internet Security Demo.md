@@ -242,8 +242,8 @@ WHERE username=:username AND password=:password;
 ```  
 
 #### Security Step 4
-Next, we need to prevent any future XSS attacks from potentially running.  
-Open `index.php`.  
+Next, we need to prevent any future XSS attacks from potentially running.  Open `index.php`.  
+
 Near the very bottom of the webpage, where you erased all your `<li>` `</li>` tags and replaced it with some code in the Database session. Here you will see a comment that says Security Step 4.
 
  The line right below it is what you will replace with the code snippet below:  
