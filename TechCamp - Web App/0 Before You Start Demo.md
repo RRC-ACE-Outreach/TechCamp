@@ -80,6 +80,9 @@ Start mysql by running this line:
 service mysql start
 ```
 
+**NOTE: If your service failed to start**... something may be wrong with your container. We suggest trying to create a new container, by restarting this setup from step 1. If you continue to have issues, feel free to reach out to us for help. Our contact details are at the bottom of this page.
+
+
 ## STEP 6
 Now let's install phpmyadmin by running this line:
 ```
