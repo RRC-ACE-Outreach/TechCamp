@@ -46,7 +46,9 @@ In the Starting Files folder are several files that you need to copy over to you
 1. [logout.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php)
 1. [validate.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php)  
 
-After the files have been copied over to the website, you will need to add the user credentials to the database. The SQL you need to run is located in the file called create_users.sql. Right click on the ZWAMP icon in the task bar, highlight Tools, and select phpMyAdmin. Log in to phpMyAdmin using `phpmyadmin` as the username with a password of `root`. When you are in, click on the techcamp database link. When the database page has loaded, click on the green SQL Command button at the top of the page.
+You can click on each of the above files to view the raw source code.  Create the file in the goormIDE with the file name above, and copy/paste the code from GitHub to Goorm.
+
+After the files have been copied over to the website, you will need to add the user credentials to the database. The SQL you need to run is located in the file called create_users.sql.  Log in to phpMyAdmin tab in your browser using `phpmyadmin` as the username with a password of `root`. When you are in, click on the techcamp database link. When the database page has loaded, click on the green SQL Command button at the top of the page.
 
 When the text box has loaded, copy and paste this script into the text area and press the `Go` button:
 ```sql
