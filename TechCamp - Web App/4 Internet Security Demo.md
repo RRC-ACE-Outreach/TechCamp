@@ -26,6 +26,8 @@ This kind of threat also goes by the acronym of XSS. This threat is one of the m
 
 At best, a cross site scripting threat will simply deface your website. You see this threat almost immediately and you can begin to clean it up so other people can view your website again. At worst, this threat can be quick and silent, tracking information about you and your website. This kind of attack could be on your site for weeks, months, or even years before you discover it.
 
+Most modern browsers have good mitigation against XSS by preventing you from calling javascript code from one website domain when you are on a different website domain.  Firefox, as of the time of this writing, doesn't block this kind of risk, so if you want to properly experiment with this on your groupmate's machines, Firefox is the browser of choice.
+
 ## Setting up the Project
 
 <!-- NOTE from Andrea: Let's prefer snippets over file navigation if at all possible.
