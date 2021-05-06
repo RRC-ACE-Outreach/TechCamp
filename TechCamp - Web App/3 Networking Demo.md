@@ -4,7 +4,15 @@
 
 #### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.  
 *HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
-  
+
+If you have been away from your Goorm container for a while, you might need to re-open it, or refresh it. Run the following commands to get your Apache2 web server and mysql service running again:
+```
+service apache2 restart
+```
+```
+service mysql start
+```
+
 ### Keeping You Connected To The Things That Matter
 
 ### Introduction
