@@ -2,7 +2,7 @@
 ## Tech Camp
 # Part 1: Web Development
 
-#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
+#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J).
 
 ### Let's Get Started
 Prior to this session, you should have completed all of the set-up steps in [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). If you did not, you should still be able to continue by completing steps 1-3 to create a Goorm container.
