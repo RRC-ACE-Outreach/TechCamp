@@ -125,11 +125,14 @@ Please provide a password for phpmyadmin to register with the database server. I
 MySQL application password for phpmyadmin:
 ```
 
-Enter Answer 3 into the command prompt **use the below password for this TechCamp for ease of following along**  
-**IT IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK.**  
-**If you accidentally leave the password blank ...** the terminal to get stuck in an endless loop as it will have decided the first password for you. Eventually the loop will fail, but there is no easy way to try to re-install phpmyadmin. It will not be possible for you to guess/match the password for confirmation. The result is you would get stuck waiting for the process to finish failing. If this happens to you, we suggest you stop the container and try making a new one again.  
 
-**NOTE:** you will not see the characters being entered in your terminal when you type this password. Please know that it is still accepting characters.  
+**IT IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK.**  
+
+</br>  
+
+*If you accidentally leave the password blank ...* the terminal to get stuck in an endless loop as it will have decided the first password for you. Eventually the loop will fail, but there is no easy way to try to re-install phpmyadmin. It will not be possible for you to guess/match the password for confirmation. The result is you would get stuck waiting for the process to finish failing. If this happens to you, we suggest you stop the container and try making a new one again.  
+
+**Enter Answer 3 into the command prompt, use the below password for this TechCamp for ease of following along**. *NOTE: you will not see the characters being entered in your terminal when you type this password. Please know that it is still accepting characters.*  
 ```
 root
 ```
