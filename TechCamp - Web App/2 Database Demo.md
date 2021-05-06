@@ -4,7 +4,7 @@
 
 <img src="0 - Images/02 Jigglypuff Database.png" alt="If its not in the database, did it really happen?">   
 
-#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
+#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J).
 *A snippets only version of these notes exist here: [2 Database Snippets](/0%20-%20Snippets%20Only/2%20Database%20Snippets.md)*
 
 ### Where we left off...
