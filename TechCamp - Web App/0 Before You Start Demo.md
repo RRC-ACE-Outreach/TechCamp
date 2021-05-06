@@ -207,7 +207,7 @@ service apache2 restart
 service mysql start
 ```
 
-If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: acemarketing@rrc.ca
+If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: [acemarketing@rrc.ca](mailto:acemarketing@rrc.ca?subject=Tech%20Camp%20Helpline)
 
 
 ---
