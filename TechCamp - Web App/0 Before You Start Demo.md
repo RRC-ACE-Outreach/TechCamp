@@ -120,14 +120,14 @@ yes
 Press Enter/Return to accept.
 
 #### Question 3:
-**IT IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK.**
 ```
 Please provide a password for phpmyadmin to register with the database server. If left blank, a random password will be generated.
 MySQL application password for phpmyadmin:
 ```
 
-Enter Answer 3 into the command prompt **use the below password for this TechCamp for ease of following along**:
-**NOTE:** you will not see the characters being entered in your terminal when you type this password. Please know that it is still accepting characters.
+Enter Answer 3 into the command prompt **use the below password for this TechCamp for ease of following along**  
+**IT IS VERY IMPORTANT THAT YOU ENTER A PASSWORD. DO NOT LEAVE IT BLANK.**  
+**NOTE:** you will not see the characters being entered in your terminal when you type this password. Please know that it is still accepting characters.  
 ```
 root
 ```
