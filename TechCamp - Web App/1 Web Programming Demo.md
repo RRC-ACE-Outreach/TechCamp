@@ -7,7 +7,7 @@
 ### Let's Get Started
 Prior to this session, you should have completed all of the set-up steps in [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). If you did not, you should still be able to continue by completing steps 1-3 to create a Goorm container.
 
-Be sure to have Goorm open, it should look something like this. (My container name is _MyTechCamp_. Yours may be different.)
+Be sure to have Goorm open, it should look something like this. (My container name is _MyTechCamp_. Yours may be different.)  
 ![image](https://user-images.githubusercontent.com/2661661/117020466-16b93e00-acbc-11eb-9b5f-073c79ed1387.png)
 
 ### Starting your Servers
@@ -90,14 +90,16 @@ Click the URL link icon to open a new browser window:
 ![image](https://user-images.githubusercontent.com/2661661/117058351-22b8f600-ace4-11eb-8224-32f97d282933.png)
 
 When the browser launches you should see something like this:
-![image](https://user-images.githubusercontent.com/2661661/117057945-ac1bf880-ace3-11eb-85ab-b599b8bb6bd6.png)
+| ![image](https://user-images.githubusercontent.com/2661661/117057945-ac1bf880-ace3-11eb-85ab-b599b8bb6bd6.png) |
+| --- |
 
 Alternatively you could copy and paste the URL text into the top of a new tab/window in your browser's press Enter.
 
 
 This is what your web page should look like:
 
-![image](https://user-images.githubusercontent.com/2661661/117058879-c86c6500-ace4-11eb-8a5c-a2dd71ce7077.png)
+| ![image](https://user-images.githubusercontent.com/2661661/117058879-c86c6500-ace4-11eb-8a5c-a2dd71ce7077.png) |
+| --- |
 
 You can see how the browser renders changes and additions you make to the HTML markup by simply saving the index.php file that contains the code, and then refreshing the browser tab that is requesting your web page from your Apache web server.
 
