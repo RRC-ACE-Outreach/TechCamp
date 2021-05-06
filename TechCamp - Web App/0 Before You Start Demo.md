@@ -127,6 +127,7 @@ MySQL application password for phpmyadmin:
 ```
 
 Enter Answer 3 into the command prompt **use the below password for this TechCamp for ease of following along**:
+**NOTE:** you will not see the characters being entered in your terminal when you type this password. Please know that it is still accepting characters.
 ```
 root
 ```
