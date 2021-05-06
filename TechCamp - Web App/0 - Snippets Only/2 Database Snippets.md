@@ -4,6 +4,7 @@
 # SNIPPETS ONLY VERSION
 
 *The full version of these notes exist here: [2 Database Demo](../2%20Database%20Demo.md)*
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**. 
 
 ## Make sure your server is running
 Restart your server
