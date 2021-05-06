@@ -6,7 +6,7 @@
 
 #### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.  
 *HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
-*A snippets only version of these notes exist here: [2 Database Snippets](/0%20-%20Snippets%20Only/2%20Database%20Snippets.md)*
+*A snippets only version of these notes exist here: [2 Database Snippets](/TechCamp%20-%20Web%20App/0%20-%20Snippets%20Only/2%20Database%20Snippets.md)*
 
 ### Where we left off...
 In the previous module, you created a simple HTML page with CSS within the Goorm IDE.
@@ -25,11 +25,11 @@ styles.css
 You can copy starter code from the below files, and then paste it into your Goorm container's project files:
 
 1. [index.php](0%20-%20Starting%20and%20Ending%20Files/01%20Web%20Ending%20Files/index.php)
-1. [styles.css](0%20-%20Starting%20and%20Ending%20Files/01%20Web%20Ending%20Files/index.css)
+1. [styles.css](0%20-%20Starting%20and%20Ending%20Files/01%20Web%20Ending%20Files/styles.css)
 
 
 ### Last check before we dive in...
-Before attending TechCamp, we asked for all participants to set up their virtual environment using [these instructions](../0%20Before%20You%20Start%20Demo.md).
+Before attending TechCamp, we asked for all participants to set up their virtual environment using [these instructions](0%20Before%20You%20Start%20Demo.md).
 
 If you didn't set up your Goorm container before today - we ask you to walk through the rest of the setup steps 4 through 9 before continuing.
 
