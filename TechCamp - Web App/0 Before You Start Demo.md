@@ -2,7 +2,7 @@
 ## Tech Camp
 # Part 0: Before you Start
 
-#### Follow along by video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
+#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J).
 
 
 # Let's set up your virtual environment before TechCamp Day!
