@@ -44,10 +44,10 @@ If you wish to start with the project already set up, you can get them from the 
 In the Starting Files folder are several files that you need to copy over to your project first. The following files will add login and logout functionality, as well as manage your session, so you can stay logged in until you logout.
 
 We can do this by creating the file by the listed name below, opening it in the goormIDE editor, and copy/pasting the code from the following files into the goormIDE.  These files are:
-1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc" target="_blank">login.inc</a>
-1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc" target="_blank">login_state.inc</a>
-1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php" target="_blank">logout.php</a>
-1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php" target="_blank">validate.php</a>
+1. <a href="/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc" target="_blank">login.inc</a>
+1. <a href="/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc" target="_blank">login_state.inc</a>
+1. <a href="/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php" target="_blank">logout.php</a>
+1. <a href="/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php" target="_blank">validate.php</a>
 
 You can click on each of the above files to view the raw source code.  Create the file in the goormIDE with the file name above, and copy/paste the code from GitHub to Goorm.
 
@@ -260,7 +260,7 @@ It is subtle, but that extra part that says `strip_tags()` prevents code from be
 Your website should now be secure against simple attacks. But there is always more that you can always do…
 
 ## Where can I learn more?
-If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit [https://www.owasp.org, ](https://www.owasp.org/)the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
+If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit [https://www.owasp.org](https://www.owasp.org/), the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
 
 And remember what our favorite web slinger always says; with great power comes great responsibility. You should **NEVER** use this knowledge against someone who is unwilling.
 
@@ -270,5 +270,5 @@ Hacking is illegal, and you can be fined, jailed, or even extradited over these 
 ## That's all for Part 4: Internet Security!
 
 # Links
-**Coming up: <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did.</a>**.
+**Coming up: <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did</a>**.  
 **Return to [Web App Landing Page](../README.md)**
