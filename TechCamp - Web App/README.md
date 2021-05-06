@@ -6,7 +6,8 @@ Thank you for spending a day with us learning about Information Technology at Re
 
 If you want to do all of the Web Application activities again, all of the files and code snippets you will need are in this GitHub.
 
-Video recordings for each session in this stream can be found on the **<a href="https://www.youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE YouTube Playlist for Stream 1</a>**.
+Video recordings for each session in this stream can be found on the **<a href="https://www.youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE YouTube Playlist for Stream 1</a>**.  
+*HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
 
 #### 0. [Before you Start: complete this setup.](/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md)  
 - Once setup is complete, TechCamp will follow the links below:  

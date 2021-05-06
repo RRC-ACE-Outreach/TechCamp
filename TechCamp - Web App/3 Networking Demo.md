@@ -2,7 +2,9 @@
 ## Tech Camp, Stream 1
 # Part 3: Networking
 
-#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.  
+*HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
+  
 ### Keeping You Connected To The Things That Matter
 
 ### Introduction

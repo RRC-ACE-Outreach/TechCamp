@@ -6,9 +6,11 @@ Thank you for joining us at RRC's TechCamp with the ACE Department. Many thanks 
 This year's TechCamps are online in two different streams, with more details below.
 
 Welcome to our Junior High visitors for Girls Exploring Information Technology, and welcome to our High School visitors for Day in the Life of an IT Student.
+**NOTE: TechCamp will work best in Chrome or Edge browser. Do not use Firefox.**
 
 We have two streams running for TechCamp, so please follow the links below for the stream you have chosen.
-Video recordings for each session can be found on the **<a href="https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g" target="_blank">Red River College ACE - YouTube channel at this link</a>**, playlist links can be found below.
+Video recordings for each session can be found on the **<a href="https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g" target="_blank">Red River College ACE - YouTube channel at this link</a>**, playlist links can be found below.  
+*HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
 
 
 
@@ -17,7 +19,8 @@ Thank you for spending a day with us learning about Information Technology at Re
 
 If you want to do all of the Web Application activities again, all of the files and code snippets you will need are in this GitHub.
 
-Video recordings for each session in this stream can be found on the **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE YouTube Playlist for Stream 1</a>**.
+Video recordings for each session in this stream can be found on the **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE YouTube Playlist for Stream 1</a>**.  
+*HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
 
 #### 0. [Before you Start: complete this setup.](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md)  
 - Once setup is complete, TechCamp will follow the links below:  
@@ -36,7 +39,8 @@ At the end of your day with us, we would love to hear your feedback.
 ## Stream 2: Information Security, Javascript, and more
 Each session will be an opportunity to experience and explore some aspect of Information Technology.
 
-Video recordings for each session in this stream can be found on the **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOngvMBaB6csvb17fOvNYhKM" target="_blank">Red River College ACE YouTube Playlist for Stream 2</a>**.
+Video recordings for each session in this stream can be found on the **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOngvMBaB6csvb17fOvNYhKM" target="_blank">Red River College ACE YouTube Playlist for Stream 2</a>**.  
+*HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
 
 Sessions will include:
 1. **[Introduction to Information Security](/TechCamp%20-%20Information%20Security)**: The Instructor will demonstrate topics covered in our Information Security courses, including pentesting and malware analysis content. (link to come)
