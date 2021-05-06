@@ -178,5 +178,5 @@ Replace with this list of information from the database.
 ### That's all for Part 2: Databases SNIPPETS ONLY VERSION!
 # Links
 **Return to [Part 2: Databases full notes](../2%20Database%20Demo.md)**  
-**Coming up: [Part 3: Networking](3%20Networking%20Demo.md)**  
+**Coming up: [Part 3: Networking](../3%20Networking%20Demo.md)**  
 **Return to [Web App Landing Page](../../README.md)**
