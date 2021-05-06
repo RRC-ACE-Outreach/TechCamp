@@ -1,3 +1,9 @@
+### Red River College's Applied Computer Education Department presents  
+## Tech Camp
+# Information Security
+
+#### Follow along by video recordings on the Stream 2 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOngvMBaB6csvb17fOvNYhKM" target="_blank">Red River College ACE's - YouTube channel</a>**.  
+
 <h2>Introduction</h2>
 
 In the Internet Security session of the Tech Camp, we teach you how to add a basic security feature called a user gateway. By setting up this feature, you limit certain functions or information on your site to authorized individuals only. However, with added complexity to your site comes the need for additional security. The example that we give you initially is flawed and it leaves the site open to security threats. After we demonstrate the holes in the security, we proceed with strengthening it. The fixes we provide do not solve every problem that can occur, but it is a great start.

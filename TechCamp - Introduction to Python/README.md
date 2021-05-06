@@ -1,22 +1,22 @@
 ### Red River College's Applied Computer Education Department presents  
-## Tech Camp
+## Tech Camp, Stream 2
 # Introduction to Python for Secret Agents
 
-#### Follow along with video recordings on the [Red River College ACE - YouTube channel](https://www.youtube.com/channel/UC4h_O-Re8zIQ5FZTIcsrN0g).
+#### Follow along by video recordings on the Stream 2 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOngvMBaB6csvb17fOvNYhKM" target="_blank">Red River College ACE's - YouTube channel</a>**.  
 
 ### Resources
 - Python online editor
-  - https://trinket.io/python3
+  - <a href="https://trinket.io/python3" target="_blank">https://trinket.io/python3</a>
 
 - Secret Agent Chat Project
-  - https://projects.raspberrypi.org/en/projects/secret-agent-chat
+  - <a href="https://projects.raspberrypi.org/en/projects/secret-agent-chat" target="_blank">https://projects.raspberrypi.org/en/projects/secret-agent-chat</a>
 
 - Raspberry Pi Python Projects
-  - https://projects.raspberrypi.org/en/projects?software%5B%5D=python
+  - <a href="https://projects.raspberrypi.org/en/projects?software%5B%5D=python" target="_blank">https://projects.raspberrypi.org/en/projects?software%5B%5D=python</a>
 
 - Python desktop editors
-  - https://codewith.mu/
-  - https://code.visualstudio.com/
+  - <a href="https://codewith.mu/" target="_blank">https://codewith.mu/</a>
+  - <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
 
 - Python tutorials
-  - https://hourofpython.com
+  - <a href="https://hourofpython.com" target="_blank">https://hourofpython.com</a> 

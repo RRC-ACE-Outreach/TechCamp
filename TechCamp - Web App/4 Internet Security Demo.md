@@ -1,8 +1,8 @@
 ### Red River College's Applied Computer Education Department presents  
-## Tech Camp
+## Tech Camp, Stream 1
 # Part 4: Internet Security
 
-#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J).
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.
 
 ## Introduction
 In the Internet Security session of the Tech Camp, we teach you how to add a basic security feature called a user gateway. By setting up this feature, you limit certain functions or information on your site to authorized individuals only. However, with added complexity to your site comes the need for additional security. The example that we give you initially is flawed and it leaves the site open to security threats. After we demonstrate the holes in the security, we proceed with strengthening it. The fixes we provide do not solve every problem that can occur, but it is a great start.
@@ -37,16 +37,16 @@ If you are setting up this project from the Database session, all of the files y
 [Github Security Files Repository](https://github.com/RRC-ACE-Outreach/TechCamp/tree/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/02%20Database%20Ending%20Files)
 -->
 
-If you wish to start with the project already set up, you can get them from the following directory:
-[Starting and Ending Files/04 Security Ending Files/Before Intrusion](0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/Before%20Intrusion)
+If you wish to start with the project already set up, you can get them from the following directory:  
+<a href="0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Ending%20Files/Before%20Intrusion" target="_blank">Starting and Ending Files/04 Security Ending Files/Before Intrusion</a>
 
 In the Starting Files folder are several files that you need to copy over to your project first. The following files will add login and logout functionality, as well as manage your session, so you can stay logged in until you logout.
 
 We can do this by creating the file by the listed name below, opening it in the goormIDE editor, and copy/pasting the code from the following files into the goormIDE.  These files are:
-1. [login.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc)
-1. [login_state.inc](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc)
-1. [logout.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php)
-1. [validate.php](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php)  
+1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login.inc" target="_blank">login.inc</a>
+1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/login_state.inc" target="_blank">login_state.inc</a>
+1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/logout.php" target="_blank">logout.php</a>
+1. <a href="/0%20-%20Starting%20and%20Ending%20Files/04%20Security%20Starting%20Files/validate.php" target="_blank">validate.php</a>
 
 You can click on each of the above files to view the raw source code.  Create the file in the goormIDE with the file name above, and copy/paste the code from GitHub to Goorm.
 
@@ -269,5 +269,5 @@ Hacking is illegal, and you can be fined, jailed, or even extradited over these 
 ## That's all for Part 4: Internet Security!
 
 # Links
-**Coming up: [Please fill out our survey and tell us how we did.](https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u)**  
+**Coming up: <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did.</a>**.
 **Return to [Web App Landing Page](../README.md)**

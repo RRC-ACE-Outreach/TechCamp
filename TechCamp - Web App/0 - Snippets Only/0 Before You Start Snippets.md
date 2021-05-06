@@ -5,7 +5,7 @@
 
 #### STEP 1
 Start by creating a user account for yourself on
-## https://ide.goorm.io/
+## <a href="https://ide.goorm.io/" target="_blank">https://ide.goorm.io/</a>
 
 
 #### STEP 2

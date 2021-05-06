@@ -1,8 +1,8 @@
 ### Red River College's Applied Computer Education Department presents  
-## Tech Camp
+## Tech Camp, Stream 1
 # Part 3: Networking
 
-#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J). 
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.
 ### Keeping You Connected To The Things That Matter
 
 ### Introduction
@@ -206,7 +206,7 @@ apt update
 apt install tshark -y
 usermod -a -G wireshark root
 newgrp wireshark
-chgrp wireshark /usr/bin/dumpcap 
+chgrp wireshark /usr/bin/dumpcap
 ```
 
 #### Goorm - Packet Capture from Terminal

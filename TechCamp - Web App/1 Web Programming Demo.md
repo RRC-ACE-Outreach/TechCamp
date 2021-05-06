@@ -1,8 +1,8 @@
 ### Red River College's Applied Computer Education Department presents  
-## Tech Camp
+## Tech Camp, Stream 1
 # Part 1: Web Development
 
-#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J).
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.
 
 ### Let's Get Started
 Prior to this session, you should have completed all of the set-up steps in [these instructions](https://github.com/RRC-ACE-Outreach/TechCamp/blob/main/TechCamp%20-%20Web%20App/0%20Before%20You%20Start%20Demo.md). If you did not, you should still be able to continue by completing steps 1-3 to create a Goorm container.
@@ -12,14 +12,14 @@ Be sure to have Goorm open, it should look something like this. (My container na
 
 ### Starting your Servers
 
-If you completed the set-up steps on a previous day, you will have to start your web server (Apache). 
+If you completed the set-up steps on a previous day, you will have to start your web server (Apache).
 
 Find the terminal window near the bottom of your screen:
 
 ![image](https://user-images.githubusercontent.com/2661661/117022150-9c89b900-acbd-11eb-915b-0749fb3d7048.png)
 
 
-Type this command in the terminal window and hit enter: 
+Type this command in the terminal window and hit enter:
 ```
 service apache2 restart
 ```
@@ -71,7 +71,7 @@ HTML stands for HyperText Markup Language. HTML is a markup language that is use
 But what is HTML? HTML is made up of `<elements>` which are used to describe the semantics of the page. *Semantics* refers to the meaning of the different elements. For example: **h1** through **h6** elements are used to describe headings; **p** elements are used to denote paragraphs.
 
 *A quick note:*
-We are building this website using a PHP stack, that means that if we wanted to, we could use the PHP scripting language in this file. 
+We are building this website using a PHP stack, that means that if we wanted to, we could use the PHP scripting language in this file.
 
 This index.php file has a file extension of *.php.* In other words, the filename ends with a ".php" suffix.
 

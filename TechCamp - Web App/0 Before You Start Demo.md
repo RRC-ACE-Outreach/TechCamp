@@ -1,9 +1,8 @@
 ### Red River College's Applied Computer Education Department presents  
-## Tech Camp
+## Tech Camp, Stream 1
 # Part 0: Before you Start
 
-#### Follow along by video recordings on the Stream 1 playlist on [Red River College ACE's - YouTube channel](https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J).
-
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**.
 
 # Let's set up your virtual environment before TechCamp Day!
 All steps in this process process may take around 20 minutes.
@@ -11,7 +10,8 @@ All steps in this process process may take around 20 minutes.
 ### Getting our Toolkit Ready
 We will be using a browser based IDE called Goorm.
 Start by creating a user account for yourself on:
-## https://ide.goorm.io/
+## <a href="https://ide.goorm.io/" target="_blank">https://ide.goorm.io/</a>
+
 
 Take a moment and get your user account created. Be careful to remember your login credentials, you will need them for TechCamp.
 
