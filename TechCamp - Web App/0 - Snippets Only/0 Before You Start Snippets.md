@@ -3,6 +3,10 @@
 # Part 0: Before you Start
 # SNIPPETS ONLY VERSION
 
+
+*The full version of these notes exist here: [0 Before You Start Demo](../0%20Before%20You%20Start%20Demo.md)*
+#### Follow along by video recordings on the Stream 1 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOmmyt8O3aTvsyM7iYDj5d-J" target="_blank">Red River College ACE's - YouTube channel</a>**. 
+
 #### STEP 1
 Start by creating a user account for yourself on
 ## <a href="https://ide.goorm.io/" target="_blank">https://ide.goorm.io/</a>
@@ -103,13 +107,13 @@ service apache2 restart
 service mysql start
 ```
 
-If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: acemarketing@rrc.ca
+If you are still having trouble, please reach out to the folks at RRC's Applied Computer Education Department for assistance during the day within the 3 business days before your TechCamp Day at: [acemarketing@rrc.ca](mailto:acemarketing@rrc.ca?subject=Tech%20Camp%20Helpline)
 
 
 
 ---
 ### That's all for Part 0: Before You Start SNIPPETS ONLY VERSION!
 # Links
-**Return to [Part 0: Before You Start full notes](../0%20Before%20You%20Start%20Demo.md)**
-**Coming up: [Part 1: Web Development](1%20Web%20Programming%20Demo.md)**  
-**Return to [Web App Landing Page](../../README.md)**
+**Return to [Part 0: Before You Start full notes](../0%20Before%20You%20Start%20Demo.md)**  
+**Coming up: [Part 1: Web Development](../1%20Web%20Programming%20Demo.md)**  
+**Return to [Web App Landing Page](../../README.md)**  
