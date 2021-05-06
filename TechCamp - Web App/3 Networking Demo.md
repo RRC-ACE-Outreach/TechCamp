@@ -108,11 +108,11 @@ Routers read packets and send them in the direction toward the network the packe
 
 #### Examples
 
-*IPv4 - 192.168.100.108*
+*IPv4 - 192.168.100.108*  
 <img src="0 - Images/03 Networking 26_1.png" width="800"  alt="IPv4 address example">
 
 
-*IPv6 - fe80::152e:fb67:e18a:b2ec*
+*IPv6 - fe80::152e:fb67:e18a:b2ec*  
 <img src="0 - Images/03 Networking 27_1.png" width="800"  alt="IPv6 address example">
 
 
