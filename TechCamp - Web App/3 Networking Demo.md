@@ -202,16 +202,24 @@ In Goorm, from the top navigation menu, choose: **Container**, then **Port Forwa
 3. Copy the address under **Command**. The format should look similar to this: 54.218.62.176:50418
 4. Paste the address into your search bar in your browser.
 
-#### Goorm - Setup Commands
+#### Tshark - Setup Commands
 ```
 apt update
 apt install tshark -y
+```
+The following commands may be required to setup packet capture permissions:
+```
 usermod -a -G wireshark root
 newgrp wireshark
 chgrp wireshark /usr/bin/dumpcap
 ```
+#### View the IP settings of your Goorm container
+To view the IP address, MAC address and Interface ID of your container, enter the following command:
+```
+ifconfig
+```
 
-#### Goorm - Packet Capture from Terminal
+#### Tshark - Packet Capture from Terminal
 To send packet capture output directly to terminal, enter the following:
 ```
 tshark -i eth0
