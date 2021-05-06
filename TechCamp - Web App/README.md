@@ -14,7 +14,7 @@ Video recordings for each session in this stream can be found on the **[Red Rive
 #### 1. [Web Development Module Instructions](/TechCamp%20-%20Web%20App/1%20Web%20Programming%20Demo.md)
 #### 2. [Database Module Instructions](/TechCamp%20-%20Web%20App/2%20Database%20Demo.md)
 #### 3. [Networking Module Instructions](/TechCamp%20-%20Web%20App/3%20Networking%20Demo.md)
-#### 4. [Internet Security Module Instructions](h/TechCamp%20-%20Web%20App/4%20Internet%20Security%20Demo.md)
+#### 4. [Internet Security Module Instructions](/TechCamp%20-%20Web%20App/4%20Internet%20Security%20Demo.md)
 
 </br>  
 
