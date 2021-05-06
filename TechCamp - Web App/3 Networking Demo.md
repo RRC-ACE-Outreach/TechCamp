@@ -244,4 +244,4 @@ The handshake is a three part process in the following order:
 
 # Links
 **Coming up: [Part 4: Internet Security](4%20Internet%20Security%20Demo.md)**  
-**Return to [Web App Landing Page](README.md)**
+**Return to [Web App Landing Page](../README.md)**
