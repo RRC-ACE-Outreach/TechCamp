@@ -21,7 +21,13 @@ With this session you will have to create a new container in Goorm. Here are the
     3. Click the "Create" button at the bottom
     4. Click "Run Container"
 4. With your container running, now we have a couple things to finish before you're ready to start your session.
-    1.     
+    1. Under "Project" on the left, there are a few files that came with the default container
+    2. Delete index.html and styles.css by right clicking and selecting "Delete"
+5. Now we have to bring in the files we downloaded initially.
+    1. Locate your downloaded starting files
+    2. Drag and drop them into the "Project" tab in your Goorm container.
+
+You're now ready to go! Start the video and follow along. 
 
 
 
