@@ -9,6 +9,8 @@ A session on using advanced HTML & CSS techniques and using JavaScript asynchron
 
 ## Getting Started
 
+Download the files for this session from this GitHub repository.
+
 With this session you will have to create a new container in Goorm. Here are the steps:
 
 1. Open and login to your Goorm account.
@@ -17,6 +19,9 @@ With this session you will have to create a new container in Goorm. Here are the
     1. Name the session "AdvWD"
     2. Scroll down to the "Stack" option and select "HTML/CSS/JS"
     3. Click the "Create" button at the bottom
+    4. Click "Run Container"
+4. With your container running, now we have a couple things to finish before you're ready to start your session.
+    1.     
 
 
 
