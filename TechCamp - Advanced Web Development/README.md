@@ -14,9 +14,9 @@ With this session you will have to create a new container in Goorm. Here are the
 1. Open and login to your Goorm account.
 2. Click on the "New Container" box. 
 3. Container settings:
-  1. Name the session "AdvWD"
-  2. Scroll down to the "Stack" option and select "HTML/CSS/JS"
-  3. Click the "Create" button at the bottom
+    1. Name the session "AdvWD"
+    2. Scroll down to the "Stack" option and select "HTML/CSS/JS"
+    3. Click the "Create" button at the bottom
 
 
 
