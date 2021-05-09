@@ -33,7 +33,7 @@ Video recordings for each session in this stream can be found on the **<a href="
 </br>  
 
 At the end of your day with us, we would love to hear your feedback.  
-**<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did.</a>**.
+**<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did</a>**.
 
 
 ## Stream 2: Information Security, Javascript, and more
@@ -45,8 +45,8 @@ Video recordings for each session in this stream can be found on the **<a href="
 Sessions will include:
 1. **[Introduction to Information Security](/TechCamp%20-%20Information%20Security)**: The Instructor will demonstrate topics covered in our Information Security courses, including pentesting and malware analysis content. (link to come)
 2. **[Advanced Web Development](/TechCamp%20-%20Advanced%20Web%20Development)**: A session on using JavaScript asynchronously to access and create dynamic content from Open Data sources.
-3. **[Introduction to Python for Secret Agents](/TechCamp%20-%20Introduction%20to%20Python)**
+3. **[Introduction to Python for Secret Agents](/TechCamp%20-%20Introduction%20to%20Python)**: Create an encrypting and decrypting app in Python using Trinket.io
 
 
 At the end of your day with us, we would love to hear your feedback.  
-**<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did.</a>**.
+**<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RZv6hqN6cECKVO3O9Da9RNVssp8kJtxMngDi82Jspk9UMks0UldJNFFLSDBTR0UwOVpGUTdZRFRNMy4u" target="_blank">Please fill out our survey and tell us how we did</a>**.
