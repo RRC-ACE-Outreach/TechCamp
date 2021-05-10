@@ -261,7 +261,7 @@ Let's try something else.  Let's see if we can see some database information.  W
 localhost; cat /var/www/dvwa/config/config.inc.php
 ```
 
-<img src="./0-infosec_images/infosec 11 web 5.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 11 web 6.PNG" alt="Pentest Environment">
 
 When we look at this, it doesn't look like we have succeded, but if we look at the source code for this page (the second half of the above image), we discover the username and password for the database:
 ```
@@ -277,7 +277,7 @@ show databases;
 \q
 ```
 
-<img src="./0-infosec_images/infosec 11 web 5.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 11 web 8.PNG" alt="Pentest Environment">
 
 Wih the above, you should see that we now have root access to the database, we can look at all the databases and all the data in those databases (if you know the SQL language).  Some quick notes on the above:
 
