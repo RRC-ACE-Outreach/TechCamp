@@ -40,16 +40,76 @@ ip addr
 nmap 192.168.56.0/24
 ```
 
+Your results for the above should look like the following:
+## image(s) of nmap
 
+You see a couple of machines showing up.  One has the same IP we discovered when we ran ip addr, so we know that is Ubuntu.  The other (likely 192.168.56.101) is a machine we don't recognize on our network, and likely our target machine.  Now we can do a detailed scan of our target machine:
+``` 
+nmap -sV 192.168.56.101
+```
+
+We should see the following detailed information about our target machine:
+## image of detailed namp scan
+
+Now we can attack specific services.
+
+<h3>MSF Console and UnrealIRCd</h3>
+
+The first service we are going to attack is port 6667 and the Unreal IRC daemon service process.  IRC is the origins of web based messaging, and UnrealIRCd is a server process that works with IRC.  If we are to research that version of UnrealIRCd, we would discover there is a known vulnerability, and this vulnerability has an exploit in the command line tool Metasploit Framework (MSF Console).  First thing we should do is open a new tab in our terminal program and launch msfconsole, as below.  Having multiple tabs open makes jumping back and forth between results easier:
+## image of msfconsole startup
+
+Please note the startup of msfconsole will display ASCII art, and this art will likely be different each time you start.  Sometimes, the art looks like a failure, but we are specifically looking for the following line:
+```
+msf6 >
+```
+
+This is our msfconsole prompt, where we lauch our attacks from.  If we are going to attack the Unreal IRC server, we need to configure our attack.  This often require research and trial and error, however, we will focus on results today.  Type in the following:
+```
+use exploit/unix/irc/unreal_ircd_3281_backdoor
+set RHOST 192.168.56.101
+set payload cmd/unix/bind_perl
+show options
+exploit
+whoami
+```
+
+You should see the following after a few minutes:
+## image of irc exploit 1
+
+Congrats, you are now a HAKORZZZZZ!!!!!
+
+We are going to have to exit this, so hit Ctrl + C to exit out of the msf session.  You can open a new terminal window or tab, however the resources for these VMs are somewhat limited, so it is not advised to have too much open concurrently in this environment.
+## image of irc exploit 2 
+
+<h3>MSF Console and vsftpd</h3>
+
+Let's take a look at another vulnerable service, specifically vsftpd.  Again, we would research our discovery and try and realize any known vulnerabilities.  Again, there is an exploit in MSF console.
+```
+use exploit/unix/irc/vsftpd_234_backdoor
+show options
+set RHOST 192.168.56.101
+show options
+exploit
+whoami
+```
+
+This time, we can see the before and after of our settings.  I have also included a troubleshooting demo if things don't go well.  Many of the tools we use are created by and for hackers, and as such, can be a bit rough around the edges.  In our example, we needed to run the exploit a couple of times to get it to work.  
+## images of vsftp 1 and 2
+
+Sometimes we even crash our target VM with our pentest activities, and in that case, we need to reboot our VM, as seen in this video:
+## video to reset target
+
+<h3>Cracking Passwords</h3>
+
+Now we have root access to a target machine, let's see if we cant crack some passwords.  We are going to first use a tool called John the Ripper.  John the Ripper is a tool with a long history.  It doesn't get installed by default when you usually set up a Linux box, but it is installed in system like Kali, and is available to us.  If we are going to use John the Ripper (john), we need a list of usernames and passwords to crack.  Fortunately, in our attack above, we have root access and we can see the users and passwords.  Let's steal that info (exfultrate) to our Kali box so we can crack the passwords with Kali.  First thing I like to do 
 
 ---
-
 <h2>Where can I learn more?</h2>
 
-Virtual machines like the one we attacked - Metasploitable - can be found online on sites like (https://vulnhub.com).  The toolset we used for hacking can be found on the Kali website: (https://kali.org).  The environment we used for our virtualization inside of Azure is called VirtualBox: (https://www.virtualbox.org).
+Virtual machines like the one we attacked - Metasploitable - can be found online on sites like vulnhub (https://vulnhub.com).  The toolset we used for hacking can be found on the Kali website: (https://kali.org).  The environment we used for our virtualization inside of Azure is called VirtualBox: (https://www.virtualbox.org).
 
 If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit [https://www.owasp.org, ](https://www.owasp.org/)the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
 
-And remember what our favorite web slinger always says; with great power comes great responsibility. You should **never **use this knowledge against someone who is unwilling.
+And remember what our favorite web slinger always says; with great power comes great responsibility. You should **never** use this knowledge against someone who is unwilling.
 
 Hacking is illegal, and you can be fined, jailed, or even extradited over these crimes. Use this knowledge wisely, to protect yourself, and those who are willing to be protected by you.
