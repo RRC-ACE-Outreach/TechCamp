@@ -6,8 +6,10 @@
 *HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
 
 ---
+
 Contents
-[Introduction](#Introduction and Connecting to Azure)
+[Introduction](#Introduction)
+
 ---
 
 ## Introduction and Connecting to Azure
