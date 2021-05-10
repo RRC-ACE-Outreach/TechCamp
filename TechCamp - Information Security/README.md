@@ -9,13 +9,13 @@
 
 ## Contents
 
-[Introduction](#Introduction)
+[Introduction](#Introduction%20and%20Connecting%20to%20Azure)
 
 [Environment](#Environment)
 
 [Scanning](#Scanning)
 
-[MSF Console and UnrealIRCd](#MSF Console and UnrealIRCd)
+[MSF Console and UnrealIRCd](#MSF%20Console%20and%20UnrealIRCd)
 
 ---
 
