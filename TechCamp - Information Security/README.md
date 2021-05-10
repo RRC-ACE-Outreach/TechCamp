@@ -162,11 +162,11 @@ medusa -U users2.txt -P /usr/share/wordlists/rockyou.txt -M ssh -h 192.168.56.10
 ```
 
 With the above, the arguments do the following:
--U for a list of users (a single user would be -u, or lower case)
--P for a list of passwords (a single password would be -p, or lower case)
--M is for the module, or protocol.  We are attacking the SSH protocol
--h for the host (if we had a list of hosts, we would use upper case H) 
--O to output the results to be stored to a text file (upper case of letter O, not number zero)
+* -U for a list of users (a single user would be -u, or lower case)
+* -P for a list of passwords (a single password would be -p, or lower case)
+* -M is for the module, or protocol.  We are attacking the SSH protocol
+* -h for the host (if we had a list of hosts, we would use upper case H) 
+* -O to output the results to be stored to a text file (upper case of letter O, not number zero)
 
 ## medusa2
 
