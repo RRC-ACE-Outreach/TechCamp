@@ -7,7 +7,7 @@
 
 <h2>Introduction and Connecting to Azure</h2>
 
-Welcome to the Red River College Information Security TechCamp.  We will cover basic penetration testing activities today.  These activities are referred to as "hacking" or "pentesting" and can be presented in a number of different contexts.  We will be using a purpose build vulnerable server running in a virtualized environment running on Azure cloud services, common for activites such as these.
+Welcome to the Red River College Information Security TechCamp.  We will cover basic penetration testing activities today.  These activities are referred to as "hacking" or "pentesting" and can be presented in a number of different contexts.  We will be using a purpose build vulnerable server running in a virtualized environment running on Azure cloud services, common for activities such as these.
 
 You should have received an email with a link to either register for the Azure service, or to add the Azure VM to your Azure account.  Please click on this link, and register for your access to your testbed.
 
@@ -15,7 +15,7 @@ Once registered, you can access your virtual machine (VM) a couple of different 
 
 <h3>Environment</h3>
 
-Before we begin our attack, we really need to understand as much as possible about the environment we are operating in.  For our environment, we are connected to an instance of Ubuntu running on Azure, and within Ubuntu, a virtualized environment was created using VirtualBox (VB), and within VB, we have our target machine Metasploitable running.  We also have our attack maching Kali Linux running.  All activities will be done using Linux today, and in this environment:
+Before we begin our attack, we really need to understand as much as possible about the environment we are operating in.  For our environment, we are connected to an instance of Ubuntu running on Azure, and within Ubuntu, a virtualized environment was created using VirtualBox (VB), and within VB, we have our target machine Metasploitable running.  We also have our attack machine Kali Linux running.  All activities will be done using Linux today, and in this environment:
 ## image of testbed. ##
 
 The above is a typical configuration for this kind of activity, where you have Kali and your target machine running on the same network so you can send attacks across that network to discover and exploit any vulnerabilities.  While there are many graphical tools for these kinds of attacks, we will be using the command line for the most part.
@@ -63,7 +63,7 @@ Please note the startup of msfconsole will display ASCII art, and this art will 
 msf6 >
 ```
 
-This is our msfconsole prompt, where we lauch our attacks from.  If we are going to attack the Unreal IRC server, we need to configure our attack.  This often require research and trial and error, however, we will focus on results today.  Type in the following:
+This is our msfconsole prompt, where we launch our attacks from.  If we are going to attack the Unreal IRC server, we need to configure our attack.  This often require research and trial and error, however, we will focus on results today.  Type in the following:
 ```
 use exploit/unix/irc/unreal_ircd_3281_backdoor
 set RHOST 192.168.56.101
