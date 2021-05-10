@@ -34,8 +34,11 @@ This should open a terminal window as seen here:
 
 We will do most of our work in these terminal windows.  Those connected via SSH will just see the terminal, and you should be OK with most of what we do today.
 
-In our terminal, scan our network with the nmap command.  We must understand our environment, so before we scan, we verify our IP information.  Type in the following commands in your terminal:
-
+In our terminal, scan our network with the nmap command.  We must understand our environment, so before we scan, we verify our IP information.  Once we have the IP of our host only network, we scan the entire network.  It is likely going to be the 192.168.56.0 network.  Type in the following commands in your terminal:
+```
+ip addr
+nmap 192.168.56.0/24
+```
 
 ---
 
