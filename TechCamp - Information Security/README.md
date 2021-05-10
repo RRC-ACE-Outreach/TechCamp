@@ -101,7 +101,53 @@ Sometimes we even crash our target VM with our pentest activities, and in that c
 
 <h3>Cracking Passwords</h3>
 
-Now we have root access to a target machine, let's see if we cant crack some passwords.  We are going to first use a tool called John the Ripper.  John the Ripper is a tool with a long history.  It doesn't get installed by default when you usually set up a Linux box, but it is installed in system like Kali, and is available to us.  If we are going to use John the Ripper (john), we need a list of usernames and passwords to crack.  Fortunately, in our attack above, we have root access and we can see the users and passwords.  Let's steal that info (exfultrate) to our Kali box so we can crack the passwords with Kali.  First thing I like to do 
+Now we have root access to a target machine, let's see if we cant crack some passwords.  We are going to first use a tool called John the Ripper.  John the Ripper is a tool with a long history.  It doesn't get installed by default when you usually set up a Linux box, but it is installed in system like Kali, and is available to us.  If we are going to use John the Ripper (john), we need a list of usernames and passwords to crack.  Fortunately, in our attack above, we have root access and we can see the users and passwords.  Let's steal that info (exfultrate) to our Kali box so we can crack the passwords with Kali.  First thing I like to do is create a separate directory for each activity or system I attack.  In this case, we are attacking Metasploitable, so let's create a directory for this.  Open a new tab in your terminal application, and type the following:
+```
+mkdir metasploitable
+cd metasploitable
+ls
+``` 
+
+This will create an empty directory, or folder, for our work. 
+## passwords1
+
+Now let's exfultrate our data.  In our tab we have our metasploit attack open, we can look at the contents of two files, the /etc/passwd file (that contains most user information, but not passwords, and a separate file /etc/shadow (that contains the actual passwords, but in an encrypted or hashed format).  We can view these and copy them to a text editor, we will be using Leafpad, a simple text editor similar to Notepad in Windows.  In Ubuntu, in the upper left corner, select Applications --> Accessories --> Leafpad.  Move it off to the side so you can see both the terminal and Leafpad side by each.  In the terminal, type the following **in the tab with the vsftpd attack** 
+```
+cat /etc/passwd
+```
+
+Highlight the text that contains the username information, and from the menu at the top select Edit --> Copy.  Paste the text in Leafpad, as seen below:
+## passwords2
+
+You need to save your work now, so in Leafpad, go to File --> Save, and select the pentest folder along the left side, select our working directory metasploitable, and in the file name, type in passwd.txt (or any filename you prefer):
+## passwords3
+
+We are going to do the same with the /etc/shadow file, open a new instance of Leafpad, highlight the lines, copy/paste to Leafpad, and save our work again in the correct directory:
+```
+cat /etc/shadow
+```
+## passwords4
+
+Once you have exfultrated the necessary data, you can go back to your terminal, select the tab you created to make the work directory (it should be the last tab on the right) and verify you have the directory listing below.  After we exfultrate our files, we want to merge them into a single file that John the Ripper can handle, and we do this with the unshadow command, an executable that gets installed with John the Ripper:
+```
+ls -al
+unshadow passwd.txt shadow.txt > passwords_to_crack.txt
+ls -al
+```
+
+## passwords5
+
+Now we are ready to try and crack some passwords:
+``` 
+john passwords_to_crack.txt
+```
+
+Your screen will look like this in a few minutes:
+## passwords 6
+
+Some items of note: this is possible only because we have root access to the system.  This is more accurately described as a password audit rather than password hacking.  
+
+After a while, you can stop John the Ripper with Ctrl + C
 
 ---
 <h2>Where can I learn more?</h2>
