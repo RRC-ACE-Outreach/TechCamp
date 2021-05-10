@@ -17,6 +17,12 @@
 
 [MSF Console and UnrealIRCd](#unreal)
 
+[MSF Console and vsftpd](#vsftp)
+
+[Cracking Passwords with John the Ripper](#passwords)
+
+[Brute Forcing with Medusa](#unreal)
+
 ---
 <a name="introduction"></a>
 ## Introduction and Connecting to Azure
@@ -68,7 +74,7 @@ We should see the following detailed information about our target machine:
 
 Now we can attack specific services.
 
-<a name="introduction"></a>
+<a name="unreal"></a>
 ## MSF Console and UnrealIRCd
 
 The first service we are going to attack is port 6667 and the Unreal IRC daemon service process.  IRC is the origins of web based messaging, and UnrealIRCd is a server process that works with IRC.  If we are to research that version of UnrealIRCd, we would discover there is a known vulnerability, and this vulnerability has an exploit in the command line tool Metasploit Framework (MSF Console).  First thing we should do is open a new tab in our terminal program and launch msfconsole, as below.  Having multiple tabs open makes jumping back and forth between results easier:
@@ -97,6 +103,7 @@ Congrats, you are now a HAKORZZZZZ!!!!!
 We are going to have to exit this, so hit Ctrl + C to exit out of the msf session.  You can open a new terminal window or tab, however the resources for these VMs are somewhat limited, so it is not advised to have too much open concurrently in this environment.
 <img src="./0-infosec_images/infosec 7 irc exploit 2.PNG" alt="Pentest Environment">
 
+<a name="vsftpd"></a>
 <h3>MSF Console and vsftpd</h3>
 
 Let's take a look at another vulnerable service, specifically vsftpd.  Again, we would research our discovery and try and realize any known vulnerabilities.  Again, there is an exploit in MSF console.
@@ -116,7 +123,8 @@ This time, we can see the before and after of our settings.  I have also include
 Sometimes we even crash our target VM with our pentest activities, and in that case, we need to reboot our VM, as seen in this video:
 ## video to reset target
 
-## Cracking Passwords
+<a name="passwords"></a>
+## Cracking Passwords with John the Ripper
 
 Now we have root access to a target machine, let's see if we cant crack some passwords.  We are going to first use a tool called John the Ripper.  John the Ripper is a tool with a long history.  It doesn't get installed by default when you usually set up a Linux box, but it is installed in system like Kali, and is available to us.  If we are going to use John the Ripper (john), we need a list of usernames and passwords to crack.  Fortunately, in our attack above, we have root access and we can see the users and passwords.  Let's steal that info (exfultrate) to our Kali box so we can crack the passwords with Kali.  First thing I like to do is create a separate directory for each activity or system I attack.  In this case, we are attacking Metasploitable, so let's create a directory for this.  Open a new tab in your terminal application, and type the following:
 ```
@@ -168,6 +176,7 @@ After a while, you can stop John the Ripper with Ctrl + C
 
 We see that there are still some passwords that haven't been cracked.  For example, when we look at either our passwd or shadow files, we see the characters from South Park haven't been cracked yet.  Let's see if we cant do that with another cracking tool
 
+<a name="medusa"></a>
 ## Brute Forcing with Medusa
 
 Let's see if we can't figure out the passwords for cartman, kenny, kyle, and stan.  We see them in our list of users, but our attempt at cracking their passwords failed, so let's try again.  We are going to use a dictionary of real world passwords found from a website in the wild.  As always, there are different ways to solve this; we can create a list of users, find a dictionary, iterate through the users and with each user, try the passwords in our dictionary.  Let's try that now.  First, let's create our users.  Feel free to close down all instances of Leafpad and start a new one.  In Leafpad, add the four users we want to attack, one on each line, all lower case as we saw in the passwd and shadow files:
