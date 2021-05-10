@@ -45,7 +45,7 @@ nmap 192.168.56.0/24
 Your results for the above should look like the following:
 ## image(s) of nmap
 <img src="./0-infosec_images/infosec 4a ip addr.PNG" alt="Pentest Environment">
-<img src="./0-infosec_images/infosec 4b ip addr.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 4b nmap 1.PNG" alt="Pentest Environment">
 
 You see a couple of machines showing up.  One has the same IP we discovered when we ran ip addr, so we know that is Ubuntu.  The other (likely 192.168.56.101) is a machine we don't recognize on our network, and likely our target machine.  Now we can do a detailed scan of our target machine:
 ``` 
@@ -54,7 +54,7 @@ nmap -sV 192.168.56.101
 
 We should see the following detailed information about our target machine:
 ## image of detailed namp scan
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 5 detailed nmap.PNG" alt="Pentest Environment">
 
 Now we can attack specific services.
 
@@ -62,7 +62,7 @@ Now we can attack specific services.
 
 The first service we are going to attack is port 6667 and the Unreal IRC daemon service process.  IRC is the origins of web based messaging, and UnrealIRCd is a server process that works with IRC.  If we are to research that version of UnrealIRCd, we would discover there is a known vulnerability, and this vulnerability has an exploit in the command line tool Metasploit Framework (MSF Console).  First thing we should do is open a new tab in our terminal program and launch msfconsole, as below.  Having multiple tabs open makes jumping back and forth between results easier:
 ## image of msfconsole startup
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 6 msfconsole start.PNG" alt="Pentest Environment">
 
 Please note the startup of msfconsole will display ASCII art, and this art will likely be different each time you start.  Sometimes, the art looks like a failure, but we are specifically looking for the following line:
 ```
@@ -81,13 +81,13 @@ whoami
 
 You should see the following after a few minutes:
 ## image of irc exploit 1
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 7 irc exploit 1.PNG" alt="Pentest Environment">
 
 Congrats, you are now a HAKORZZZZZ!!!!!
 
 We are going to have to exit this, so hit Ctrl + C to exit out of the msf session.  You can open a new terminal window or tab, however the resources for these VMs are somewhat limited, so it is not advised to have too much open concurrently in this environment.
 ## image of irc exploit 2 
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 7 irc exploit 2.PNG" alt="Pentest Environment">
 
 <h3>MSF Console and vsftpd</h3>
 
