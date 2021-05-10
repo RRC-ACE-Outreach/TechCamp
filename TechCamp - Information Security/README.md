@@ -23,6 +23,10 @@
 
 [Brute Forcing with Medusa](#medusa)
 
+[Web Attacks](#webattacks)
+
+[Where Can I Learn More](#learnmore)
+
 ---
 <a name="introduction"></a>
 ## Introduction and Connecting to Azure
@@ -209,6 +213,83 @@ You should see the following
 <img src="./0-infosec_images/infosec 10 medusa 3.PNG" alt="Pentest Environment">
 
 ---
+<a name="webattacks"></a>
+## Web Attacks
+
+Due to the ubiquitous nature of websites for most organizations, we see many attacks happening through a web browser to a web site.  Let's look at some popular examples of these types of attacks.  In your Ubuntu VM, in the Launcher at the bottom, you should see the option to launch a web browser.  You can also do this with the start like button in the upper left: Applications --> Web Browser.  This should take you to the web server running on our target machine.  If not, set the IP address in the browser's address bar to the IP address of our target machine.  You should see the following:
+<img src="./0-infosec_images/infosec 11 web 1.PNG" alt="Pentest Environment">
+
+We are going to select DVWA, a purposely weekly designed website that allows us to try some basic web attack activities.  The nice thing about DVWA is the source code shows us both easy and difficult code to attack. 
+
+The first thing we need to do is log in.  The username and password are below:
+```
+username: admin
+password: password
+```
+
+As we said, this isn't a secure site. 
+
+Before we go forward, we need to change the settings.  Along the left side, select Security, and on the DVWA Security page, select Low from the drop down list, and select Low in the Script Security option, as seen below:
+<img src="./0-infosec_images/infosec 11 web 2.PNG" alt="Pentest Environment">
+
+Once this is set, you can then try any of the attacks along the side.  Let's look at command injection and chaining.  Some systems allow you to run certain commands as if you were logged in to the terminal.  It isn't common, however, if you see something like the screen below, allowing you to ping a website (Ping for FREE), what might happen is whatever you are typing in gets passed directly to the underlying command, possibly with no mitigations in possible.  Let's try the command without any hacking, we will ping our machine directly, let's ping localhost.
+```
+localhost
+```
+
+You should see the following:
+<img src="./0-infosec_images/infosec 11 web 3.PNG" alt="Pentest Environment">
+
+Now let's see if we can inject a command using UNIX command chaining.  This is a technique where you execute multiple UNIX (in this case, Linux) commands in one single command line by separating the commands with a semi colon.  Consider:
+```
+localhost; ls
+```
+
+<img src="./0-infosec_images/infosec 11 web 4.PNG" alt="Pentest Environment">
+
+If the above works, we have an indication that this page is subject to command chaining.  Let's try a couple of attacks:
+```
+localhost; cat /etc/passwd
+```
+
+<img src="./0-infosec_images/infosec 11 web 5.PNG" alt="Pentest Environment">
+
+The above will show the users in the system, and as we saw above, we can use this information with Medusa to gain access to the system.
+
+Let's try something else.  Let's see if we can see some database information.  We are going to try a different attack.  For arguments sake, let's assume we have discovered the configuration file for our DVWA application.  We can use this to look at the database configuration for our web app with the following injection:
+```
+localhost; cat /var/www/dvwa/config/config.inc.php
+```
+
+<img src="./0-infosec_images/infosec 11 web 5.PNG" alt="Pentest Environment">
+
+When we look at this, it doesn't look like we have succeded, but if we look at the source code for this page (the second half of the above image), we discover the username and password for the database:
+```
+username: root
+password:
+```
+
+Worrying, the password field is empty.  Let's try connecting to the database.  Go back to the vsftpd screen, where you are logged in as root, and try and connect to the mysql database software with the following commands:
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+mysql -u root
+show databases;
+\q
+```
+
+<img src="./0-infosec_images/infosec 11 web 5.PNG" alt="Pentest Environment">
+
+Wih the above, you should see that we now have root access to the database, we can look at all the databases and all the data in those databases (if you know the SQL language).  Some quick notes on the above:
+
+* the python command creates a better shell allowing us to use tools like mysql 
+* the mysql command logs us into the database, this time as user root with no password
+* the show databases is a SQL command to display all databases this account has access to.  We might be able to exfultrate all kinds of data now
+* the \q exits the system so we don't destroy data.
+
+As you can start to see, attacks are multi vector in nature.  For this, we have a combination of the website, a service exploit, and a database exploit all working together to exfultrate sensitive data.
+
+---
+<a name="learnmore"></a>
 ## Where can I learn more?
 
 Virtual machines like the one we attacked - Metasploitable - can be found online on sites like vulnhub (https://vulnhub.com).  The toolset we used for hacking can be found on the Kali website: (https://kali.org).  The environment we used for our virtualization inside of Azure is called VirtualBox: (https://www.virtualbox.org).
