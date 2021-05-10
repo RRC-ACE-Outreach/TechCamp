@@ -16,7 +16,7 @@ Once registered, you can access your virtual machine (VM) a couple of different 
 <h3>Environment</h3>
 
 Before we begin our attack, we really need to understand as much as possible about the environment we are operating in.  For our environment, we are connected to an instance of Ubuntu running on Azure, and within Ubuntu, a virtualized environment was created using VirtualBox (VB), and within VB, we have our target machine Metasploitable running.  We also have our attack machine Kali Linux running.  All activities will be done using Linux today, and in this environment:
-## image of testbed. ##
+<img src="0-infosec_images/infosec 1 azure kali setup.png" alt="Pentest Environment">
 
 The above is a typical configuration for this kind of activity, where you have Kali and your target machine running on the same network so you can send attacks across that network to discover and exploit any vulnerabilities.  While there are many graphical tools for these kinds of attacks, we will be using the command line for the most part.
 
