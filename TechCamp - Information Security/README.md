@@ -170,6 +170,14 @@ With the above, the arguments do the following:
 
 ## medusa2
 
+This will run for a few minutes.  When complete, you should see Stan's password displayed.  If you want to see all results, **after** medusa is complete, type the following:
+```
+cat success.txt
+```
+
+You should see the following
+## medusa3
+
 ---
 <h2>Where can I learn more?</h2>
 
