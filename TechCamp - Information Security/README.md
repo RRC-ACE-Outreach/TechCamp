@@ -149,6 +149,27 @@ Some items of note: this is possible only because we have root access to the sys
 
 After a while, you can stop John the Ripper with Ctrl + C
 
+We see that there are still some passwords that haven't been cracked.  For example, when we look at either our passwd or shadow files, we see the characters from South Park haven't been cracked yet.  Let's see if we cant do that with another cracking tool
+
+<h3>Brute Forcing with Medusa</h3>
+
+Let's see if we can't figure out the passwords for cartman, kenny, kyle, and stan.  We see them in our list of users, but our attempt at cracking their passwords failed, so let's try again.  We are going to use a dictionary of real world passwords found from a website in the wild.  As always, there are different ways to solve this; we can create a list of users, find a dictionary, iterate through the users and with each user, try the passwords in our dictionary.  Let's try that now.  First, let's create our users.  Feel free to close down all instances of Leafpad and start a new one.  In Leafpad, add the four users we want to attack, one on each line, all lower case as we saw in the passwd and shadow files:
+## medusa1
+
+Next we need to prepare our dictionary.  This is a large list of passwords that were taken from a website a number of years ago, so this is a real-world, unfiltered list of passwords that people have used in the past, and continue to use today.  It is so big, it is usually compressed into the UNIX equivalent of a zip file, but I have prepared it ahead of time so we can just use it, as below:
+```
+medusa -U users2.txt -P /usr/share/wordlists/rockyou.txt -M ssh -h 192.168.56.101 -O success.txt
+```
+
+With the above, the arguments do the following:
+-U for a list of users (a single user would be -u, or lower case)
+-P for a list of passwords (a single password would be -p, or lower case)
+-M is for the module, or protocol.  We are attacking the SSH protocol
+-h for the host (if we had a list of hosts, we would use upper case H) 
+-O to output the results to be stored to a text file (upper case of letter O, not number zero)
+
+## medusa2
+
 ---
 <h2>Where can I learn more?</h2>
 
