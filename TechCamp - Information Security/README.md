@@ -40,9 +40,13 @@ ip addr
 nmap 192.168.56.0/24
 ```
 
+
+
 ---
 
 <h2>Where can I learn more?</h2>
+
+Virtual machines like the one we attacked - Metasploitable - can be found online on sites like (https://vulnhub.com).  The toolset we used for hacking can be found on the Kali website: (https://kali.org).  The environment we used for our virtualization inside of Azure is called VirtualBox: (https://www.virtualbox.org).
 
 If you wish to learn more about security audits and the many different kinds of attacks that can happen to a website, visit [https://www.owasp.org, ](https://www.owasp.org/)the Open Web Application Security Project. This is a community built around the idea of letting the public know about the different types of attacks that can happen, and how to prevent them.
 
