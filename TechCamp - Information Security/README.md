@@ -5,7 +5,12 @@
 #### Follow along by video recordings on the Stream 2 playlist on **<a href="https://youtube.com/playlist?list=PL6Izhxz8ouOngvMBaB6csvb17fOvNYhKM" target="_blank">Red River College ACE's - YouTube channel</a>**.  
 *HINT: hold the `CTRL` key on Windows, or `Command` on Mac when clicking the link to open in a new tab.*  
 
-<h2>Introduction and Connecting to Azure</h2>
+---
+Contents
+[Introduction](#Introduction and Connecting to Azure)
+---
+
+## Introduction and Connecting to Azure
 
 Welcome to the Red River College Information Security TechCamp.  We will cover basic penetration testing activities today.  These activities are referred to as "hacking" or "pentesting" and can be presented in a number of different contexts.  We will be using a purpose build vulnerable server running in a virtualized environment running on Azure cloud services, common for activities such as these.
 
@@ -13,14 +18,14 @@ You should have received an email with a link to either register for the Azure s
 
 Once registered, you can access your virtual machine (VM) a couple of different ways, one using Remote Desktop (RDP), the other using a Secure SHell (SSH) terminal.  I would recommend using RDP, as this will give you access to a better web browser for the part of the activities where we attack a website.  You will need to set your own password, please set this, and remember your password going forward (write it down).  Please connect to your VM if you haven't already done so.
 
-<h3>Environment</h3>
+## Environment
 
 Before we begin our attack, we really need to understand as much as possible about the environment we are operating in.  For our environment, we are connected to an instance of Ubuntu running on Azure, and within Ubuntu, a virtualized environment was created using VirtualBox (VB), and within VB, we have our target machine Metasploitable running.  We also have our attack machine Kali Linux running.  All activities will be done using Linux today, and in this environment:
 <img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
 
 The above is a typical configuration for this kind of activity, where you have Kali and your target machine running on the same network so you can send attacks across that network to discover and exploit any vulnerabilities.  While there are many graphical tools for these kinds of attacks, we will be using the command line for the most part.
 
-<h3>Scanning</h3>
+## Scanning
 
 It is common to start any attack with a network and service scan.  This involves discovering all machines that are running on your network, regardless if that network is physical or virtual, and all services that are running on those machines.  There are a number of tools that will do this, we will be looking at nmap
 
@@ -54,7 +59,7 @@ We should see the following detailed information about our target machine:
 
 Now we can attack specific services.
 
-<h3>MSF Console and UnrealIRCd</h3>
+## MSF Console and UnrealIRCd
 
 The first service we are going to attack is port 6667 and the Unreal IRC daemon service process.  IRC is the origins of web based messaging, and UnrealIRCd is a server process that works with IRC.  If we are to research that version of UnrealIRCd, we would discover there is a known vulnerability, and this vulnerability has an exploit in the command line tool Metasploit Framework (MSF Console).  First thing we should do is open a new tab in our terminal program and launch msfconsole, as below.  Having multiple tabs open makes jumping back and forth between results easier:
 <img src="./0-infosec_images/infosec 6 msfconsole start.PNG" alt="Pentest Environment">
@@ -101,7 +106,7 @@ This time, we can see the before and after of our settings.  I have also include
 Sometimes we even crash our target VM with our pentest activities, and in that case, we need to reboot our VM, as seen in this video:
 ## video to reset target
 
-<h3>Cracking Passwords</h3>
+## Cracking Passwords
 
 Now we have root access to a target machine, let's see if we cant crack some passwords.  We are going to first use a tool called John the Ripper.  John the Ripper is a tool with a long history.  It doesn't get installed by default when you usually set up a Linux box, but it is installed in system like Kali, and is available to us.  If we are going to use John the Ripper (john), we need a list of usernames and passwords to crack.  Fortunately, in our attack above, we have root access and we can see the users and passwords.  Let's steal that info (exfultrate) to our Kali box so we can crack the passwords with Kali.  First thing I like to do is create a separate directory for each activity or system I attack.  In this case, we are attacking Metasploitable, so let's create a directory for this.  Open a new tab in your terminal application, and type the following:
 ```
@@ -153,7 +158,7 @@ After a while, you can stop John the Ripper with Ctrl + C
 
 We see that there are still some passwords that haven't been cracked.  For example, when we look at either our passwd or shadow files, we see the characters from South Park haven't been cracked yet.  Let's see if we cant do that with another cracking tool
 
-<h3>Brute Forcing with Medusa</h3>
+## Brute Forcing with Medusa
 
 Let's see if we can't figure out the passwords for cartman, kenny, kyle, and stan.  We see them in our list of users, but our attempt at cracking their passwords failed, so let's try again.  We are going to use a dictionary of real world passwords found from a website in the wild.  As always, there are different ways to solve this; we can create a list of users, find a dictionary, iterate through the users and with each user, try the passwords in our dictionary.  Let's try that now.  First, let's create our users.  Feel free to close down all instances of Leafpad and start a new one.  In Leafpad, add the four users we want to attack, one on each line, all lower case as we saw in the passwd and shadow files:
 <img src="./0-infosec_images/infosec 10 medusa 1.PNG" alt="Pentest Environment">
@@ -181,7 +186,7 @@ You should see the following
 <img src="./0-infosec_images/infosec 10 medusa 3.PNG" alt="Pentest Environment">
 
 ---
-<h2>Where can I learn more?</h2>
+## Where can I learn more?
 
 Virtual machines like the one we attacked - Metasploitable - can be found online on sites like vulnhub (https://vulnhub.com).  The toolset we used for hacking can be found on the Kali website: (https://kali.org).  The environment we used for our virtualization inside of Azure is called VirtualBox: (https://www.virtualbox.org).
 
