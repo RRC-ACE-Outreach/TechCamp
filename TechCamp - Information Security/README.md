@@ -9,16 +9,16 @@
 
 ## Contents
 
-[Introduction](#Introduction%20and%20Connecting%20to%20Azure)
+[Introduction and Connecting to Azure](#Introduction)
 
 [Environment](#Environment)
 
 [Scanning](#Scanning)
 
-[MSF Console and UnrealIRCd](#MSF%20Console%20and%20UnrealIRCd)
+[MSF Console and UnrealIRCd](#unreal)
 
 ---
-
+<a name="introduction"></a>
 ## Introduction and Connecting to Azure
 
 Welcome to the Red River College Information Security TechCamp.  We will cover basic penetration testing activities today.  These activities are referred to as "hacking" or "pentesting" and can be presented in a number of different contexts.  We will be using a purpose build vulnerable server running in a virtualized environment running on Azure cloud services, common for activities such as these.
@@ -68,6 +68,7 @@ We should see the following detailed information about our target machine:
 
 Now we can attack specific services.
 
+<a name="introduction"></a>
 ## MSF Console and UnrealIRCd
 
 The first service we are going to attack is port 6667 and the Unreal IRC daemon service process.  IRC is the origins of web based messaging, and UnrealIRCd is a server process that works with IRC.  If we are to research that version of UnrealIRCd, we would discover there is a known vulnerability, and this vulnerability has an exploit in the command line tool Metasploit Framework (MSF Console).  First thing we should do is open a new tab in our terminal program and launch msfconsole, as below.  Having multiple tabs open makes jumping back and forth between results easier:
