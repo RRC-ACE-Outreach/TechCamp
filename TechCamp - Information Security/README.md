@@ -17,11 +17,11 @@
 
 [MSF Console and UnrealIRCd](#unreal)
 
-[MSF Console and vsftpd](#vsftp)
+[MSF Console and vsftpd](#vsftpd)
 
 [Cracking Passwords with John the Ripper](#passwords)
 
-[Brute Forcing with Medusa](#unreal)
+[Brute Forcing with Medusa](#medusa)
 
 ---
 <a name="introduction"></a>
