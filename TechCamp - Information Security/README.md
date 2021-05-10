@@ -72,6 +72,10 @@ nmap -sV 192.168.56.101
 We should see the following detailed information about our target machine:
 <img src="./0-infosec_images/infosec 5 detailed nmap.PNG" alt="Pentest Environment">
 
+We will be focusing on the bolded services listed below:
+<img src="./0-infosec_images/infosec 5b services.PNG" alt="Pentest Environment">
+
+
 Now we can attack specific services.
 
 <a name="unreal"></a>
