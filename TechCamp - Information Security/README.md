@@ -78,7 +78,7 @@ Now we can attack specific services.
 ## MSF Console and UnrealIRCd
 
 The first service we are going to attack is port 6667 and the Unreal IRC daemon service process.  IRC is the origins of web based messaging, and UnrealIRCd is a server process that works with IRC.  If we are to research that version of UnrealIRCd, we would discover there is a known vulnerability, and this vulnerability has an exploit in the command line tool Metasploit Framework (MSF Console).  First thing we should do is open a new tab in our terminal program and launch msfconsole, as below.  Having multiple tabs open makes jumping back and forth between results easier:
-<img src="./0-infosec_images/infosec 6 msfconsole start.PNG" alt="Pentest Environment">
+<br /><img src="./0-infosec_images/infosec 6 msfconsole start.PNG" alt="Pentest Environment">
 
 Please note the startup of msfconsole will display ASCII art, and this art will likely be different each time you start.  Sometimes, the art looks like a failure, but we are specifically looking for the following line:
 ```
