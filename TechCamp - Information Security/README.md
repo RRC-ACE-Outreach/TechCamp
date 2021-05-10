@@ -103,7 +103,8 @@ whoami
 
 This time, we can see the before and after of our settings.  I have also included a troubleshooting demo if things don't go well.  Many of the tools we use are created by and for hackers, and as such, can be a bit rough around the edges.  In our example, we needed to run the exploit a couple of times to get it to work.  
 ## images of vsftp 1 and 2
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 8 vsftp 1.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 8 vsftp 2.PNG" alt="Pentest Environment">
 
 Sometimes we even crash our target VM with our pentest activities, and in that case, we need to reboot our VM, as seen in this video:
 ## video to reset target
@@ -119,7 +120,7 @@ ls
 
 This will create an empty directory, or folder, for our work. 
 ## passwords1
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 9 passwords 1.PNG" alt="Pentest Environment">
 
 Now let's exfultrate our data.  In our tab we have our metasploit attack open, we can look at the contents of two files, the /etc/passwd file (that contains most user information, but not passwords, and a separate file /etc/shadow (that contains the actual passwords, but in an encrypted or hashed format).  We can view these and copy them to a text editor, we will be using Leafpad, a simple text editor similar to Notepad in Windows.  In Ubuntu, in the upper left corner, select Applications --> Accessories --> Leafpad.  Move it off to the side so you can see both the terminal and Leafpad side by each.  In the terminal, type the following **in the tab with the vsftpd attack** 
 ```
@@ -128,18 +129,18 @@ cat /etc/passwd
 
 Highlight the text that contains the username information, and from the menu at the top select Edit --> Copy.  Paste the text in Leafpad, as seen below:
 ## passwords2
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 9 passwords 2.PNG" alt="Pentest Environment">
 
 You need to save your work now, so in Leafpad, go to File --> Save, and select the pentest folder along the left side, select our working directory metasploitable, and in the file name, type in passwd.txt (or any filename you prefer):
 ## passwords3
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 9 passwords 3.PNG" alt="Pentest Environment">
 
 We are going to do the same with the /etc/shadow file, open a new instance of Leafpad, highlight the lines, copy/paste to Leafpad, and save our work again in the correct directory:
 ```
 cat /etc/shadow
 ```
 ## passwords4
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 9 passwords 4.PNG" alt="Pentest Environment">
 
 Once you have exfultrated the necessary data, you can go back to your terminal, select the tab you created to make the work directory (it should be the last tab on the right) and verify you have the directory listing below.  After we exfultrate our files, we want to merge them into a single file that John the Ripper can handle, and we do this with the unshadow command, an executable that gets installed with John the Ripper:
 ```
@@ -149,7 +150,7 @@ ls -al
 ```
 
 ## passwords5
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 9 passwords 5.PNG" alt="Pentest Environment">
 
 Now we are ready to try and crack some passwords:
 ``` 
@@ -158,7 +159,7 @@ john passwords_to_crack.txt
 
 Your screen will look like this in a few minutes:
 ## passwords 6
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 9 passwords 6.PNG" alt="Pentest Environment">
 
 Some items of note: this is possible only because we have root access to the system.  This is more accurately described as a password audit rather than password hacking.  
 
@@ -170,7 +171,7 @@ We see that there are still some passwords that haven't been cracked.  For examp
 
 Let's see if we can't figure out the passwords for cartman, kenny, kyle, and stan.  We see them in our list of users, but our attempt at cracking their passwords failed, so let's try again.  We are going to use a dictionary of real world passwords found from a website in the wild.  As always, there are different ways to solve this; we can create a list of users, find a dictionary, iterate through the users and with each user, try the passwords in our dictionary.  Let's try that now.  First, let's create our users.  Feel free to close down all instances of Leafpad and start a new one.  In Leafpad, add the four users we want to attack, one on each line, all lower case as we saw in the passwd and shadow files:
 ## medusa1
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 10 medusa 1.PNG" alt="Pentest Environment">
 
 Next we need to prepare our dictionary.  This is a large list of passwords that were taken from a website a number of years ago, so this is a real-world, unfiltered list of passwords that people have used in the past, and continue to use today.  It is so big, it is usually compressed into the UNIX equivalent of a zip file, but I have prepared it ahead of time so we can just use it, as below:
 ```
@@ -185,7 +186,7 @@ With the above, the arguments do the following:
 * -O to output the results to be stored to a text file (upper case of letter O, not number zero)
 
 ## medusa2
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 10 medusa 2.PNG" alt="Pentest Environment">
 
 This will run for a few minutes.  When complete, you should see Stan's password displayed.  If you want to see all results, **after** medusa is complete, type the following:
 ```
@@ -194,7 +195,7 @@ cat success.txt
 
 You should see the following
 ## medusa3
-<img src="./0-infosec_images/infosec 1 azure kali setup.PNG" alt="Pentest Environment">
+<img src="./0-infosec_images/infosec 10 medusa 3.PNG" alt="Pentest Environment">
 
 ---
 <h2>Where can I learn more?</h2>
