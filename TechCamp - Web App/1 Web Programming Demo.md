@@ -91,7 +91,7 @@ Click the URL link icon to open a new browser window:
 ![image](https://user-images.githubusercontent.com/2661661/117058351-22b8f600-ace4-11eb-8224-32f97d282933.png)
 
 When the browser launches you should see something like this:
-| ![image](https://user-images.githubusercontent.com/2661661/117057945-ac1bf880-ace3-11eb-85ab-b599b8bb6bd6.png) |
+| ![image](https://raw.githubusercontent.com/RRC-ACE-Outreach/TechCamp/main/TechCamp%20-%20Web%20App/0%20-%20Images/01%20Index%20of%20v2.png) |
 | --- |
 
 Alternatively you could copy and paste the URL text into the top of a new tab/window in your browser's press Enter.
