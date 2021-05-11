@@ -129,7 +129,7 @@ This time, we can see the before and after of our settings.  I have also include
 <img src="./0-infosec_images/infosec 8 vsftp 2.PNG" alt="Pentest Environment">
 
 Sometimes we even crash our target VM with our pentest activities, and in that case, we need to reboot our VM, as seen in this video:
-## video to reset target
+[Metasploitable VM Reboot](https://youtu.be/-5hE6Gm1QLw).
 
 <a name="passwords"></a>
 ## Cracking Passwords with John the Ripper
