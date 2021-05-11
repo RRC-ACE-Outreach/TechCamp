@@ -89,7 +89,7 @@ service mysql start
 ## STEP 6
 Now let's install phpmyadmin by running this line:
 ```
-apt-get install -y php7.3-mbstring php7.3-mysql phpmyadmin
+apt-get install php7.3-mbstring php7.3-mysql phpmyadmin
 ```
 
 ### When installing phpmyadmin, you'll be prompted for some questions to answer.
