@@ -96,7 +96,7 @@ msf6 >
 This is our msfconsole prompt, where we launch our attacks from.  If we are going to attack the Unreal IRC server, we need to configure our attack.  This often require research and trial and error, however, we will focus on results today.  Type in the following:
 ```
 use exploit/unix/irc/unreal_ircd_3281_backdoor
-set RHOST 192.168.56.101
+set RHOSTS 192.168.56.101
 set payload cmd/unix/bind_perl
 show options
 exploit
@@ -116,7 +116,7 @@ We are going to have to exit this, so hit Ctrl + C to exit out of the msf sessio
 
 Let's take a look at another vulnerable service, specifically vsftpd.  Again, we would research our discovery and try and realize any known vulnerabilities.  Again, there is an exploit in MSF console.
 ```
-use exploit/unix/irc/vsftpd_234_backdoor
+use exploit/unix/ftp/vsftpd_234_backdoor
 show options
 set RHOST 192.168.56.101
 show options
@@ -192,7 +192,7 @@ Let's see if we can't figure out the passwords for cartman, kenny, kyle, and sta
 
 Next we need to prepare our dictionary.  This is a large list of passwords that were taken from a website a number of years ago, so this is a real-world, unfiltered list of passwords that people have used in the past, and continue to use today.  It is so big, it is usually compressed into the UNIX equivalent of a zip file, but I have prepared it ahead of time so we can just use it, as below:
 ```
-medusa -U users2.txt -P /usr/share/wordlists/rockyou.txt -M ssh -h 192.168.56.101 -O success.txt
+medusa -U users.txt -P /usr/share/wordlists/rockyou.txt -M ssh -h 192.168.56.101 -O success.txt
 ```
 
 With the above, the arguments do the following:
@@ -247,7 +247,12 @@ localhost; ls
 
 <img src="./0-infosec_images/infosec 11 web 4.PNG" alt="Pentest Environment">
 
-If the above works, we have an indication that this page is subject to command chaining.  Let's try a couple of attacks:
+If the above works, we have an indication that this page is subject to command chaining.  What is happening in the background is the ping command is running with the web form data, and executing it unchecked.  We added an unexpected command with the semi colon; chaining one command to another command.  Below is what is happening on the server based on our form data:
+```
+ping localhost; ls
+```
+
+Let's try a couple of attacks:
 ```
 localhost; cat /etc/passwd
 ```
