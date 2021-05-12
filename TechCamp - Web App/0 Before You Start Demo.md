@@ -22,6 +22,7 @@ Take a moment and get your user account created. Be careful to remember your log
 Once logged into Goorm:
 - Select the 'Dashboard' button
 - From the Dashboard, select the '+ New Container' button
+![image](https://user-images.githubusercontent.com/83470699/116954762-d8416600-ac5e-11eb-93f1-c74e08ec2810.png)
 
 #### STEP 2
 Configure your container.  
